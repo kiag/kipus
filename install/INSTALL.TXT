@@ -1,0 +1,42 @@
+Tested on Linux and OSX.
+
+Install node
+Install graphicsmagick
+
+  npm install -g mysql
+  npm install -g connect
+  npm install -g gm
+  npm install -g node-zip
+  npm install -g mime
+  npm install -g progress
+  npm install -g xml2js
+  npm install -g nodemailer
+  npm install -g request
+  npm install -g morgan
+  npm install -g compression
+  npm install -g serve-static
+  npm install -g body-parser
+  npm install -g mime-types
+  npm install -g http-status-codes
+  npm install -g lodash
+
+% cd ../install
+  cp createdb.sql.template createdb.sql
+  vi createdb.sql
+    check the password and/or the db user
+  mysql -uroot -p < createdb.sql
+  mysql -uXXX -pYYY XXX < create_tables.sql
+
+% cd ..backend
+  cp config.js.template to config.js
+  vi config.js
+    modify DB name, DB-User and DB-Password
+
+Start the backend in a console with
+% sh startbackend.sh
+  In a browser open 
+    http://backendhost:8080/admin.html
+  Login with user admin, and password kipusadmin
+  Configure your projects.
+  Projects can be reached under
+    http://backendhost:8080/PROJECTNAME

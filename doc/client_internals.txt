@@ -1,0 +1,204 @@
+kipus.js:
+
+Sync:
+=====
+ Button:
+   kps_syncBookDef -> kps_syncUploadData -> kps_execSyncHooks -> nextFn(?)
+     
+ - kps_syncBookDef
+   - kps_doDownload
+     - db: get stored struct version
+     * backendCall: getStructChanges from manually maintained server table
+       kipus_structChanges containing JS code
+     - execute structChanges (JS Code) newer than the version number
+     - db: get list of image timestamps from the local DB. (aka metadata)
+     * backendCall: getMyBookDefinitions (with lastSync, see below)
+     - db: store bookdef (without lookuptables and image-name-list)
+     - digest bookdefinition
+     - store the lookuptables one-by-one
+     - db: download & store the images (if the remote image timestamp is newer)
+     - call initialized hooks (kipusScore, kipus_addition)
+     - Status-Dialog (optional)
+ - kps_syncUploadData
+   - db: getLastSync
+   * backendCall getMyUserData (with lastSync)
+   - kps_storeMyData (see below)
+   - db_getUnsynced
+   - Status-Dialog
+   - kps_queueLongData (== separate items > 10k)
+   * backendCall: upload
+   * backendSendLongDataQ (== upload foto or file, backendCall: uploadData)
+   * backendCall: getMyUserData (if server sets syncAgain)
+   - applicationCache.update (for offline apps)
+   - initialize (for online apps)
+ - kps_execSyncHooks (kipusWeather)
+
+
+Sync and new version:
+- offline app:
+ - nach Sync wird Code automatisch geholt, wenn(!) auf dem Projekt ein Update
+   gemacht wurde.
+ - Browser reload holt Code auch nur, wenn auf dem Projekt ein Update gemacht
+   wurde.
+ - Ein File-Upload gilt auch als "Projekt-Update".
+
+- online app:
+ - Sync holt nur Daten, nie Code
+ - Browser reload holt immer Code, unabhaengig von einem Projekt-Update.
+ - Mit Browser reload meine ich "Cmd-Shift-R", das normale Reload habe ich nie
+   getestet.
+
+Reinstall the app:
+==================
+ - kps_doDownloadMyData
+   - backendCall getMyUserData
+   - kps_storeMyData
+     - db: db_deleteBooks (skips unsynced data, ??)
+     - kps_syncBookDef
+     - db_getRowUpdates (update timestamps for each row)
+     - db_deleteMyData (actually everything)
+     - for each table
+       - for each row
+         - extract & download picture/files
+         - db_updateAnswer
+       - db_updateBook
+     - kps_initialize
+
+
+
+StructChanges
+- must call the global nextFn at the end
+
+
+====================
+Rights format, rights are stored in the rights column in the kipus_user table
+- Space separated list of Units, ORd together
+- Unit: comma separated list of Entries, ANDed together
+- Entry:
+  - Variant 1: <ruleId>:<COLUMNNAME>=<value>, meaning: <COLUMNNAME> in a
+               rootbook must have <value>. In case of Hierarchies (they have a
+               PARENT column), each rootbook, which is below in the hierarchy,
+               is accepted.
+  - Variant 2: <ruleId>:OWN.<bookdefId>=<columnName>, meaning each rootbook of
+               type <bookdefid>, where <columnName> contains my loginId, is
+               accepted.
+  - Variant 3: <ruleId>:<bookdefId>=<value>
+               rootbook of type <bookdefid>, with bookid=<value> is accepted.
+- Notes:
+  - each book below an accepted rootbook is accepted.
+  - in the above text "book" means "header page of a book". All body pages
+    belonging to an accepted header page are accepted.
+
+Rules format (kipus_rules)
+- bookdef_rights (aka mobile client rights)
+  - Space separated list of Entries (ORed together)
+  - Entry: <bookDefId>={none|read|write}
+
+
+============================================
+Storing/Syncing large data
+
+Before 2018-10-31
+
+constrainttype=foto
+  - create: the original (or resized) foto is stored as the value of the
+    column with the syntax:
+      <filename>;data:image/jpeg;base64,<content>
+  - upload: the original foto data is copied into the LongData Queue, the
+    column content is replaced with an icon (max 192x192), same syntax. This
+    icon data is synced with the rest of the data(!).
+  - backend/DB: the column content is replaced with
+    [deferred:tablename/lineno/columnname], the original image + an icon is
+    stored with tablename/lineno/columnname as dataid in kipus_longdata
+  - download: the client process extracts the dataid from the column,
+    downloads the icon in a separate call (which return filename;data), stores
+    the icon data in the column itself, and stores the dataid in the _imgMap
+    hash with the filename, to be able to add a HTML-link to the original
+    image.
+  - upon second sync (only if the current row was modified), the same process
+    as above is repeated, destroying the original image in the backend.
+    TODO: fix it.
+
+Images in lookup-Tables 
+  - images from lookup-tables are also stored in the kipus_bigdata table, the
+    lookup image column containing [deferred:tablename/lineno/columnname].
+  - the list of lookup images is sent at download in the images hash, the
+    client loads the image, and stores it in the kps_images table, the column
+    content itself is not modified.
+  - upon display the image is loaded from the kps_images table (db_getImage)
+
+Files:
+  - upon creation the file is stored as filename;data:...
+  - upon sync: if constraintParam contains AllowDownload, then the content is
+    kept as it is, else it is replaced with filename; . The data is copied to
+    longData, and uploaded separately
+  - if doc is synced again (as another attribute is changed), and file was
+    deleted before (No AllowedData) then the data in the backend is deleted
+    TODO: fix it
+  - upon download the client gets [file:tablename/lineno/columnname], which
+    triggers loading of the content. If AllowedData is set, then
+      <filename>;data:<mimetype>;base64,<content>
+    will be returned, else only
+      <filename>;
+    filename;filedata is stored in the column, the _imgMap contains the dataid,
+    the key is the filename.
+    Whe syncing, the file will be sent again to the backend, if there is no
+    file, the file will be deleted.
+    TODO: fix it
+
+Uploading
+  - kipusLongData.js separates the data, and writes it into kps_longDataQ
+  - from here it will be uploaded via the uploadData backend call.
+  - this function checks if there is a correspondig "original" Line in the DB,
+    and calles finishBigDataCols
+  - finishBigDataCols replaces the column content with
+    [deferred:tablename/rowid/columnname] (or file: instead of defererred for
+    non image or signature), creates an icon if its an image, and calls
+    saveBigData
+  - saveBigData inserts/updates comment, icon and bigdata in kps_bigData
+    comment is the filename, extracted from the data (the part before the ;)
+
+After 2018-10-31, for both files and images
+  - when showing an image/file/signature, the following data is stored in the
+    html, as HTML attributes of the img.fotoImg or a.fileLink
+    - id: [(deferred|file):tbl/rowid/colname] or a new UUID8-4-4-4-12 
+    - data: content (src for img, href for a)
+    - fileName
+    - link: empty, dbImage?image=... or dbFile?fileid=...
+    - modified: true or false
+  - when saving an image, the above values are stored in the _complexData
+    structure as a separate object, with id as index
+
+  - upon upload only fields with .modified:true are concerned. After the data is
+    saved to kps_longDataQ, .modified is set to false, the image data is
+    replaced with its icon, and for files the content is removed, if
+    AllowedData is not set.
+  - the backend process remains the same
+  - on download the data is written to the _complexData, instead of a UUID the
+    content of the field (as before, [(deferred|file):tbl/row/col], the whole
+    string!) is used for adressing the data in _complexData. That means, that
+    the download process has to extract the tbl/row/col field, but for the
+    display the format is not relevant any more.
+
+Fixed bugs:
+- resizing images on the clients works again (but the data was replaced with
+  the synced one from the server).
+- clicking on the image (for foto and signature) before sync will show the
+  original (previously only after sync)
+- modifying data after sync will not upload the foto/signature again
+  (potentially overwriting the original with an icon).
+- modifying data after sync will not delete the already uploaded file on the
+  server or upload it again, if AllowedData is set
+- deleting image after sync will delete the image on the backend.
+- "clear"ing a signature deletes the data (previously this created an white png),
+  now can check for mandatory.
+
+Executed Tests:
+  foto: *cr *save *sh *lg *upl *dl *sh *lg *delete *upldel *upl2  crCam
+  sign: *cr *save *sh *lg *upl *dl *sh *lg *delete *upldel *upl2
+  file: *cr *save *sh *lg *upl *dl *sh *lg -delete -upldel *upl2 *AllData
+  where: *tableRows *bookNew *bookEdit *rowNew *rowEdit
+  Legend: cr:create sh:show lg:largeView upl:upload dl:download upldel:delete&upload
+TODO
+  automatic data move on the client
+============================================

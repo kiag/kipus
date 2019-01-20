@@ -1,0 +1,28 @@
+{
+  "short_name": "<generated from project.short_name>",
+    "name": "<generated from project.title>",
+    "icons": [
+      {
+      "src": "./projects/<project>/icon_48.png",
+      "sizes": "48x48"
+      },
+      {
+      "src": "./projects/<project>/icon_96.png",
+      "sizes": "96x96"
+      },
+      {
+      "src": "./projects/<project>/icon_144.png",
+      "sizes": "144x144"
+      },
+      {
+      "src": "./projects/<project>/icon_152.png",
+      "sizes": "152x152"
+      }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "start_url": ".",
+    "display": "standalone",
+    "gcm_sender_id": "103953800507",
+    "_comment_gcm_sender_id": "Don't change the gcm_sender_id, the browser sender ID for manifest.json is a fixed value, common among all FCM JavaScript clients. Refer to https://firebase.google.com/docs/cloud-messaging/js/client#configure_the_browser_to_receive_messages"
+}

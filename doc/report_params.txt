@@ -1,0 +1,112 @@
+  kipus_reportparams table and the most important columns 
+  
+  +-------------+--------------------+------+-----+---------+----------------+
+| Field       | Type               | Null | Key | Default | Extra          | column description
++-------------+--------------------+------+-----+---------+----------------+
+| id          | int(11)            | NO   | PRI | NULL    | auto_increment | 
+| projectid   | int(11)            | YES  | MUL | NULL    |                | the reference to the project the report belongs to
+| displayname | varchar(255)       | NO   |     | NULL    |                | not use anywhere
+| paramname   | varchar(255)       | NO   |     | NULL    |                | reference to the report, @+kipus_reports.reportname
+| paramtype   | enum('SQL','JSON') | NO   |     | NULL    |                | JSON is used at the moment, maybe SQL was intended but is never used
+| paramvalue  | text               | NO   |     | NULL    |                | the actual JSON object
+| modified    | char(19)           | NO   |     | NULL    |                | modified/created timestamp
+| modifiedby  | varchar(255)       | NO   |     | NULL    |                | used whoe  created/modified the report param
++-------------+--------------------+------+-----+---------+----------------+------------------------
+
+  UNIQUE (projectid, paramname)                                              -> combination of projectid and paramname is unique
+  FOREIGN KEY (projectid) REFERENCES kipus_projects(id) ON DELETE CASCADE    -> projectid has to be a valid project
+
+in kipus_reportparams, the paramtype can be set to JSON,
+the paramvalue can be an JSON-object, which is read in javascript (adminReports.js)
+
+Examples for paramvalues:
+
+(1) The simplest paramvalue is an empty JSON Object, needed for Table:
+{}
+
+(2) a more complex JSON Object, which configures the report to be represented as a line chart (time series) 
+
+ {"filters": ["@year_list"],
+  "hide_filter": ["line","table"],
+  "x_type": "timeseries", "x_time_column": "Delivery Date", "x_column": "Buyer", 
+  "y_type": ["line"],
+  "zoom": "true",
+  "y1": {"value_column": "Volume (kg)", "axisLabel": "Sales Volume (kg)", "aggregation": "sum" },
+  "x": { "tick" : { "format": "%Y-%m-%d", "rotate": 60 } }
+
+
+List of used params (it is not claimed that the list is complete)
+How to read this list:
+key: value (default)
+     description
+
+filters:            [<filterId>, ...]
+                    array of filter, filterId has to exist in kipus_reportparams
+                    and is hard coded in adminReports.js
+
+                    Example:
+                    filters: ["@year_list","@region_list","@target_group_list","@gender_list","@trade_area_list"]
+                      -> show report with year-filter, region_filter, target-group-filter, gender-filter and trade area filter.
+                    NOTE: when implementing a new dimension, the code to generate the filter has to be implemented in adminReports.js.
+
+append_totals:      true|false (default=false)
+                    if true, append line totals to the table. The last row of the reportsql will not be part of the
+                    chart-aggregation and is highlighted in bold. The totals-line has to generated with the reportsql
+                    using UNION.
+
+hide_filter:        [<chart_type1>,...] (default=[])
+                    array of chart_types, known chart_types: bar, stackedbar, pie, table
+       
+                    Example:
+                    hide_filter: ["pie","bar"]
+                      -> hide the filters for bar chart and pie chart
+
+disable_filter: see hide_filter. instead of hiding, the filter is disabled
+
+x_type:            "category"|"timeseries"|"trend"|"distinct" 
+                   which type the bar or pie chart is rendered.
+
+                   category:    chart uses category on x axis, the values of the data on the key will be used for category names
+                   timeseries:  x axis uses timeseries (each x is a date)
+                   trend:       not implemented, was planned for kipus reports
+                   distinct:    aggregate totals for each column specified in columns_distinct-parameter 
+                                which has to be specified in this case
+                     
+
+distinct_value_column: column (optional)         
+                   adds the number of the column when aggregating totals.
+                   if not set, aggregate totals will just count the rows.
+
+columns_distinct:  [ column1, column2, ...]
+                   array of columns used for x_type = distinct
+                   Each column has to be exactly the same string as it is returned by the reportsql-query.
+     
+                   Example:
+                   columns_distinct: [ "Beneficiary Region", "Target Group", "Beneficiary Gender", "Course Trade Area" ]
+                     -> aggregate totals over the specified columns. 
+
+columns_distinct_aggregation:  [ column1, column2, ...]
+                   array of columns used for x_type = distinct, for each column the data will be aggregated by.
+                   Each column has to be exactly the same string as it is returned by the reportsql-query.
+     
+                   Example:
+                   columns_distinct_aggregation: [ "Beneficiary Region", "Target Group", "Beneficiary Gender", "Course Trade Area" ]
+                     -> aggregate  over the specified columns. 
+                   If not set, default is aggregate over totals
+
+
+
+
+// TODO: following params are used in kipus_reports
+// and maybe also lack of documentation
+
+// for x_type=category
+y1,y2,y3,y4
+pie1,pie2,pie3,pie4
+chart_aggregation
+crop_list
+
+// for x_type=timeseries
+x_time_column,
+x_column
+

@@ -1,0 +1,623 @@
+<xliff version="1.0">
+  <file original="kipus_fr.xml" source-language="en-US" target-language="fr" datatype="plaintext">
+    <header/>
+    <body>
+      <trans-unit id="add">
+        <source>Add entry</source>
+        <target xml:lang="fr">Ajouter une entrée</target>
+      </trans-unit>
+      <trans-unit id="admin">
+        <source>Admin</source>
+        <target xml:lang="fr">Administration</target>
+      </trans-unit>
+      <trans-unit id="admin_advanced">
+        <source>Advanced options</source>
+        <target xml:lang="fr">Options avancées</target>
+      </trans-unit>
+      <trans-unit id="admin_autocreate">
+        <source>Create Books with autocreate flag</source>
+        <target xml:lang="fr">Créer des livres avec la configuration "création automatique"</target>
+      </trans-unit>
+      <trans-unit id="admin_sync">
+        <source>Synchronize with the server</source>
+        <target xml:lang="fr">Synchronisation avec le serveur</target>
+      </trans-unit>
+      <trans-unit id="admin_syncBookDef">
+        <source>Download book definitions and helper-tables</source>
+        <target xml:lang="fr">Téléchargement de définitions et tables</target>
+      </trans-unit>
+      <trans-unit id="alreadyExists">
+        <source>Entry already exists</source>
+        <target xml:lang="fr">L'entrée existe déjà</target>
+      </trans-unit>
+      <trans-unit id="appInstalled">
+        <source>This page was successfully installed as an application.&lt;br&gt;
+Please close this browser page and continue to use the app on the home screen.</source>
+        <target xml:lang="fr">Cette page a été installé comme application.&lt;br&gt; Fermer s'il vous plaît cette page et utiliser l'application à partir de l'écran d'acceuil.</target>
+      </trans-unit>
+      <trans-unit id="back">
+        <source>Back</source>
+        <target xml:lang="fr">Retour</target>
+      </trans-unit>
+      <trans-unit id="book">
+        <source>Book</source>
+        <target xml:lang="fr">Livre</target>
+      </trans-unit>
+      <trans-unit id="bookDefFailed">
+        <source>Data partially downloaded</source>
+        <target xml:lang="fr">Données téléchargées partiellement</target>
+      </trans-unit>
+      <trans-unit id="bookDefResult">
+        <source>Got {1} books, {2} pages, {3} attributes</source>
+        <target xml:lang="fr">Reçu {1} livres, {2} pages, {3} attributions</target>
+      </trans-unit>
+      <trans-unit id="bookHeader">
+        <source>Book header</source>
+        <target xml:lang="fr">Entête du livre</target>
+      </trans-unit>
+      <trans-unit id="caErr1">
+        <source>Action Text Missing</source>
+        <target xml:lang="fr">Texte de l'action n'est pas présent</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source>Cancel</source>
+        <target xml:lang="fr">Annuler</target>
+      </trans-unit>
+      <trans-unit id="caShowClosed">
+        <source>(closed entries)</source>
+        <target xml:lang="fr">(tâches résolues)</target>
+      </trans-unit>
+      <trans-unit id="caShowOpen">
+        <source>(open entries)</source>
+        <target xml:lang="fr">(tâches ouvertes)</target>
+      </trans-unit>
+      <trans-unit id="changeuser">
+        <source>Change User</source>
+        <target xml:lang="fr">Changer l'utilisateur</target>
+      </trans-unit>
+      <trans-unit id="checkDateStartEnd">
+        <source>Date de fin est avant date de début</source>
+        <target xml:lang="fr">Date de fin est avant date de début</target>
+      </trans-unit>
+      <trans-unit id="checkLength">
+        <source>{1} is too long</source>
+        <target xml:lang="fr">{1} est trop long</target>
+      </trans-unit>
+      <trans-unit id="checkMandatory">
+        <source>{1} is mandatory</source>
+        <target xml:lang="fr">{1} est requis(e)</target>
+      </trans-unit>
+      <trans-unit id="checkNumBoundery">
+        <source>Boundery ({2}) exceeded for {1}</source>
+        <target xml:lang="fr">Limit ({2}) non respectée pour {1}</target>
+      </trans-unit>
+      <trans-unit id="checkRegexp">
+        <source>{1} check failed</source>
+        <target xml:lang="fr">Validation de {1} a échoué</target>
+      </trans-unit>
+      <trans-unit id="clear">
+        <source>Clear</source>
+        <target xml:lang="fr">Effacer</target>
+      </trans-unit>
+      <trans-unit id="connecting">
+        <source>Connecting to kipus server...</source>
+        <target xml:lang="fr">Connexion au serveur</target>
+      </trans-unit>
+      <trans-unit id="correctiveAction">
+        <source>Corrective action</source>
+        <target xml:lang="fr">Mesures correctives</target>
+      </trans-unit>
+      <trans-unit id="create">
+        <source>Create</source>
+        <target xml:lang="fr">Créer</target>
+      </trans-unit>
+      <trans-unit id="createNotAllowed">
+        <source>Permission denied</source>
+        <target xml:lang="fr">Permission refusée</target>
+      </trans-unit>
+      <trans-unit id="debugInfo">
+        <source>Check debug messages</source>
+        <target xml:lang="fr">Verifiez les messages de débogage</target>
+      </trans-unit>
+      <trans-unit id="delAll">
+        <source>All data on this client will be deleted, unsynchronized data gets lost!</source>
+        <target xml:lang="fr">Tous les données sur cet appareil vont être effacées, les données n'ayant pas été synchronisées avec le serveur seront irrémédiablement perdues!</target>
+      </trans-unit>
+      <trans-unit id="deleteRow">
+        <source>Delete entry</source>
+        <target xml:lang="fr">Effacer l'entrée</target>
+      </trans-unit>
+      <trans-unit id="deleteRowReally">
+        <source>The current entry will be deleted!</source>
+        <target xml:lang="fr">Ceci effacera d'une façon permanente TOUTES les données ayant été entrées pour la sélection actuelle.&lt;br&gt;Êtes-vous sûr que vous voulez effacer les données de cette sélection?&lt;br&gt;Pour annuler seulement vos derniers changements, utilisez la flèche retour en haut et à gauche de l'écran.</target>
+      </trans-unit>
+      <trans-unit id="deleteRowReallyCancel">
+        <source>NO, keep this entry</source>
+        <target xml:lang="fr">NON, gardez ces données</target>
+      </trans-unit>
+      <trans-unit id="deleteRowReallyOK">
+        <source>YES, delete this entry</source>
+        <target xml:lang="fr">OUI, effacer ces données</target>
+      </trans-unit>
+      <trans-unit id="discardChanges">
+        <source>Voulez-vous vraiment quitter? Ceci effacera les données saisies.</source>
+      </trans-unit>
+      <trans-unit id="download">
+        <source>Load</source>
+        <target xml:lang="fr">Charger</target>
+      </trans-unit>
+      <trans-unit id="downloadMD_picture">
+        <source>Download pictures too</source>
+        <target xml:lang="fr">Télécharger aussi les photos</target>
+      </trans-unit>
+      <trans-unit id="downloadMD_time">
+        <source>Time period</source>
+        <target xml:lang="fr">Période</target>
+      </trans-unit>
+      <trans-unit id="downloadMD_time1m">
+        <source>last Month</source>
+        <target xml:lang="fr">dernier mois</target>
+      </trans-unit>
+      <trans-unit id="downloadMD_time1y">
+        <source>last Year</source>
+        <target xml:lang="fr">dernière année</target>
+      </trans-unit>
+      <trans-unit id="downloadMD_timeAll">
+        <source>Everything</source>
+        <target xml:lang="fr">tout</target>
+      </trans-unit>
+      <trans-unit id="downloadMyData">
+        <source>Download my data from the server</source>
+        <target xml:lang="fr">Télécharger mes données du serveur</target>
+      </trans-unit>
+      <trans-unit id="downloadProgram">
+        <source>Loading program files:&lt;br&gt;{1} of {2}</source>
+        <target xml:lang="fr">Charge fichier :&lt;br&gt;{1} de {2}</target>
+      </trans-unit>
+      <trans-unit id="downloadProgramError">
+        <source>Loading program failed:&lt;br&gt;{1}&lt;br&gt;Try to reload.</source>
+        <target xml:lang="fr">Charge fichier échoué :&lt;br&gt;{1}&lt;br&gt;Essayez de nouveau</target>
+      </trans-unit>
+      <trans-unit id="downloadSaving">
+        <source>Saving table {1}</source>
+        <target xml:lang="fr">Sauvegarde la table {1}</target>
+      </trans-unit>
+      <trans-unit id="downloadServer">
+        <source>Getting data from server</source>
+        <target xml:lang="fr">Reçois données du serveur</target>
+      </trans-unit>
+      <trans-unit id="enoperm">
+        <source>Permission denied</source>
+        <target xml:lang="fr">Permission refusée</target>
+      </trans-unit>
+      <trans-unit id="filesizeExceeded">
+        <source>Max Filesize exceeded (maxsize={1} bytes).</source>
+        <target xml:lang="fr">Taille maximale excédée (&gt; {1} octets)</target>
+      </trans-unit>
+      <trans-unit id="gpsArea">
+        <source>Calculated area: {1} ha</source>
+      </trans-unit>
+      <trans-unit id="gpsDeleteShape">
+        <source>Delete drawn shape</source>
+      </trans-unit>
+      <trans-unit id="gpsGetLoc">
+        <source>Get current location from GPS</source>
+        <target xml:lang="fr">Capturer la location actuelle du GPS (connection internet n'est pas requise)</target>
+      </trans-unit>
+      <trans-unit id="gpsIgnComp">
+        <source>Ignore computed value</source>
+        <target xml:lang="fr">Ignorer les données auto-déterminées</target>
+      </trans-unit>
+      <trans-unit id="gpsUseGM">
+        <source>Use Google-Maps</source>
+        <target xml:lang="fr">Utiliser Google MAPS</target>
+      </trans-unit>
+      <trans-unit id="gpsUseGMHelp1">
+        <source>Note: Google-Maps needs internet connection</source>
+        <target xml:lang="fr">Note : Google MAPS a besoin d'une connection internet</target>
+      </trans-unit>
+      <trans-unit id="gpsUseGMHelp2">
+        <source>Drag the pin and drop it to the desired location</source>
+        <target xml:lang="fr">Prenez l'épingle et bougez-la à la location voulue</target>
+      </trans-unit>
+      <trans-unit id="helpTextLoginName">
+        <source>Enter your login name here</source>
+        <target xml:lang="fr">Entrez ici votre nom de compte que vous avez obtenu par votre conseiller</target>
+      </trans-unit>
+      <trans-unit id="helpTextPassword">
+        <source>Enter your password here</source>
+        <target xml:lang="fr">Entrez ici votre mot de passe que vous avez obtenu par votre conseiller</target>
+      </trans-unit>
+      <trans-unit id="home">
+        <source>Overview</source>
+        <target xml:lang="fr">Résumé</target>
+      </trans-unit>
+      <trans-unit id="importClientDBReady">
+        <source>Client database import finished</source>
+        <target xml:lang="fr">Stockage de la base de données fini</target>
+      </trans-unit>
+      <trans-unit id="inputFile">
+        <source>Select File</source>
+        <target xml:lang="fr">Sélectionnez un fichier</target>
+      </trans-unit>
+      <trans-unit id="inputPhoto">
+        <source>Select Photo</source>
+        <target xml:lang="fr">Sélectionnez une photo</target>
+      </trans-unit>
+      <trans-unit id="langButton">
+        <source>Set language</source>
+        <target xml:lang="fr">Changer la langue</target>
+      </trans-unit>
+      <trans-unit id="langLabel">
+        <source>Language</source>
+        <target xml:lang="fr">Langue</target>
+      </trans-unit>
+      <trans-unit id="langTitle">
+        <source>Select language</source>
+        <target xml:lang="fr">Sélectionnez une langue</target>
+      </trans-unit>
+      <trans-unit id="leaveApp">
+        <source>Leaving the app (KIPUS)</source>
+        <target xml:lang="fr">Quitte l'application</target>
+      </trans-unit>
+      <trans-unit id="loadImg">
+        <source>Downloading image {1}</source>
+        <target xml:lang="fr">Télécharge photo {1}</target>
+      </trans-unit>
+      <trans-unit id="login">
+        <source>Login</source>
+        <target xml:lang="fr">Nom de compte</target>
+      </trans-unit>
+      <trans-unit id="loginName">
+        <source>Login Name</source>
+        <target xml:lang="fr">Nom de l'utilisateur</target>
+      </trans-unit>
+      <trans-unit id="loginOffline">
+        <source>ready to operate offline</source>
+        <target xml:lang="fr">Prêt à operer en mode déconnecté</target>
+      </trans-unit>
+      <trans-unit id="loginOnline">
+        <source>online operation only</source>
+        <target xml:lang="fr">Opération en ligne seulement - contactez le support kipus@ki-ag.com</target>
+      </trans-unit>
+      <trans-unit id="moreEntries">
+        <source>{1} more entries</source>
+        <target xml:lang="fr">{1} more entries</target>
+      </trans-unit>
+      <trans-unit id="moreEntry">
+        <source>one more entry</source>
+        <target xml:lang="fr">one more entry</target>
+      </trans-unit>
+      <trans-unit id="multiPicDone">
+        <source>Done</source>
+        <target xml:lang="fr">Terminé</target>
+      </trans-unit>
+      <trans-unit id="networkErr">
+        <source>Network Error, please check the Internet Connection.</source>
+        <target xml:lang="fr">Erreur de réseau</target>
+      </trans-unit>
+      <trans-unit id="newBook">
+        <source>New book</source>
+        <target xml:lang="fr">Nouvelle ferme</target>
+      </trans-unit>
+      <trans-unit id="noBodyPage">
+        <source>No page definition available</source>
+        <target xml:lang="fr">Définition de la page non présente</target>
+      </trans-unit>
+      <trans-unit id="noBookDef">
+        <source>No book definition available</source>
+        <target xml:lang="fr">Définition du livre non présente</target>
+      </trans-unit>
+      <trans-unit id="noSel">
+        <source>Nothing selected</source>
+        <target xml:lang="fr">Aucune sélection effectuée</target>
+      </trans-unit>
+      <trans-unit id="nSel">
+        <source>{1} selected</source>
+        <target xml:lang="fr">{1} sélectionné</target>
+      </trans-unit>
+      <trans-unit id="numHelp">
+        <source>Number between {1} and {2}</source>
+        <target xml:lang="fr">Nombre entre {1} et {2}</target>
+      </trans-unit>
+      <trans-unit id="numHelp2">
+        <source>Number between {1} and {2}, with {3} decimal places</source>
+        <target xml:lang="fr">Nombre entre {1} et {2} avec {3} décimales</target>
+      </trans-unit>
+      <trans-unit id="ok">
+        <source>Ok</source>
+        <target xml:lang="fr">Ok</target>
+      </trans-unit>
+      <trans-unit id="password">
+        <source>Password</source>
+        <target xml:lang="fr">Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="programUpdate">
+        <source>Check for program update</source>
+        <target xml:lang="fr">Vérifie la présence d'une nouvelle version du logiciel</target>
+      </trans-unit>
+      <trans-unit id="pw_change">
+        <source>Changer le mot de passe</source>
+      </trans-unit>
+      <trans-unit id="pw_changed">
+        <source>Mot de passe changé</source>
+      </trans-unit>
+      <trans-unit id="pw_do">
+        <source>Changement</source>
+      </trans-unit>
+      <trans-unit id="pw_dontmatch">
+        <source>Les mots de passe ne correspondent pas</source>
+      </trans-unit>
+      <trans-unit id="pw_newpw">
+        <source>Nouveau mot de passe</source>
+      </trans-unit>
+      <trans-unit id="pw_newpw2">
+        <source>retaper le mot de passe</source>
+      </trans-unit>
+      <trans-unit id="pw_oldpw">
+        <source>Ancien mot de passe</source>
+      </trans-unit>
+      <trans-unit id="pw_tooshort">
+        <source>Mot de passe trop court</source>
+      </trans-unit>
+      <trans-unit id="pw_wrongold">
+        <source>Mot de passe ancien incorrect</source>
+      </trans-unit>
+      <trans-unit id="pwRequired">
+        <source>Password protected</source>
+        <target xml:lang="fr">Protégé par un mot de passe</target>
+      </trans-unit>
+      <trans-unit id="qrBadPrefix">
+        <source>Wrong QR code detected (bad prefix)</source>
+        <target xml:lang="fr">Code QR inapproprié (préfixe inconnu)</target>
+      </trans-unit>
+      <trans-unit id="qrBadRegexp">
+        <source>Wrong QR code detected (not a number)</source>
+        <target xml:lang="fr">Code QR inapproprié (pas de code conteneur)</target>
+      </trans-unit>
+      <trans-unit id="qrScan">
+        <source>Scan</source>
+        <target xml:lang="fr">Scanner</target>
+      </trans-unit>
+      <trans-unit id="qrScanAbort"><source>Abort scanning</source><target xml:lang="fr"/>Abandonner le balayage</trans-unit>
+      <trans-unit id="quizBackToStart">
+        <source>Do you want to go back to start?</source>
+        <target xml:lang="fr">Voulez-vous retourner au début ?</target>
+      </trans-unit>
+      <trans-unit id="quizCancel">
+        <source>Do you really want to end the quiz? Progress will not be saved.</source>
+        <target xml:lang="fr">Voulez-vous vraiment terminer le quiz ?</target>
+      </trans-unit>
+      <trans-unit id="quizCheck">
+        <source>Check answer</source>
+        <target xml:lang="fr">Vérifier la réponse</target>
+      </trans-unit>
+      <trans-unit id="quizPleaseChoose">
+        <source>Please choose an answer.</source>
+        <target xml:lang="fr">Choississez une réponse s'il vous plaît</target>
+      </trans-unit>
+      <trans-unit id="quizQuestion">
+        <source>Question {1}/{2}</source>
+        <target xml:lang="fr">Question {1}/{2}</target>
+      </trans-unit>
+      <trans-unit id="quizResult100">
+        <source>Perfect! You know everything about this topic. Please don't forget to share your knowledge.</source>
+        <target xml:lang="fr">Parfait ! Vous savez tout à ce sujet. N'oubliez pas de partager votre savoir !</target>
+      </trans-unit>
+      <trans-unit id="quizResultsAnswered">
+        <source>You have answered {1} questions out of {2} correctly.</source>
+        <target xml:lang="fr">Vous avez répondu correctement à {1} questions de {2}.</target>
+      </trans-unit>
+      <trans-unit id="quizResultsHeader">
+        <source>Your results</source>
+        <target xml:lang="fr">Vos résultats</target>
+      </trans-unit>
+      <trans-unit id="quizResultsNote">
+        <source>Note: you have left {1} questions open.</source>
+        <target xml:lang="fr">Note : {1} questions attend(ent) encore </target>
+      </trans-unit>
+      <trans-unit id="quizResultUpTo100">
+        <source>Fantastic! You knew most of the answers, you have a very good knowledge of this topic.</source>
+        <target xml:lang="fr">Fantastique ! Vous connaissez la plupart des réponses et vous avex une très bonne maîtrise du sujet.</target>
+      </trans-unit>
+      <trans-unit id="quizResultUpTo25">
+        <source>Don't worry, no-one is born a master. Just look at the questions again in the learning mode to improve your knowledge, and then try again!</source>
+        <target xml:lang="fr">Ne soyez pas inquiet ! Personne est né maître... profitez des questions dans le mode apprentissage pour parfaire votre savoir, puis réessayez !</target>
+      </trans-unit>
+      <trans-unit id="quizResultUpTo50">
+        <source>Good work! Maybe you can try the learning mode to close some gaps in your knowledge.</source>
+        <target xml:lang="fr">Bon travail ! Utilisez le mode d'apprentissage pour combler les lacunes qui subsistent.</target>
+      </trans-unit>
+      <trans-unit id="quizResultUpTo75">
+        <source>Very good! More than half of the correct answers. Keep learning to achieve even better results.</source>
+        <target xml:lang="fr">Très bien ! Plus de la moitié des réponses sont bonnes. Continuez à apprendre pour améliorer votre score encore un peu.</target>
+      </trans-unit>
+      <trans-unit id="quizSave">
+        <source>Save answer</source>
+        <target xml:lang="fr">Sauvez la réponse</target>
+      </trans-unit>
+      <trans-unit id="quizTocHeader">
+        <source>Learn the answers</source>
+        <target xml:lang="fr">Apprenez les réponses</target>
+      </trans-unit>
+      <trans-unit id="quizTocText">
+        <source>To refresh your knowledge, you can read all the questions and check your answers before taking the test.</source>
+        <target xml:lang="fr">Pour rafraîchir votre savoir vous pouvez lire les questions et vérifier vos réponses avant de jouer au quiz.</target>
+      </trans-unit>
+      <trans-unit id="readonly">
+        <source>Entry is readonly</source>
+        <target xml:lang="fr">L'entrée ne peut pas être modifiée</target>
+      </trans-unit>
+      <trans-unit id="ready">
+        <source>Ready</source>
+        <target xml:lang="fr">Prêt</target>
+      </trans-unit>
+      <trans-unit id="regionLabel">
+        <source>Region</source>
+      </trans-unit>
+      <trans-unit id="resetDatabase">
+        <source>Clear data (unsynced data will be lost)</source>
+        <target xml:lang="fr">Éffacer toutes les données (note : toutes les données non synchronisées avec le serveur seront perdues !)</target>
+      </trans-unit>
+      <trans-unit id="resetDatabaseDone">
+        <source>App Data cleared.&lt;br&gt;
+To restart, just reload the app (swipe down) to download the app from scratch.&lt;br&gt;&lt;br&gt;
+If you do not intend to reinstall the app, we recommend you also uninstall the app by deleting the app from the home screen.</source>
+        <target xml:lang="fr">Pour redémmarer, recharger l'application en tirant l'écran vers le bas.&lt;br&gt;&lt;br&gt; Si vous ne voulez pas réinstaller l'application il est recommandé de l'effacer aussi de l'écran d'acceuil.</target>
+      </trans-unit>
+      <trans-unit id="resetSync">
+        <source>Reset sync status</source>
+        <target xml:lang="fr">Remettre le témoin de synchronisation à zéro</target>
+      </trans-unit>
+      <trans-unit id="resumeQuiz">
+        <source>Resume the test</source>
+        <target xml:lang="fr">Reprendre le quiz</target>
+      </trans-unit>
+      <trans-unit id="save">
+        <source>Save</source>
+        <target xml:lang="fr">Sauver</target>
+      </trans-unit>
+      <trans-unit id="settingsButton">
+        <source>Update settings</source>
+        <target xml:lang="fr">Sauver les rÃ©glages</target>
+      </trans-unit>
+      <trans-unit id="settingsTitle">
+        <source>User settings</source>
+        <target xml:lang="fr">RÃ©glages</target>
+      </trans-unit>
+      <trans-unit id="signatureEnter">
+        <source>Enter Signature</source>
+        <target xml:lang="fr">Entrer la signature</target>
+      </trans-unit>
+      <trans-unit id="startQuiz">
+        <source>Take the test</source>
+        <target xml:lang="fr">Jouer au quiz</target>
+      </trans-unit>
+      <trans-unit id="startQuizHeader">
+        <source>Test your knowledge</source>
+        <target xml:lang="fr">Vérifier votre savoir</target>
+      </trans-unit>
+      <trans-unit id="startQuizText">
+        <source>Answer all questions to find out how good your knowledge is.</source>
+        <target xml:lang="fr">Répondez à toutes les questions pour connaître votre meîtrise du sujet</target>
+      </trans-unit>
+      <trans-unit id="structExec">
+        <source>Structural change: {1}</source>
+        <target xml:lang="fr">Changement structurel : {1}</target>
+      </trans-unit>
+      <trans-unit id="swRegisterError">
+        <source>App could not be registered as a progressive web app, fallback to traditional app mode.&lt;br&gt;
+Some functionalities like receiving push notifications or add to home screen prompt do not work in the traditional app mode.</source>
+        <target xml:lang="fr">L'application n'a pas pu utiliser se registrer en tant que PWA, le mode traditionnel sera utilisé.&lt;br&gt;Des fonctionnalités comme recevoir des messages ou ajout à l'écran d'acceuil ne seront pas disponible.</target>
+      </trans-unit>
+      <trans-unit id="sync">
+        <source>Sync</source>
+        <target xml:lang="fr">Synchronisation</target>
+      </trans-unit>
+      <trans-unit id="syncBookDef">
+        <source>Download book definitions and helper-tables</source>
+        <target xml:lang="fr">Téléchargement des données et tables</target>
+      </trans-unit>
+      <trans-unit id="syncBusy">
+        <source>Another Sync operation is in progress. Please try again later.</source>
+        <target xml:lang="fr">Une autre opération de synchronisation a lieu. Essayez ultérieurement s'il vous plaît</target>
+      </trans-unit>
+      <trans-unit id="syncDataCollect">
+        <source>Collect data...</source>
+        <target xml:lang="fr">Reçois données</target>
+      </trans-unit>
+      <trans-unit id="syncFailed">
+        <source>Sync not possible, please make sure you have an internet connection.</source>
+        <target xml:lang="fr">La synchronisation n'est pas possible, assurez-vous que votre connextion internet fonctionne bien</target>
+      </trans-unit>
+      <trans-unit id="syncFinished">
+        <source>Sync finished</source>
+        <target xml:lang="fr">Synchronisation terminée</target>
+      </trans-unit>
+      <trans-unit id="syncGotData">
+        <source>Got new data</source>
+      </trans-unit>
+      <trans-unit id="syncImgRem">
+        <source>To send: {1} images/documents</source>
+        <target xml:lang="fr">Encore à transmettre : {1} photos ou documents</target>
+      </trans-unit>
+      <trans-unit id="syncNewProg">
+        <source>Program will be updated.</source>
+        <target xml:lang="fr">Le logiciel sera mis à jour</target>
+      </trans-unit>
+      <trans-unit id="syncNoData">
+        <source>No data to send</source>
+        <target xml:lang="fr">Pas de données à transmettre</target>
+      </trans-unit>
+      <trans-unit id="syncNoDef">
+        <source>No definition changes</source>
+        <target xml:lang="fr">Pas de changements de definitions</target>
+      </trans-unit>
+      <trans-unit id="syncNoProg">
+        <source>Program is up to date</source>
+        <target xml:lang="fr">Le logicile est à jour</target>
+      </trans-unit>
+      <trans-unit id="syncSend">
+        <source>Sending data to server...</source>
+        <target xml:lang="fr">Transmets données au serveur...</target>
+      </trans-unit>
+      <trans-unit id="syncTimeout">
+        <source>Background sync of images timed out. No need to worry.</source>
+        <target xml:lang="fr">La synchronisation en arrière plan s'est terminé. Ceci est une information seulement et n'a pas de conséquences immédiates. Si cela arrivait plus souvent, contactez votre conseiller</target>
+      </trans-unit>
+      <trans-unit id="tableCopy">
+        <source>Importer la liste</source>
+      </trans-unit>
+      <trans-unit id="tableCopyClear">
+        <source>Effacer la liste</source>
+      </trans-unit>
+      <trans-unit id="tableCopyEmpty">
+        <source>No data found to copy</source>
+        <target xml:lang="fr">Pas de données à copier, la table restera vide</target>
+      </trans-unit>
+      <trans-unit id="takePhoto">
+        <source>Take photo</source>
+      </trans-unit>
+      <trans-unit id="timeGroupEmpty">
+        <source>{1} is empty, please fill it first</source>
+        <target xml:lang="fr">{1} est vide, le remplir d'abord SVP</target>
+      </trans-unit>
+      <trans-unit id="unsupportedImage">
+        <source>Only photos of type jpeg are supported</source>
+        <target xml:lang="fr">Seulement des photos de type jpeg seront acceptées</target>
+      </trans-unit>
+      <trans-unit id="upload">
+        <source>Upload</source>
+        <target xml:lang="fr">Téléchargement au serveur</target>
+      </trans-unit>
+      <trans-unit id="uploadClientDB">
+        <source>Upload client database (to help debugging)</source>
+        <target xml:lang="fr">Téléchargement au serveur de la base de données mobiles (pour débogage)</target>
+      </trans-unit>
+      <trans-unit id="uploadClientDBReady">
+        <source>Client database was uploaded to {1}</source>
+        <target xml:lang="fr">Base de données mobiles a été téléchargée</target>
+      </trans-unit>
+      <trans-unit id="uploadData">
+        <source>Upload entered data</source>
+        <target xml:lang="fr">Téléchargement au serveur des données entrées</target>
+      </trans-unit>
+      <trans-unit id="uploadReady">
+        <source>Upload finished</source>
+        <target xml:lang="fr">Téléchargement au serveur terminé</target>
+      </trans-unit>
+      <trans-unit id="userPreferences">
+        <source>User preferences</source>
+        <target xml:lang="fr">Préférences utilisateur</target>
+      </trans-unit>
+      <trans-unit id="videoDownload">
+        <source>Download videos for storage on your device</source>
+        <target xml:lang="fr">Téléchargement des vidéos pour stockage local</target>
+      </trans-unit>
+      <trans-unit id="viewEntry">
+        <source>View entries</source>
+        <target xml:lang="fr">Montrer les entrées</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

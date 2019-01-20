@@ -1,0 +1,29 @@
+/* Copyright KI-AG 2013-2019, Project KIPUS */
+
+module.exports.db = {
+  host:'localhost', port:3306, database:'kipus',
+  user:'kipus', password:'password', timezone:'UTC'
+};
+module.exports.httpPort = 8080;
+module.exports.prefix = '/kipus';
+module.exports.htmlDir  = "../html";
+module.exports.projectDir = "../html/projects";
+module.exports.backendModules = "";
+module.exports.xliffedit = {
+  filePath: '../html/xliffedit/output', 
+  url: 'xliffedit/xliff.html'
+};
+module.exports.mail = {
+  notifyLevel: LOGLEVEL.WARN,
+  host: 'mail.example.com', 
+  port: 465, // use tls
+  secure: true,
+  auth: {
+    user: 'kipus@mail.example.com',
+    pass: '1234567890'
+  },
+  from: 'kipus-supportexample.com',
+  to: 'kipus-support@example.com'
+};
+// if not set, defaulting to %u_clientdb.sql. %u = user, %t = tick
+module.exports.uploadClientDBName = "%u_clientdb_%t.sql";

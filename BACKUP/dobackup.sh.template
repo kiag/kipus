@@ -1,0 +1,31 @@
+#!/bin/sh
+
+tgt=kipus
+
+home=/data/kipus/$tgt/BACKUP
+mysqlpath=/usr/bin
+mysqlpw=" -u$tgt -p5424_kipus $tgt"
+
+cd $home
+
+mv -f *01.gz ../archive > /dev/null 2>&1 
+find . -ctime +30 | grep $tgt | sort | xargs rm  > /dev/null 2>&1 
+
+d=`date +%H`
+if test $d = 20; then
+  fname="$tgt."`date +"%Y%m%d"`
+else
+  fname="$tgt.hourly.$d"
+fi
+
+$mysqlpath/mysqldump $mysqlpw > $fname
+gzip -f $fname
+rm -f LAST
+ln $fname.gz LAST
+
+if test $d = 20; then
+  cd ../backend
+  sh ./refreshbitables.sh
+  sh ./refreshuserbookids.sh
+fi
+

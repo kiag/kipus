@@ -1,0 +1,88 @@
+@font-face { font-family: 'Exo2condensed';
+             src: url('../projects/KIPUS01/Exo2_MediumCondensed.otf') format('opentype'); }
+@font-face { font-family: 'Exo2condensed';
+             src: url('../projects/KIPUS01/Exo2_BoldCondensed.otf') format('opentype');
+             font-weight: bold; }
+
+div#piechart, div#barchart1, div#barchart2, div#barchart3, div#barchart4, div#barchart5 {
+	font-family:'Exo2condensed',Helvetica, Arial, sans-serif;
+}
+
+#piechart {
+	width:900px;
+	height:500px;
+	border:1px solid silver;
+	margin-top:30px;
+	background-color:#eee;
+	margin-bottom:1em;
+}
+
+#barchart1,#barchart2,#barchart3,#barchart4,#barchart5{
+	width:900px;
+	height:500px;
+	border:1px solid silver;
+  margin-right:10px;
+	background-color:#eee;
+	margin-bottom:1em;	
+}
+
+.dhx_chart.inline {
+  display: inline-block!important;
+	width:600px!important;
+}
+
+p.title {
+	margin-left:40px;
+	font-weight:bold;
+	font-size:16pt;
+}
+
+div.groupbuttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10000;
+}
+
+div.sortbuttons {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  z-index: 10000;
+}
+
+input.toggeled {
+    outline:0;
+    background-color:#ededed;
+    background-image: -moz-linear-gradient(top, #ededed 0%, #81898c 100%);
+    background-image: -webkit-linear-gradient(top, #ededed 0%, #81898c 100%);
+    background-image: -o-linear-gradient(top, #ededed 0%, #81898c 100%);
+    background-image: -ms-linear-gradient(top, #ededed 0%, #81898c 100%);
+    background-image: linear-gradient(top, #ededed 0%, #81898c 100%);
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+    -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
+.dhx_chart_legend_item:first-child {
+  margin-top: 70px;
+}
+
+.dhx_chart_legend_item {
+  position: relative;
+  padding-top: 0px!important;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.dhx_chart {
+	font-size:11pt!important;
+}
+.pielabel{
+      height:15px;
+      line-height:15px;
+      font-size: 14px;
+      width:25px;
+      text-align:center;
+    }
+

@@ -1,0 +1,96 @@
+Note: the following description assumes familiarity with UNIX/Linux command
+line, and file editing.
+Replace XXXXXX with the actual name of the installation
+
+1. Short architecture
+=====================
+  Client side:
+    There are two clients, the mobile client, which can operate standalone,
+    without a server connection, and syncs its data to the server, and the admin
+    client, which needs a permanent (internet) connection the the server.
+
+  Server side:
+    HTTPS requests are served by apache, which forwards the request to the kipus
+    (node.js) server. The node.js server connects to a mysql server, where the
+    project configuration and the collected data is stored.
+
+2. apache
+=========
+  The (standard) configuration is stored in /etc/apache2, the only modification
+  is the forwarding rule stored in sites-enabled/000-default.conf:
+    ProxyPass /XXXXXX http://127.0.0.1:8095 retry=0 timeout=90
+    ProxyPassReverse /XXXXXX http://127.0.0.1:8095
+  The letsencrypt installation modified this, enabling HTTPS and redirecting
+  HTTP requests automatically to HTTPS.
+  The letsencrypt certificate is renewed automatically, the program for
+  checking this is started by the root cronjob (see crontab -l):
+    30 2 * * 1 certbot -q renew
+
+  - to check if apache is running, type
+      /etc/init.d/apache2 status
+  - to stop apache (as root)
+     /etc/init.d/apache2 stop
+  - to start apache (as root)
+     /etc/init.d/apache2 start
+
+  Apache will be started automatically on system start.
+
+
+3. mysql (the Database Server)
+==============================
+  Mysql 5.5.56 is installed into /usr/local/mysql, the data is stored in the
+  /usr/local/mysql/data directory.
+
+  - to check if mysqld (the DB server) is running, type
+      /etc/init.d/mysql.server status
+  - to stop mysqld (as root)
+     /etc/init.d/mysql.server stop
+  - to start mysqld (as root)
+     /etc/init.d/mysql.server start
+
+  mysqld will be started automatically on system start.
+
+
+4. The Kipus Server (node.js)
+=============================
+  The Kipus Kerver is installed in the directory
+    /home/administrator/XXXXXX
+  The configuration is in the backend/config.js file, which contains also the
+  database credentials.
+
+  - to check if node.js is running, type
+      pgrep -a node
+    the output should look like:
+      1482 ../node/bin/node backend.js XXXXXX
+
+  - to stop the server kill it (the argument/process-id is taken from the ps
+    output above)
+      kill 1482
+
+  - to start the server (as administrator)
+      cd /home/administrator/XXXXXX/backend
+      sh ./startbackend.sh &
+
+  Note: by using the screen command, the Kipus Server can be started as
+    sh ./startbackend.sh
+  without sending the program to the background.  This way is stopping (Ctrl-C)
+  and restarting the server (by executing the last command) is easier, and the
+  logfile output can be watched in real time.
+  
+  The Kipus Server logfile is found in
+    /home/administrator/XXXXXX/backend/backend.log
+  The Kipus Server has to be started manually on system start.
+
+5. Backup
+=========
+  Backup is configured via the crontab entry of the administrator, currently as
+    1 */8 * * * /home/administrator/XXXXXX/BACKUP/dobackup.sh
+
+  dobackup.sh dumps the database via mysqldump, compresses it, and transfers
+  the backup at midnight to the second cotvet-srv.
+
+  For restoring the database:
+  - create a database named XXXXXX, and add a XXXXXX user, with the correct
+    credentials.
+  - execute
+    gzip -dc < backupfile.gz | mysql -uXXXXXX -p XXXXXX

@@ -1,0 +1,3203 @@
+@font-face { font-family: 'Exo2condensed';
+             src: url('Exo2_MediumCondensed.otf') format('opentype'); }
+@font-face { font-family: 'Exo2condensed';
+             src: url('Exo2_BoldCondensed.otf') format('opentype');
+             font-weight: bold; }
+
+body,button,input {
+    /* font-family: 'Exo2condensed', 'Arial narrow', 'Droid Sans', Arial, */
+    font-family: 'Arial narrow', 'Droid Sans', Arial,
+    Helvetica, sans-serif;
+}
+
+body[lang="vi"], body[lang="vi"] button, body[lang="vi"] input {
+    font-family: 'Droid sans', Arial, sans-serif;
+}
+
+
+
+body {
+  background-color:gray;
+  color:#333;
+  font-size:18px;
+}
+
+html,body,div,dl,dt,dd,ul,p,blockquote,pre,th,td,form,fieldset,input,textarea,button
+{
+  margin:0;
+  padding:0;
+}
+
+table
+{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+fieldset,img,abbr,acronym
+{
+  border:0;
+}
+
+ol,ul
+{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+caption,th
+{
+  text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-size:100%;
+  font-weight:400;
+  margin:0;
+  padding:0;
+}
+
+h1
+{
+  font-size:130%;
+  font-weight:700;
+  line-height:120%;
+  margin:5px 0 20px;
+}
+
+h2,.printouttitle
+{
+  font-size:120%;
+  font-weight:700;
+  line-height:120%;
+  margin:5px 0 15px;
+}
+
+h3
+{
+  font-size:110%;
+  font-weight:700;
+  margin:5px 0 10px;
+}
+
+/*
+a:link,a:visited
+{
+  color:#1e1aec;
+}
+*/
+
+table.register td,#load table td,#save table td
+{
+  text-align:left;
+}
+
+#outer-wrapper,#statsContainer
+{
+  background-color:#fff;
+  margin:0 auto;
+  max-width:1000px;
+  min-width:320px;
+  padding:0;
+}
+
+
+#content-wrapper
+{
+  position:fixed;
+  width:100%;
+  margin:46px 0 0 0;
+  line-height:1.5;
+}
+
+#content-wrapper > div#d3
+{
+  width:100%;
+}
+
+#content-wrapper > div#d3 > div
+{
+  background-color:#FCFBF0;
+  width:100%;
+  max-width:1000px;
+  position:absolute;
+  top:0; left:0;
+  height:100%;
+  overflow-y:auto;
+  overflow-x:hidden;
+  -webkit-overflow-scrolling: touch; /* needed for iOS scroll speedup */
+  z-index:5;
+}
+
+#content-wrapper > div#d3 > div > div
+{
+  clear:both;
+  padding:20px;
+}
+
+
+#footer-wrapper
+{
+  margin:30px 10px 0;
+  padding-bottom:30px;
+  text-align:center;
+}
+
+#footer
+{
+  font-size:16px;
+}
+
+#loadbutton,#savebutton,input.submit,.date p.question button.ui-datepicker-triggert
+{
+  font-size:18px;
+  padding:1px 7px;
+}
+
+.clearall,.saveall, #movenextbtn, #moveprevbtn, #submitbtn, #movesubmitbtn
+{
+  font-size:18px;
+  padding:1px 4px;
+}
+
+.surveylistheading
+{
+  font-weight:700;
+}
+
+#surveylist ul
+{
+  margin:20px 0;
+}
+
+#surveylist li.surveytitle
+{
+  padding:0 0 5px;
+}
+
+#surveylist li.surveytitle a
+{
+  font-size:120%;
+  text-decoration:none;
+}
+
+#surveylist li.surveytitle a:hover
+{
+  text-decoration:underline;
+}
+
+.surveycontact
+{
+  margin:20px 0 0;
+}
+
+#surveylist .lang-wrapper
+{
+  margin:10px 0;
+}
+
+#surveyinfo
+{
+  margin:0 0 20px;
+}
+
+.welcomenote
+{
+  margin:20px 0;
+}
+
+.therearexquestions
+{
+  font-style:italic;
+}
+
+#privacynote
+{
+  background-color:#fff3ad;
+  font-size:95%;
+  padding:10px;
+}
+
+#surveydata
+{
+  margin:0 0 20px;
+}
+
+#surveydata .lang-wrapper
+{
+  float:right;
+  margin:5px 0 0;
+}
+
+#assessment
+{
+  border:1px solid #ccc;
+  padding:10px;
+}
+
+.assessmentheading
+{
+  font-size:105%;
+  font-weight:700;
+  padding:0 10px 10px;
+  text-align:center;
+}
+
+#assessments table
+{
+  width:100%;
+}
+
+#assessments table th
+{
+  padding:0 2px 5px;
+  text-align:center;
+}
+
+#assessments table td
+{
+  padding:0 2px;
+}
+
+#completed
+{
+  border:1px solid #ccc;
+  margin:20px 0;
+  padding:15px 10px 30px;
+  text-align:center;
+}
+
+.success
+{
+  color:#77ef87;
+  font-size:110%;
+  font-weight:700;
+}
+
+#clearall
+{
+  border:1px solid #ccc;
+  margin:20px 0;
+  padding:25px 10px 30px;
+  text-align:center;
+}
+
+#clearall span.answerscleared
+{
+  color:#ff0f0f;
+  font-size:110%;
+  font-weight:700;
+}
+
+.regmessage1
+{
+  font-weight:700;
+  margin:5px 0;
+}
+
+table.register
+{
+  margin-bottom:20px;
+  margin-top:10px;
+  text-align:left;
+}
+
+table.register td
+{
+  padding:3px;
+}
+
+#load .loadmessage,#save .savemessage
+{
+  margin:5px 0;
+}
+
+#load table,#save table
+{
+  margin-bottom:20px;
+  margin-top:10px;
+  text-align:left;
+}
+
+#load table table,#save table table
+{
+  margin:0;
+}
+
+#load td,#save td
+{
+  padding:3px;
+}
+
+.error,.errormandatory,.warningjs
+{
+  color:#ff0f0f;
+  font-size:95%;
+  font-weight:700;
+  text-align: left;
+}
+
+#statsContainer
+{
+  padding-top:15px;
+}
+
+#statsContainer .statsSurveyTitle
+{
+  font-size:130%;
+  font-weight:700;
+  text-align:center;
+}
+
+#statsContainer .statsNumRecords
+{
+  font-size:110%;
+  font-weight:700;
+  text-align:center;
+}
+
+table.statisticssummary
+{
+  margin:10px auto 50px;
+}
+
+table.statisticssummary thead th
+{
+  text-align:center;
+}
+
+table.statisticssummary tbody th
+{
+  font-size:100%;
+  font-weight:400;
+  padding-right:5px;
+  text-align:right;
+}
+
+table.statisticssummary tbody td
+{
+  padding-left:5px;
+  text-align:left;
+}
+
+table.statisticstable
+{
+  margin:5px 0 20px;
+}
+
+#group-wrapper h3.groupname
+{
+  background-color:#d2dade;
+  padding:3px 5px 0;
+}
+
+#group-wrapper .groupdescription
+{
+  margin:0 0 20px;
+}
+
+/* NIB No distance between questions, silver border between questions */
+.question-wrapper { margin:0; border-bottom: 2px solid silver!important; }
+
+/* NIB silver border between questions */
+.question-wrapper:first-child { border-top: 2px solid silver!important; }
+
+.question-value.samerow { display:inline-block; margin-left:10px; }
+
+div.questiontext, div.overview
+{
+  border-top:1px solid #ccc;
+  font-size:90%;
+  font-weight:700;
+}
+
+span.upper_questionhelp
+{
+  display:block;
+  font-size:90%;
+  font-style:normal;
+  font-weight:400;
+  margin-top:5px;
+  clear:both;
+/*  margin-right: 140px; */
+}
+
+span.upper_questionhelp img.questionhelp
+{
+  max-width:128px;
+  max-height:96px;
+  height:auto;
+  float:right;
+  /* Select-Image + Longhelp-Image compatibility
+  position:absolute;
+  top:0;
+  right:0;
+  */
+}
+
+div.smileyrow > img
+{
+  width:24px;
+  height:24px;
+  float:right;
+  margin-left:3px;
+}
+
+span.lower_questionhelp
+{
+  display:block;
+  font-size:90%;
+  font-style:italic;
+  font-weight:400;
+  margin-top:5px;
+  clear:both;
+}
+
+div.questiontext .errormandatory
+{
+  text-align:left;
+}
+
+div.answer
+{
+  margin:0 0 10px;
+}
+
+span.asterisk
+{
+  color:#ff0f0f;
+  font-size:80%;
+  letter-spacing:2px;
+}
+
+.numeric-multi .answer ul li label,.numeric-multi .answer ul li span.input,.numeric-multi .answer ul li div.slider_lefttext,.numeric-multi .answer ul li label.slider-label,.numeric-multi .answer ul li div.multinum-slider,.numeric-multi .answer ul li div.slider_righttext,.multiple-opt-comments .answer ul li span.option,.multiple-opt-comments .answer ul li span.comment,.multiple-short-txt .answer ul li label,.multiple-short-txt .answer ul li span
+{
+  display:block;
+}
+
+.numeric-multi .answer ul
+{
+  display:table;
+}
+
+.numeric-multi .answer ul li
+{
+  display:table-row;
+}
+
+.numeric-multi .answer ul li label,.numeric-multi .answer ul li div.slider_lefttext,.numeric-multi .answer ul li label.slider-label,.numeric-multi .answer ul li div.multinum-slider,.numeric-multi .answer ul li div.slider_righttext
+{
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.numeric-multi .answer ul li label,.multiple-opt-comments .answer ul li span.option,.multiple-short-txt .answer ul li label
+{
+  padding:3px 10px 3px 0;
+}
+
+.numeric-multi .answer ul li span.input,.numeric-multi .answer ul li.multiplenumerichelp span,.multiple-opt-comments .answer ul li span.comment,.multiple-short-txt .answer ul li span
+{
+  padding:3px;
+}
+
+input.text,.array-multi-flexi-text tbody td label input,.array-multi-flexi tbody td input,.date p.question input,.numeric-multi li.multiplenumerichelp input.good,.numeric-multi li.multiplenumerichelp input.problem,.numeric-multi .answer ul li span.input input
+{
+  padding:1px 3px;
+}
+
+.numeric p.question input.text,.numeric-multi li.multiplenumerichelp input,.numeric-multi .answer ul li span.input input
+{
+  text-align:right;
+  color: #000;
+}
+
+.gender .answer ul li,.yes-no .answer ul li,.multiple-opt .answer ul li,.choice-5-pt-radio .answer ul li,.list-radio .answer ul li,.list-with-comment .answer .list ul li
+{
+  margin-bottom:6px;
+  position:relative;
+  text-align:left;
+}
+
+.gender .answer ul li input.radio,.yes-no .answer ul li input.radio,.multiple-opt .answer ul li input.checkbox,.choice-5-pt-radio .answer ul li input.radio,.list-radio .answer ul li input.radio,.list-with-comment .answer .list ul li input.radio
+{
+  left:0;
+  position:absolute;
+  top:5px;
+}
+
+.gender .answer ul li label.answertext,.yes-no .answer ul li label.answertext,.multiple-opt .answer ul li label.answertext,.choice-5-pt-radio .answer ul li label.answertext,.list-radio .answer ul li label.answertext,.list-with-comment .answer .list ul li label.answertext
+{
+  display: inline;
+  margin-left: 10px;
+}
+
+// .list-radio .answer ul li label.answertext
+label.answertext
+{
+  display: inline;
+  margin-left: 10px;
+}
+
+div.answer img {
+  float: none;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.multiple-opt-comments .answer ul li.other span.option
+{
+  padding-left:0;
+}
+
+.multiple-opt-comments .answer li span.option input.checkbox
+{
+  float:left;
+  margin-left:-20px;
+}
+
+p.tip
+{
+  font-size:85%;
+  font-style:italic;
+}
+
+p.problem
+{
+  color:#ff0f0f;
+}
+
+.answer input,.answer button,.answer select, button,.answer textarea, div#qTemplate input
+{
+  font-size:18px;
+  /* max-width:90%; */
+}
+
+table.question
+{
+  width:100%;
+}
+
+table.question thead th
+{
+  padding:2px 5px;
+  text-align:center;
+  vertical-align:bottom;
+}
+
+table.question tbody th.answertext
+{
+  /* padding:5px 7px; RKO */
+  padding:3px;
+  vertical-align:middle;
+}
+
+table.question tbody td
+{
+  padding:3px 3px;
+  text-align:center;
+  vertical-align:middle;
+}
+
+table.question tbody th.answertext,.array-flexible-column tbody th.arraycaptionleft,.array-flexible-row tbody th.answertextright
+{
+  font-weight:400;
+}
+
+table.question tbody .array1,.array-flexible-column table.question .odd
+{
+  background-color:#f0f0f0;
+}
+
+table.question tbody .array2,.array-flexible-column table.question .even
+{
+  background-color:#fff;
+}
+
+table.question tbody tr.array1:hover,table.question tbody tr.array2:hover
+{
+  background-color:#e8f0e0;
+}
+
+.array-flexible-column tbody th.arraycaptionleft,.array-flexible-row tbody th.answertextright
+{
+  padding:3px;
+  text-align:left;
+}
+
+.array-flexible-duel-scale thead .groups
+{
+  background-color:#fff;
+}
+
+.array-flexible-duel-scale tbody td.ddprefix
+{
+  text-align:right;
+}
+
+.array-flexible-duel-scale tbody td.ddsuffix
+{
+  text-align:left;
+}
+
+.array-flexible-duel-scale tbody td select
+{
+  margin:2px 1px;
+}
+
+.date p.tip
+{
+  margin-top:5px;
+}
+
+.numeric p.tip
+{
+  margin-top:5px;
+}
+
+.numeric-multi p.tip
+{
+  margin-bottom:5px;
+}
+
+.numeric-multi li.multiplenumerichelp input.good
+{
+  background-color:#77ef87;
+  color: #000;
+}
+
+.numeric-multi li.multiplenumerichelp input.problem
+{
+  background-color:#ff0f0f;
+  color: #000;
+}
+
+.numeric-multi .answer li span.input,.numeric-multi .answer li.multiplenumerichelp span
+{
+  text-align:left;
+}
+
+.numeric-multi .answer ul li label.slider-label
+{
+  font-size:100%;
+  padding:0 15px 0 0;
+  vertical-align:middle;
+}
+
+.numeric-multi .answer ul li div.slider_lefttext
+{
+  font-size:90%;
+  padding:0 15px 0 0;
+  text-align:right;
+  vertical-align:middle;
+}
+
+.numeric-multi .answer ul li div.slider_righttext
+{
+  font-size:90%;
+  padding:0 0 0 15px;
+  text-align:left;
+  vertical-align:middle;
+}
+
+.numeric-multi .answer ul li div.multinum-slider
+{
+  vertical-align:middle;
+}
+
+.ranking table td.label select.select
+{
+  margin-top:5px;
+}
+
+.ranking table td.output table td
+{
+  padding:2px 3px;
+}
+
+.list-with-comment p.comment
+{
+  margin-top:5px;
+}
+
+.list-with-comment p.comment label
+{
+  display:block;
+  vertical-align:top;
+}
+
+.list-with-comment p.comment textarea.textarea
+{
+  margin-top:5px;
+}
+
+.multiple-short-txt .answer li span
+{
+  text-align:left;
+}
+
+.ui-wrapper
+{
+  border:1px solid #50A029;
+}
+
+.ui-wrapper input,.ui-wrapper textarea
+{
+  border:0;
+}
+
+.ui-slider
+{
+  height:9px;
+  margin:25px 0 8px;
+  width:200px;
+}
+
+.ui-slider .ui-slider-handle
+{
+  height:23px;
+  left:0;
+  position:absolute;
+  top:-8px;
+  width:12px;
+}
+
+.slider_callout
+{
+  font-size:85%;
+  font-weight:400;
+  height:20px;
+  margin-left:-10px;
+  overflow:hidden;
+  position:absolute;
+  text-align:left;
+  top:-30px;
+  width:85px;
+}
+
+.slider_showmin,.slider_showmax
+{
+  float:left;
+  font-size:80%;
+  font-weight:400;
+  margin:15px 0 0;
+  text-align:left;
+  width:50px;
+}
+
+.slider_showmax
+{
+  float:right;
+  text-align:right;
+}
+
+
+/* error stuff 
+
+span.hide-tip div.error {
+    color: #FF00FF;
+}
+
+
+.error, .errormandatory, .warningjs, .mandatory, .input-error, .input-error span.hide-tip div.error
+{
+  color:#ff0f0f;
+  font-size:95%;
+  font-weight:700;
+  text-align: left;
+}
+*/
+
+/* Expression Manager warnings 
+.hide-tip        added if you use the hide_tip option 
+.em_num_answers      for for min_answers and max_answers 
+.em_value_range      for min/max_num_value_n and multiflexible_min/max 
+.em_sum_range      for min/max/equals_num_value 
+.em_regex_validation  for regular-expression validation of the question 
+.em_q_fn_validation    for the em_validation_q option 
+.em_sq_fn_validation  for the em_validation_sq option 
+.em_other_comment_mandatory    for other_comment_mandatory option - shows when "other" is selected but associated comment is missing.
+
+General warnings    
+.mandatory        the question is mandatory 
+.input-error      the question had at least one validation error 
+.tip          small help text e.g. for numeric questions ("Only number may be inputted") or ranking questions   
+
+*/
+.em_num_answers, .em_value_range, .em_sum_range
+{
+    color: #555555;
+    font-size: 95%;
+    font-style: italic;
+    font-weight: 400;
+}
+
+div.em_q_fn_validation, div.em_sq_fn_validation
+{
+    color: #555555;
+    font-size: 95%;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.tip 
+{
+    color: #000;
+    font-size: 90%;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.good 
+{
+  color: #000;
+}
+
+
+
+#save .error
+{
+  color:#ff0f0f;
+  font-size:110%;
+  font-weight:700;
+}
+
+
+
+/* II / 1.    */
+.question tr.headings th {
+    padding: 2px 5px;
+    text-align: center;
+}
+
+
+
+/* II / 2.    */
+.numeric-multi li.multiplenumerichelp span {
+  text-align: center;
+  background: transparent none;
+}
+
+.numeric-multi li.multiplenumerichelp span span {
+  display: inline;
+  padding: 0;
+}
+
+.numeric-multi ul li span {
+    display: table-cell;
+    padding: 0.3em 0 0 1em;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+ 
+ 
+ 
+/* II / 5.    */
+
+/* Question Index */
+
+#index
+{  
+  margin-top: 10px;
+}
+
+#index h2 {
+  padding: 1em;
+  background: #3E3E3E;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#index h3 { margin: 0.5em 0 0 0.5em; }
+
+#index .container {
+  width: 50%;  
+  background: #FFFFFF;
+  color: #000000;
+}
+
+#index .container .row {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  border-top: 1px solid #fff;
+}
+
+#index .container .row:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}
+
+#index .container .row .hdr {
+  width: 3em;
+  text-align: right;
+  display: inline-block;
+  padding: 0 0.5em 0 0;
+}
+
+#index .container .row.odd { background: #EEF6FF; }
+#index .container .row.current { background: #1D2D45; color: #fff; }
+#index .container .row.missing { background: #CC0000; color: #fff; }
+#index .container input { margin: 1em; }
+
+#index .container .answer
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* II / 11.    */
+.hide {
+  font-weight: normal;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+
+/* II / 12.    */
+.array-flexible-duel-scale tbody td.dual_scale_separator {
+    background-color: #5C5858;
+    margin: 0;
+    padding: 0;
+}
+
+.array-flexible-duel-scale tbody td.ddarrayseparator {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;    
+}
+
+/* II / 3.    */
+/* taken from default template */
+/* Tips / Validation Messages */
+/* If the question is invalid, but has not been submitted, give it a pleasant (red) warning color */
+div.em_num_answers.good {
+ color: green;
+}
+
+div.em_num_answers.error {
+  color: red;
+  display: block;
+}
+
+div.em_value_range.good {
+  color: green;
+}
+div.em_value_range.error {
+  color: red;
+  display: block;
+}
+
+div.em_sum_range.good {
+  color: green;
+}
+div.em_sum_range.error {
+  color: red;
+  display: block;
+}
+
+div.em_regex_validation {
+  display: none;
+}
+div.em_regex_validation.good {
+  color: green;
+}
+div.em_regex_validation.error {
+  color: red;
+}
+
+div.em_q_fn_validation.good {
+  color: green;
+}
+div.em_q_fn_validation.error {
+  color: red;
+}
+
+div.em_sq_fn_validation.good {
+  color: green;
+}
+div.em_sq_fn_validation.error {
+  color: red;
+}
+
+div.em_other_comment_mandatory.good {
+  display: none;
+}
+div.em_other_comment_mandatory.error {
+  color: red;
+  display: block;
+}
+
+input.em_sq_validation.good, textarea.em_sq_validation.good {
+}
+
+input.em_sq_validation.error, textarea.em_sq_validation.error {
+  color: black;
+  background-color:  pink; 
+  font-size: 100%;
+  font-weight: normal;
+}
+
+span.dynamic_sum {
+  font-weight: bold;
+  background-color: #d3d3d3;
+}
+span.dynamic_sum.good {
+  color: green;
+}
+span.dynamic_sum.error {
+  color: red;
+}
+
+span.dynamic_remaining {
+  font-weight: bold;
+  background-color: #d3d3d3;
+}
+span.dyanamic_remaining.good {
+  color: green;
+}
+span.dynamic_remaining.error {
+  color: red;
+}
+
+.answer li.multiplenumerichelp span.dynamic_sum, 
+.answer li.multiplenumerichelp .dynamic_sum span, 
+.answer li.multiplenumerichelp span.dynamic_remaining  {
+  text-align: center;
+}
+
+/* If  it is still invalid after submit, flag it in red */
+.input-error div.error {
+  color: red;
+  display: block;
+}
+
+span.hide-tip div.good {
+    display: none;
+}
+
+span.hide-tip div.error {
+    color: red;
+}
+
+.input-error span.hide-tip div.error {
+    color: red;
+    display: block;
+}
+
+
+
+/* CSS for imagetick JS for disabled checkboxes */                                                                                                      
+img.checkboxes.disabled {
+  opacity:0.6;
+  filter:alpha(opacity=50);
+}
+
+div.answer div.photoDelete {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    vertical-align: top;
+    position: relative;
+    left: -2.5em;
+    top: 0.5em;
+    background-image: url(images/delete.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 1em;
+    background-color: red;
+    border:1px solid red;
+}
+
+div.answer div.delete {
+    width: 2em;
+    height: 2em;
+    vertical-align: top;
+    position: relative;
+    left: -0.5em;
+    top: 0.5em;
+    background-image: url(images/delete.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 1em;
+    background-color: red;
+    border:1px solid red;
+    float:right;
+    z-index:100;
+}
+
+div.answer div.delete + img.fotoImg {
+    position:relative;
+    left:2em;
+}
+
+
+
+/* START: Clearfix
+.clearfix:after {
+  content:"."; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  visibility:hidden;
+}
+.clearfix {display:inline-block; }
+*/
+
+
+button[type="submit"] {
+  max-width:100%;
+  padding:0.5em;
+  margin:0.2em;
+  text-align:left;
+  box-shadow: none;
+  width:auto;
+  max-width:auto;  
+}
+
+
+#header button[type="submit"] {
+  width:auto;
+  margin:0 1em 0 0;
+  min-width:50px;
+  float: right;
+  text-align:center;
+}
+
+a {
+  color: #00646E;
+}
+
+.qnumcode {
+  color: #888;
+}
+
+div.question-wrapper div.questiontext {
+  background-size:auto 90%;
+  background-repeat:no-repeat;
+  background-position:right 5px;
+}
+
+table.question th
+{
+  font-size:85%; /* for No/Yes,not documented/Yes,documented */
+}
+
+/* --------------------------------------- */
+/* --- additional layout styles by NIB --- */
+/* --------------------------------------- */
+
+div.question-wrapper, div.overview {
+  padding:0.75em 3% 0.75em 3%;  /* RKO */
+  border: none;                 /* kein Rand (uspr?nglichen Stil ?berschreiben */
+  background-color:rgba(255,255,255,1);         /* HG-Farbe: wei? halbdurchsichtig */
+  background-color:#F0F0F0;   /* Hintergrund-farbe wie bei groups */
+}
+
+div.overview {
+  padding:0.5em 3% 0.5em 3%;
+}
+
+div.questiontext {
+  border-top:none!important;      /* kein Rand (uspr?nglichen Stil ?berschreiben */
+}
+
+/* RKO */
+div { -webkit-user-select: none; }
+*{ outline:none; } /* remove blue border */
+
+div.ui-dialog { 
+  border:4px solid #00646E; 
+  padding: 0.2em;
+  border-radius: 8px;
+}
+div.ui-dialog div.ui-dialog-titlebar { display:none; }
+div.ui-widget-content { background:#FFFFE7; }
+button.ui-button.ui-state-default,
+button.ui-button.ui-state-default.ui-state-hove {
+  background:white;
+  border:4px solid #00646E; 
+  border-radius: 8px;
+}
+
+input.fotoInput, input.fileInput {
+  color: transparent;
+}
+input.fotoInput::-webkit-file-upload-button {
+  visibility: hidden;
+}
+input.fileInput::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+span.gpshelp {
+  display:block;
+  font-size:90%;
+  font-style:italic;
+  font-weight:400;
+  margin-top:5px;
+}
+
+span.useGoogleMaps {
+  white-space: nowrap;
+}
+
+button[type="submit"].gpsGetLoc {
+  width: auto;
+ line-height:2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.1em;
+}
+
+button[type="submit"].gpsGetLoc img {
+  margin-left:8px;
+}
+
+button.kpsButton.deleteEntryButton.gpsarea {
+  line-height: 1.5em;
+  margin:0.2em;
+  padding:0.5em 35px 0.5em 0.25em!important;
+  min-height:2em;
+  background-position:95% center;
+  border-width:2px;
+}
+
+button.kpsButton.addEntryButton.gpsarea {
+  line-height: 1.5em;
+  margin:0.2em;
+  padding:0.5em 0.25em 0.5em 0.25em!important;
+  min-height:2em;
+  background-position:95% center;
+  border-width:2px;
+}
+
+div.bookTitle {
+  font-weight: bold;
+  font-size: 125%;
+  margin-top:1em;
+}
+
+button.mainSync img { max-height:1.5em; max-width:auto; margin:0 .5em; }
+button.mainSync div { position:relative; margin-top:-1.5em; }
+
+img.longhelp { float:right; padding-top:5px; cursor:pointer; }
+div.answer img.smiley { float:right; padding-top:5px; width:2em; height:auto; }
+div.smileyrow   { float:right; padding-top:5px;}
+button div.smileyrow img { float:right; max-height:24px; max-width:24px; }
+button div.smileyrow div.crit { font-size:70%; }
+
+
+input[type=number]:invalid { background-color: #FFCCCC; }
+/* div.groupheader .questiontext span { margin-left:10px; } */  /* commented out by NIB. Margin looks strange in groups. Is it used elsewhere? */
+
+/* RATING START */
+div.rating { float:right; clear:both; padding:10px; }
+progress {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 15px;
+  border: none;
+}
+
+progress::-webkit-progress-bar {
+  background: rgba(160,160,160,0.5);
+  border:1px solid grey;
+  border-radius: 50px;
+  padding: 1px;
+}
+
+/* RATING END */
+
+/* corrective actions START */
+
+div.question-value {
+  position:relative;
+}
+
+div.qbuttons {
+  float:right;
+  display:-webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  padding:3px 0;
+  border-radius:5px;
+}
+div.qbuttons.calist { margin:0; }
+
+.qbutton {
+  cursor:pointer;
+  box-sizing:border-box;
+  width:46px;
+  height:46px;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-color:white;
+  border:1px solid grey;
+  border-radius:5px;
+  padding:5px;
+  position:relative;
+  margin-left:6px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+}
+
+.qbutton:active {
+  box-shadow: none;
+}
+
+div.qbutton.ca {
+  background-image:url(images/ca.png);
+  background-size: 36px auto;
+}
+
+div.qbutton.longhelp {
+  background-image:url(images/help-icon.png);
+  background-size:36px auto;
+}
+
+div.ca div.ca-signal {
+  position:absolute;
+  right: 2px;
+  top: 2px;
+  display:inline-block;
+  box-sizing:border-box;
+  height: 40px;
+  width: 40px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
+div.ca-signal.inactive { border:3px solid transparent!important;   }
+div.ca-signal.active   { border:3px solid red!important;   }
+div.ca-signal.start    { border:3px solid orange!important;}
+div.ca-signal.finished { border:3px solid limegreen!important; }
+/* corrective actions END */
+
+/* Flipcard START */
+div#d3 { max-width: 1000px; -webkit-transform-style:preserve-3d; }
+.hideBackside { -webkit-backface-visibility:hidden; }
+/* Flipcard END */
+
+img.inactive { opacity:0.3; }
+
+
+/* Login Screen START */
+
+/*
+#content-wrapper > div#d3 > div {
+  background:#FCFBF0!important;
+}
+*/
+#content-wrapper.login {
+  margin:0;
+}
+
+#loginScreen div.version {
+  text-align:center;
+  margin:0!important;
+  font-weight:normal;
+  padding:0.25em 0 0 0;
+  font-size:90%
+}
+
+#loginScreen div.qbuttons {
+  cursor:pointer;
+  width:2em;
+  height:2em;
+  display:inline-block;
+  background-image:url(images/login_help.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+  position:relative;
+  top:0.25em;
+}
+
+#w_pushtopics ul.answers-list li label.answertext {
+  padding: 5px;
+}
+
+#w_pushtopics ul.answers-list li span.qbuttons {
+  cursor:pointer;
+  width:30px;
+  height:30px;
+  display:inline-block;
+  background-image:url(images/login_help.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;
+  vertical-align: middle;
+  border: 1px solid #00646E;
+  border-radius: 50%;
+}
+
+#loginScreen {
+  width:100%;
+  text-align:center;
+  padding:2.5em 0 0 0!important;
+}
+
+#loginScreen div#login-header {
+  margin:0 auto 2.5em auto;
+  /* width:60%; */
+  min-width:20em;
+  max-width:80%;
+}
+
+#loginScreen div#login-header img {
+  width:auto;
+  max-width:400px;
+  height:auto;
+  max-height:200px;
+}
+
+#loginScreen #w_username {
+  padding:1em 4em 0.5em 1em;
+  display:inline-block;
+  margin:0 auto;
+  text-align:left;
+  font-weight:bold;
+  -moz-border-radius:12px;
+  -webkit-border-radius:12px;
+  border-radius:12px;
+  -moz-box-shadow:none;      
+    -webkit-box-shadow:none;
+    box-shadow:none;  
+  background-color:#00646E;
+  color:white;
+  letter-spacing:0.75;
+  position:relative;
+}
+
+#loginScreen #w_username > div {
+  margin-bottom:0.5em;
+  vertical-align:middle;
+}
+
+#loginScreen #w_username div label, #w_username div div.rowtitle {
+  display:inline-block;
+  width:5em;
+  text-align:right;
+  margin-right:0.5em;
+}
+
+#loginScreen #w_username .qbuttons {
+  display:block;
+  float:left;
+  margin:0 1em 0 0;
+}
+
+#loginScreen #w_username .answer.clearfix {
+  display:inline-block!important;
+}
+
+#loginScreen #w_username div div.rowtitle {
+  width:9em!important;
+}
+
+#loginScreen #w_username div.rowtitle div.questiontext span.displayname {
+  font-size:130%;
+  letter-spacing:0.025em;
+}    
+
+#loginScreen #w_username div input {
+  /* width:12em; */
+  font-size:100%;
+  font-weight:bold;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  padding:5px;
+  -moz-box-shadow:        
+  inset 3px 3px 3px rgba(0,0,0,0.25);
+  -webkit-box-shadow:
+  inset 3px 3px 3px rgba(0,0,0,0.25);
+  box-shadow:
+  inset 3px 3px 3px rgba(0,0,0,0.25);
+}
+
+#loginScreen #w_username div label, #w_username div input {
+  vertical-align:middle;
+  box-sizing:border-box;
+}
+
+#loginScreen #w_username button.login-button {
+  margin:0;
+  height:2em;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+  background-color:lightgray;
+  color:black;
+  text-align:center;
+  border-width:0;
+  font-weight: bold;
+}
+
+#loginScreen #w_username button.login-button:active {
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;  
+}
+
+#loginScreen div > div.answer {
+  display:inline-block;
+}
+
+#w_username div#settingsicon {
+  z-index:99;
+  width:24px;
+  height:24px;
+  cursor:pointer;
+  background-image:url(images/settings-icon.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  border:2px solid white;
+  border-radius:4px;
+  position:absolute;
+  right:1em;
+  top:1em;
+}
+
+#loginScreen .settingsicons {
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  right:1em;
+  top:1em;
+  align-items: center;
+}
+
+#loginScreen .settingsicons div.language {
+  z-index:99;
+  width:32px;
+  height:24px;
+  cursor:pointer;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  border-radius:4px;
+  opacity: 0.8;
+  margin-bottom: 0.5em;
+}
+
+
+#loginScreen .settingsicons div.language.active {
+  border:2px solid white;
+  opacity: 1;
+}
+
+#loginScreen .settingsicons div.language.en {
+  background-image:url(images/gb.png);
+}
+#loginScreen .settingsicons div.language.vi {
+  background-image:url(images/vn.png);
+}
+#loginScreen .settingsicons div.language.de {
+  background-image:url(images/de.png);
+}
+#loginScreen .settingsicons div.language.fr {
+  background-image:url(images/fr.png);
+}
+
+/* Change User */
+
+#loginScreen #w_username button.chuser-button {
+  margin:0;
+  margin-right:0.5em;
+  height:2em;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+  background-color:lightgray!important;
+  color:black;
+  text-align:center;
+  border-width:0;
+}
+
+#loginScreen #kps_msgDiv {
+  max-width:100%;
+  padding:0.1em;
+  line-height:1em;
+  height:2.2em;
+  border:1px solid white;
+  border-radius:3px;
+  background-color:rgba(255,255,255,0.75);
+  color:black;
+  font-weight:normal;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+#loginScreen div.question-wrapper {
+  border-bottom: none!important;
+}
+#loginScreen #v_language ul {
+  text-align: left; 
+}
+
+#loginScreen div.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen
+  and (max-width: 480px) {
+    #loginScreen #w_username button.chuser-button {
+      margin-right:10px;
+      /* float:right; */
+      margin-right:0;
+  }
+}
+
+
+/* Login Screen END */
+
+/* Header bar START */
+#header-wrapper {  
+  box-sizing:border-box;
+  border-bottom:1px solid black;
+  -webkit-box-shadow:  0px 6px 6px rgba(0,0,0,0.25);
+  box-shadow:  0px 6px 6px rgba(0,0,0,0.25);
+  margin:0;
+  padding:2px 10px;
+  position:fixed;
+  top:0;
+  width:100%;
+  height:46px;
+  max-width:1000px;
+  min-width:320px;
+  z-index:99;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background:#2F4154!important;
+  font-size:11pt;
+  color:white;
+}
+
+/*  text field for back button */
+#header-wrapper div.backtext {
+  padding:0;
+  max-width:8em;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+#header-wrapper div.back > div {
+  cursor:pointer;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+/* back arrow icon */
+#header-wrapper div.backicon {
+  width:24px;
+  height:24px;
+  margin-right:0.5em;
+  background-image:url(images/back_icon.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;  
+}
+
+/* container for menu buttons in the header bar */
+#header-wrapper div#menubuttons {
+  padding:8px 0 5px 5px;
+}
+
+#header-wrapper div#menubuttons > div {
+  cursor:pointer;
+  display:inline-block;
+}
+
+/* title text container in header bar */
+#header-wrapper .title {
+  -webkit-box-flex: 1;
+  text-align:center;
+  padding: 0 10px;
+  max-height: 36px;
+  font-size:11pt;
+  line-height:1.2em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* max. 2 lines of text for long titles */ 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* shorten very long texts with ... */
+}
+
+#header-wrapper div#mainmenuicon {
+  width:24px;
+  height:24px;
+  margin-right:15px;
+  background-image:url(images/menu-icon.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+}
+
+#header-wrapper div#syncicon {
+  width:24px;
+  height:24px;
+  position:relative;
+  margin-right:15px;
+  background-image:url(images/sync-icon.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+}
+
+#header-wrapper div#settingsicon {
+  width:24px;
+  height:24px;
+  cursor:pointer;  
+  position:relative;
+  margin-right:15px;
+  background-image:url(images/settings-icon.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+}
+
+/* change opacity when icons are clicked */
+#header-wrapper div#menubuttons div:active {
+  opacity:0.5;
+  cursor:inherit;
+}
+
+
+/* counter "bubbles" for display of data not synced */
+
+#header-wrapper div.syncnumber {
+  font-size:11px;
+  display:inline-block;
+  position:absolute;
+  box-sizing:border-box;
+  text-align:center;
+  padding:0 4px;
+  height:16px;
+  width:auto;
+  min-width:16px;
+  background-color:red;
+  color:white;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+}
+
+#header-wrapper div#syncup {
+  top:-8px;
+  left:16px;
+}
+
+#header-wrapper div#syncdown {
+  bottom:-8px;
+  right:16px;
+}
+/* Header bar END */
+
+
+/* kipus_groups START*/
+
+div.groupheader { border-bottom:none!important; }
+
+div.groupheader.question-wrapper {
+    padding:0;
+    background-color:#eee;
+}
+
+div.groupheader > div > div.rowtitle {
+  padding:0.75em 3% 0.75em 3%;
+  background-color:#ddd;
+    border:none;
+    min-height: 85px;
+}
+
+div.groupheader > div > .rowtitle:first-child img.groupimg {
+  max-width:80px!important;
+  height:auto;
+  float: left;
+}
+
+div.groupheader > div > div.rowtitle > div.questiontext span.displayname {
+  margin-left:10px;
+  font-size:150%;
+
+}
+
+div.groupheader > div > div.rowtitle > span.upper_questionhelp {
+  margin-left:90px;
+  clear:none!important;  
+}
+
+div.groupheader.question-wrapper, div.groupheader .question-wrapper  {
+  box-shadow:none!important;
+/*  background-color:#00646E!important; RKO: removed for tableRows */
+}
+
+div.groupcontent > div.question-wrapper {
+  border-radius:0!important;
+  box-shadow:none!important;
+  margin:0!important;
+  border-top:2px solid silver!important;
+  border-bottom:none!important;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  background-color:#F0F0F0!important;
+}
+
+div.groupcontent > div.question-wrapper:first-child {
+  border-top:none!important;
+}
+
+div.groupheader.question-wrapper {
+    padding:0;
+    background-color:#eee;
+  position:relative;
+  border-top-left-radius:50px;
+  border-bottom-left-radius:50px;
+  margin-bottom:30px;
+}
+
+div.groupheader.question-wrapper > div.grouptab {
+  box-sizing:border-box;
+  position:absolute;
+  bottom:-20px;
+  right:0;
+  width:50px;
+  height:20px;
+  background-color:transparent;
+  border-top:20px solid #00646E;
+  border-right:0 solid transparent;
+  border-left:10px solid transparent;
+  visibility:visible!important;
+  z-index:2;
+}
+
+div.groupheader.question-wrapper.open > div.grouptab {
+  bottom:-18px;
+}
+
+div.groupheader.question-wrapper div.grouptabarrow {
+  box-sizing:border-box;
+  position:absolute;
+  right:15px;
+  bottom:5px;
+  width:10px;
+  height:0;
+  background-color:transparent;
+  visibility:visible!important;
+  z-index:3;
+}
+
+div.groupheader.question-wrapper.closed div.grouptabarrow {
+  border-top:8px solid white;
+  border-right:8px solid transparent;
+  border-left:8px solid transparent;
+}
+
+div.groupheader.question-wrapper.open div.grouptabarrow {
+  border-top:8px solid transparent;
+  border-bottom:8px solid white;
+  border-right:8px solid transparent;
+  border-left:8px solid transparent;
+}
+
+div.groupheader > div > div.rowtitle {
+  padding:0.75em 3% 0.75em 15px;
+  background-color:#00646E;
+  color:white;
+    border:none;
+    min-height: 72px;
+  border-top-left-radius:50px;
+  border-bottom-left-radius:50px;  
+  letter-spacing:0.75;  
+}
+
+div.groupheader.question-wrapper.open > div > div.rowtitle {
+  border-bottom-left-radius:0;
+}
+
+div.groupheader > div > .rowtitle:first-child img.groupimg {
+  width:80px;
+  height:80px;
+  float: left;
+  position:relative;
+  left:-5px;
+  top:-5px;
+}
+
+div.groupheader > div > div.rowtitle > div.questiontext span.displayname {
+  margin-left:10px;
+  font-size:150%;
+}
+
+div.groupheader > div > div.rowtitle > span.upper_questionhelp {
+  margin-left:90px;
+}
+
+div.groupcontent > div.question-wrapper:first-child {
+  margin-top:1em;  
+}
+
+div.groupheader div.groupcontent div.question-wrapper {
+  border-left:2px solid #00646E!important;
+  border-right:2px solid #00646E!important;
+}
+
+div.groupheader div.groupcontent div.question-wrapper:last-child {
+  border-bottom:2px solid #00646E!important;
+}
+
+div.groupheader img.longhelp {
+  width:48px;
+  height:48px;
+}
+
+
+div.groupheader .questiontext span {
+  margin-left:0;
+}
+
+div.groupheader div.smileyrow {
+  float:none;
+  padding-top:0;
+  position:absolute;
+  right:3%;
+  bottom:auto;
+  top:65px;
+}
+
+div.qbuttons {
+  position:relative;
+  top:-7px;
+}
+
+div.groupheader > .question-value > div.rowtitle > div.questiontext > span.displayname {
+  letter-spacing:1px;
+  font-size:130%!important;
+} 
+
+div.groupheader > .question-value > div.rowtitle > span.upper_questionhelp {
+  margin-top:0!important;
+  letter-spacing:0.5px;  
+  font-size:80%;
+  line-height:1.2em;
+}
+
+/* kipus_groups END */
+
+/* START Dialoge jQuery UI*/
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button, .ui-dialog, .ui-widget, .ui-widget-content, .ui-dialog-buttons, .ui-dialog-buttonpane, .ui-widget-content {
+  font-family:inherit;  /* use same font as body */
+}
+
+div.ui-widget-content {
+  background-color:white;  /* set background for all dialogs to white */
+}
+
+div.ui-dialog {
+  max-width:94%;
+  -webkit-box-shadow:4px 6px 10px rgba(0,0,0,0.5);  /* drop shadow */
+  box-shadow:4px 6px 10px rgba(0,0,0,0.5);
+  -webkit-border-radius:6px;              /* reduce border radius to 3px */
+  border-radius:6px;
+  border-color:#00646E;                /* set border color to dark green */
+  border-width:3px;
+  border-style:solid;  
+}
+
+div.ui-dialog.ui-widget.ui-dialog-buttons > div.ui-dialog-buttonpane > div > button {    /* Styles for Buttons in dialogs */
+  background:#00646E;                  /* bg color dark green */
+  color:white;                    /* font color white */
+  border:none;                    /* remove border */
+  letter-spacing:0.025em;                /* set text a little wider */
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);      /* drop shadow */
+}
+
+div.ui-dialog.ui-widget.ui-dialog-buttons > div.ui-dialog-buttonpane > div > button:active {  /* active styles for buttons while pressed */
+  background:#004D54; /* Brightness reduced by 10% */
+  box-shadow: none;  /* remove drop shadow */
+}
+
+div.ui-dialog div.ui-widget-content img {
+  max-width:100%;
+}
+
+/* END Dialoge jQuery UI*/
+
+/* BEGIN Signature */
+.m-signature-pad {
+  position: absolute;
+  font-size: 10px;
+  width: 700px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -350px;
+  margin-top: -200px;
+  background-color: #fff;
+}
+
+.m-signature-pad--body
+  canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.m-signature-pad--footer {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  height: 40px;
+}
+
+.m-signature-pad--footer
+  .description {
+    color: #C3C3C3;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1.8em;
+  }
+
+.m-signature-pad--footer
+  .button {
+    position: absolute;
+    bottom: 0;
+  }
+
+.m-signature-pad--footer
+  .button.clear {
+    left: 0;
+  }
+
+.m-signature-pad--footer
+  .button.save {
+    right: 0;
+  }
+
+/* END Signature */
+
+/* Media Queries and styles for smaller screens */
+/* Phone Screens max 480 width (Portrait) */
+/* Portrait */
+
+@media screen
+  and (max-width: 800px) {
+  /* login screen */
+  #loginScreen {padding-top:1em!important;}
+  #loginScreen div#login-header img { max-height:100px; }
+  #loginScreen div#login-header {min-width:auto!important;max-width:100%!important;margin-bottom:1em}   /* remove min-width to prevent logo from clipping */
+  #loginScreen #w_username .language {width:24px; } 
+  #loginScreen #w_username {margin:0 1em; padding-right: 3.5em;} /* add margin to login box */
+  #loginScreen #w_username button.login-button {float: right;max-width:45%;margin-right:0;} 
+  #loginScreen #w_username div input {max-width: 100%!important;width:100%!important;} /* set input fields to 100% width */
+  #loginScreen #w_username div div.rowtitle, #loginScreen #w_username div div.answer {width:100%!important;}
+  #loginScreen #w_username div label, #w_username div div.rowtitle {text-align:left;} /* set labels to left */
+  #loginScreen #w_username .qbuttons {margin:0 0.5em 0.5em 0;position:relative;top:-0.25em} /* add margin to question buttons */
+  /* general */
+  #content-wrapper > div#d3 > div > div {padding:0.5%;}	/*reduce padding for whole screen */
+  /* groups */
+  div.groupheader > div > .rowtitle:first-child img.groupimg {width:40px!important;height:40px!important;}			/* make group icons smaller */
+  div.groupheader > div > div.rowtitle {border-top-left-radius:30px;border-bottom-left-radius:30px;}		/* adjust border radius to smaller icon */
+  div.groupheader > .question-value > div.rowtitle > div.questiontext > span.displayname {font-size:110%!important;margin-left:0;} /* smaller font size for group title */
+  div.groupheader > div > div.rowtitle > span.upper_questionhelp {margin-left:40px;margin-right:0;padding-bottom: 18px;} 	/* reduce margin for help text */
+  div.groupheader div.smileyrow {top:auto;bottom:5px}	/* attach smileys to lower border instead of upper */   
+}
+
+div.answer img.certImg {
+  float: right;
+  margin-left: 10px;
+  height: 36px;
+}
+
+div.answer img.multiFromTable {
+  margin: 0 10px 0 10px;
+  height: 36px;
+}
+
+/* moved from kipus_addition.css */
+
+button, label.inputlabel, button.sigButton {/* default button style */
+	letter-spacing:0.75;
+	border-width: 3px;
+	border-color: silver;
+	border-style:outset;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	background: rgba(30,140,190,1);
+	color:white;
+	position:relative;
+	font-weight:normal;
+	min-width: 6em;
+}
+
+div.gm-style button {
+ min-width: 0;
+}
+
+.widget-mylocation-button, .shape-delete-button  {
+  margin-right: 12px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  list-style: none;
+  overflow: visible;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 29px;
+  height: 29px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.16s ease-out;
+  position:relative;
+}
+.shape-delete-button  {
+  top: 6px;
+}
+.shape-delete-button-icon {
+  display: block;
+  height: 18px;
+  left: 6px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 6px;
+  width: 18px;
+  background-image: url(images/shape_delete.png);
+  background-size: 18px 18px;
+}
+
+.widget-mylocation-button.disabled div {
+  opacity: 0.5;
+}
+
+.widget-mylocation-button-icon-common {
+  display: block;
+  height: 18px;
+  left: 6px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 6px;
+  width: 18px;
+  background-image: url(images/mylocation-sprite-1x.png);
+  background-size: 180px 18px;
+}
+
+.widget-mylocation-button .widget-mylocation-button-normal {
+    background-position: 0 0;
+}
+
+.widget-mylocation-button:hover .widget-mylocation-button-blue, .widget-mylocation-button-blue {
+    background-position: -162px 0;
+}
+
+
+input.fotoInput[type=file] { width:1px; height:1px; }
+img.fotoImg {
+  max-width:9em;
+  max-height:9em;
+  float:right!important;
+}
+
+button.ui-button { min-width:auto; } /* not the dialog buttons */
+
+label.inputlabel, button.sigButton {
+	cursor:pointer;	
+	margin-top:0.5em;
+	display:inline-block;
+	padding:0.5em;
+}
+
+button.plus:after, .addEntryButton:after { /* "Plus"-Symbol and additional styles for "add" button */
+	content:"+";
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	position:absolute;
+	top:-0.5em;
+	right:-0.5em;
+	width:1em;
+	height:1em;
+	text-align:center;
+	font-weight:bold;
+	font-size:1.5em;
+	border:#999 solid 1px; 
+	background-color:#ffcc00;
+	-moz-border-radius:1em;
+	-webkit-border-radius:1em;
+	border-radius:1em;
+	color:#333;
+	line-height:0.8em;
+}
+
+button.plus:active:after,  .addEntryButton:active:after {/* Enlarge "plus"-Symbol when clicking "add" button */
+	font-size:1.75em;
+}
+
+button.plus:active,  .addEntryButton:active {	/* add "glow" when pressing an "add" button */
+	-webkit-filter: drop-shadow(0px 0px 3px red); 
+	filter: drop-shadow(0px 0px 3px red);
+}
+
+button:active, label.inputlabel:active {	/* visual feedback when button is pressed */
+	border-style:inset;
+}
+
+button.kpsButton.deleteEntryButton {
+	margin-top:10px;
+	padding-left:35px;
+	background-color: #B81414;
+	border-color:brown;
+	background-image:url(images/delete.png)!important;
+	background-repeat:no-repeat;
+	background-size:24px;
+	background-position:5px center;
+}
+
+button.kpsButton.save, button.kpsButton.correctiveAction, button.kpsButton.changeLang  {
+	margin-top:10px;
+	padding-left:35px;
+	background-color: #478F24;
+	border-color: green;
+	background-image:url(images/save.png)!important;
+	background-repeat:no-repeat;
+	background-size:24px;
+	background-position:5px center;
+}
+
+button.ui-datepicker-trigger {
+	min-width:2em!important;
+}
+
+button.sigButton {
+	text-align:left;
+}
+	
+button.kpsButton.admin {
+	width:100%;
+}
+
+button.entry, button.correctiveList, .kpsButton.bookHeaderButton, .kpsButton.book  {
+  width:100%;
+  max-width:100%;
+  padding:0.4em;
+  margin:0.2em;
+  text-align:left;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  background: #00646E;
+} 
+
+/* START tile view for actions etc. (instead of dropdowns) */
+
+div.tile {
+ 	box-sizing:border-box;
+	width:24.8%!important;
+	margin:0 0.26% 2px 0;
+	float:left;
+	cursor: pointer;
+	border:1px solid silver;
+	background-color:white;
+	background-position:center top;
+	background-size:cover;
+	padding:1em;
+	text-align:center;
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:flex-end;
+ }
+ 
+div.tile > div.txt {
+
+	display:block;
+	padding-top:0.25em;
+	font-size:1em;
+	font-weight:bold;
+	text-align:center;
+	text-shadow:1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white  ;
+}
+
+div.tile.done > div.txt {
+  align-self:center;
+  background-color:#8E180B;
+  color:white;
+  border:2px outset #c0c0c0;
+  border-radius:3px;
+  text-shadow:none;
+  padding:0.25em 2em;
+}
+
+div.tile > div.checkbox {
+  background-image:url(images/no_checkwhite.png);
+  width:40px;
+  height:40px;
+  position:absolute;
+  background-repeat:no-repeat;
+  top: 10px;
+  left: 10px;
+}
+
+div.tile.active > div.checkbox {
+  background-image:url(images/checkwhite.png);
+}
+
+ 
+div.tile:hover, div.tile.active:hover {
+	border:1px solid grey;
+	background-color:silver;
+	box-shadow: 3px 3px 6px 0px rgba(38,38,38,0.5), -3px -3px 6px 0px rgba(38,38,38,0.5);
+	transform-origin:50% 50%;
+	transform: scale(1.01);
+ }
+
+div.tile.active {
+	border:1px solid grey;
+	background-color:silver;
+	box-shadow: inset 3px 3px 6px 0px rgba(38,38,38,0.5), inset -3px -3px 6px 0px rgba(38,38,38,0.5);
+ } 
+ 
+ div.tile:nth-child(4n+1) {
+  margin-right:0;
+}
+
+@media screen and (max-width: 767px) {
+  div.tile > span {
+    font-size:1em;
+    line-height:1.1em;
+  }
+  div.tile {
+    padding:0.25em;
+    width:49.8%!important;
+    margin-right:0.4%;
+  }
+  div.tile:nth-child(4n+1) {
+    margin-right:0.2%;
+  }
+  div.tile:nth-child(2n+1) {
+    margin-right:0;
+  }  
+}
+
+div#dialog-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: #FCFBF0;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 2px;
+}
+/* END tile view for actions etc. (instead of dropdowns) */
+
+
+/* START range */
+div.rangecontainer {
+  width:280px;
+}
+
+div.rangedisplay {
+  display:flex;
+  width:100%;
+  margin-bottom:15px;
+}
+
+div.range {
+  box-sizing:border-box;
+  height:50px;
+  flex-grow:1;
+  flex-basis:20px;
+  opacity:0.25;
+  text-align:center;
+  background-repeat:no-repeat;
+}
+
+div.rangeMan {
+  background-image:url(images/man.png);
+  background-position:center center;
+  background-size: 98% auto;
+}
+div.range.rangeMan.Zero {
+  background-image:url(images/manzero.png);
+  background-position:center center;
+  background-size:70% auto;
+}
+div.range.Zero {
+  background-image:url(images/zero.png);
+  background-position:center center;
+  background-size:70% auto;
+}
+
+div.range.active {
+  opacity:1;
+}
+
+div.range:not(.zero):nth-child(5n+1) {
+  margin-right:8px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #00646E;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top:-13px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: inset 1px 1px 1px rgba(0,0,0,0.5);
+  background-color: #D9D9D9;
+  color:red;
+  border-radius: 2px;
+  border: 1px solid #000000;
+}
+
+div.rangecontainer {
+   width: 400px;
+   max-width: 100%;
+}
+
+div.rangeMan {
+  background-size: contain;
+}
+
+/* END range */
+
+/* START hour */
+
+div.hourscontainer div.singlehours div.hours.lock div.image {
+  width:24px;
+  background-position: center bottom 8px;
+  background-size:80% auto;
+}
+
+div.hourscontainer div.separator div.hours.separator div.image {
+  width:24px;
+  background-size:98% auto;
+}
+
+div.hourscontainer div.hours div.input, div.grouphours div.hours div.input {
+  margin-top:2px;
+  padding: 3px 1px;
+}
+
+div.grouphours {display:flex;}
+
+div.hourscontainer div.hours div.input input, div.grouphours div.hours div.input input {
+	font-size:small!important;
+}
+
+div.hourscontainer {
+  display:flex;
+  flex-direction:row;
+}
+
+div.singlehours {
+  display:flex;
+  position:relative;
+  padding-right:10px;
+  flex-wrap:wrap;
+}
+
+div.singlehours.locked div.input, 
+div.singlehours.locked div.separator div { background-color: #FAE86E;}
+
+div.singlehours > div {padding-top:5px}
+div.separator { 
+  width:0.7em;
+  text-align:center;
+  display:flex;
+  flex-direction:column-reverse; 
+  font-weight:bold;
+}
+
+div.separator div { 
+  height:34px;
+  text-align:center;
+}
+
+div.hours {
+  display: flex;
+  flex-direction:column;
+  min-width:20px;
+  text-align:center;
+}
+
+div.hours div.image {
+  flex-grow:1;
+  background-repeat:no-repeat;
+  min-height:50px;
+}
+div.hours div.image.inactive { opacity:0.25; }
+
+div.hours.hourMan > div.image {
+  background-image:url(images/man.png);
+  background-position:center center;
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+div.hours.hourMan > div.image.timeGroupWithPhoto { background-size:cover; }
+
+div.hours.hourMan > div.image.photo {
+  background-size:cover;
+  border-radius:5px;
+  border:1px solid grey;
+}
+
+div.hours.hourMan > div.image > div.name {
+  box-sizing:border-box;
+  border: 1px solid silver;
+  max-width:100%;
+  width:1.5em;
+  height:1.2em;
+  line-height:1.2em;
+  margin:0 auto;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.75);
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+div.hours.hourGroup div.image {
+  background-image:url(images/mangroup.png);
+  background-position:center bottom;
+  background-size: contain;
+  width:50px;
+}
+
+div.hours.lock > div.image {
+  background-repeat:no-repeat;
+  height:100%;
+  width:50px;
+  background-image:url(images/chain.png);
+  background-position: center bottom 5px;
+  background-size:24px auto;
+}
+
+div.hours.separator div.image {
+  background-repeat:no-repeat;
+  height:100%;
+  width:50px;
+  background-image:url(images/dblarrow.png);
+  background-position: center center;
+  background-size:70% auto;
+}
+
+div.hours div.input {
+  margin-top:10px;
+  padding:6px 3px;
+}
+
+div.hours div.input input {
+  width:2em;
+  height:20px;
+  text-align:center;
+}
+
+div.lockbar {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:36px;
+  border-radius:6px;
+  background:#FAE86E;
+  z-index:-1;
+}
+
+
+/* END hour */
+
+/* START Number Selector */
+
+div.numberselector {
+  box-shadow: 3px 5px 8px rgba(0,0,0,0.25);
+  width: 200px;
+  border-radius:1em;
+  z-index:10;
+  position:absolute;
+}
+
+div.fullnum {
+  border-top-left-radius:1em;
+  border-top-right-radius:1em;
+  background:#E4DEAA;
+  box-sizing:border-box;
+  padding:3px;
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+}
+
+div.fragnum {
+  background:#C9BE9C;
+  box-sizing:border-box;
+  padding:3px;	
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom-left-radius:1em;
+  border-bottom-right-radius:1em;
+  justify-content:space-around;	
+}
+
+div.fragnum.min5 {
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;	
+}
+
+div.fullnum div, div.fragnum div {
+	background-color:white;
+	margin:1px;
+	box-sizing:border-box;
+	width:2em;
+	border-radius:2em;
+	text-align:center;
+	margin:2px;
+	height:2em;
+	line-height:2em;	
+}
+
+div.fragnum.min5 div {
+	width:28px;
+	border-radius:6px;
+}
+
+div.fragnum div {
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:auto 90%;
+}
+
+div.numberselector > div > div:hover {
+	background-color:#FDEBB4;
+}
+
+div.numberselector > div > div.active   {
+	background-color:#F2CF66;
+}	
+
+div.fragnum div.hour-zero {
+	background-image:url(hour-zero.png);
+}
+
+div.fragnum div.hour-quarter {
+	background-image:url(hour-quarter.png);
+}  
+
+div.fragnum div.hour-half {
+	background-image:url(hour-half.png);
+} 
+
+div.fragnum div.hour-3quarter {
+	background-image:url(hour-3quarter.png);
+}	
+
+/* END Number Selector */
+
+
+/* START datetimepicker extension */
+
+div.ui-datepicker div.fullnum div, ui-datepicker div.fragnum div {
+  width: 11%;
+  border-radius:50%;
+  height:auto;
+}
+
+div.ui-datepicker div.fragnum.min5 div {
+  width: 15%;
+  height: 30px;
+  line-height: 30px;
+}
+
+div.ui-datepicker div.fullnum, div.ui-datepicker div.fragnum {
+      border-radius:0!important;
+      box-shadow:none;
+}
+
+div.ui-datepicker div.numberselector {
+  position: static;
+  top: 0;
+  left: 0;
+  margin-left: 0;
+  margin-bottom: 5px;
+  width:100%;
+  box-shadow:none;
+}
+
+/* END datetimepicker extension */
+
+/* width of date input field */
+div.question-value[constrainttype="date"] input.text {
+    width:6em!important;
+    min-width:none!important;
+    max-width:none!important;
+}
+
+/* width of dateTime input field */
+div.question-value[constrainttype="dateTime"] input.text {
+    width:7em!important;
+    min-width:none!important;
+    max-width:none!important;
+}
+
+
+/* START tableCopy styles */
+
+table.tableCopy  {
+	border-collapse:collapse;
+	margin-left:2.2em;
+	margin-top:-2em;
+}
+
+table.tableCopy tr {
+	border:1px solid silver;
+}
+
+table.tableCopy td, table.tableCopy th {
+	padding:0.2em;
+	border:1px solid silver;
+}
+
+table.tableCopy td div.img {
+  width: 3em;
+  height: 3em;
+  background-position: center center;
+  background-size: cover;
+}
+
+button.dsc_fold.tableCopy {
+    display:block!important;
+	position:static!important;
+}
+
+button.dsc_fold.tableCopy[status="down"] {
+    display:block!important;
+	position:static!important;
+	margin-bottom:1em;
+}
+
+button.dsc_fold.tableCopy[status="up"] {
+    display:block!important;
+	position:static!important;
+	margin-bottom:-1em;
+}
+/* END tableCopy styles */
+
+/* START fotoScan styles */
+#fdiv {
+}
+#fdiv video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.capturediv {
+  position:absolute;
+  box-sizing:border-box;
+  bottom:20px;
+  left: calc(50% - 40px);
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  background-color:rgba(255,255,255,0.5);
+  border:1px solid rgba(0,0,0,0.75);
+  box-shadow: 0 0 0 5px white;
+  z-index: 10;
+}
+
+.capturediv:active {        /* effect on clicking */
+  background-color:white;
+  box-shadow: 0 0 0 8px white;
+}
+
+.capturediv.spinning {
+  background-image:url(images/Spinner.gif);	   
+  background-size:80%; 
+  background-repeat:no-repeat;
+  background-position:center center;
+  pointer-events: none;
+}
+
+.blackdiv {
+ top: 0;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: black;
+ animation-name: takePhoto;
+ animation-duration: 0.1s; 
+ will-change: opacity;
+ opacity: 0;
+ z-index: 5;
+ backface-visibility: hidden;
+ translate: transform3d(0, 0, 0);
+}
+
+@keyframes takePhoto {
+  0% { opacity: 0; }
+  50% {  opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.flipdiv {
+  position:absolute;
+  box-sizing:border-box;
+  bottom:30px;
+  left: calc(20% - 30px);
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background-color:rgba(255,255,255,0.75);
+  background-image:url(images/flip.png);	   background-size:50%;
+  background-position:center center;
+  background-repeat:no-repeat;
+  z-index: 10;
+}
+
+.flipdiv:active, .flashdiv:active {
+  background-color:white;
+}
+
+.flashdiv {
+  position:absolute;
+  box-sizing:border-box;
+  bottom:30px;
+  left: calc(80% - 30px);
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background-color:rgba(255,255,255,0.75);
+  background-size:60%;
+  background-position:center center;
+  background-repeat:no-repeat;
+  z-index: 10;
+}
+
+.flashdiv.on {
+	background-image:url(images/flash-on.png);
+}
+
+.flashdiv.off {
+	background-image:url(images/flash-off.png);
+}
+
+
+/* START QR code */
+#qrdiv {
+  width:320px; height:240px;
+  border: solid;
+  border-width: 3px;
+}
+#qrdiv video {
+  width:320px; height:240px;
+}
+
+div.xbutton {
+    float:left;
+    width:1.2em!important;
+    height:1.2em!important;
+    border-radius:0.6em;
+    margin-right:0.25em;
+    border:1px solid #B81414;
+    background-color:#B81414;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:contain;
+    background-image:url(images/delete.png);
+    opacity:0.5;
+}
+
+div.xbutton:active {
+    opacity:1;
+}
+
+
+/* END QR code */
+
+/* additions for radioTable widget */
+
+table.radioTable {
+  max-width:100%!important;
+  width:100%;
+}
+
+table.radioTable colgroup col {
+  width:12%;
+}
+
+table.radioTable colgroup col.name {
+  width:28%;
+}
+
+table.radioTable thead tr th {
+  vertical-align:bottom;
+  text-align:center;
+}
+
+table.radioTable tbody tr td {
+  border-top:1px solid rgba(0,0,0,0.1);
+}
+
+table.radioTable tbody tr td {
+  text-align:center;
+}
+
+table.radioTable tbody tr td img{
+  max-width:90%;
+}
+
+table.radioTable tbody tr td:first-child {
+  text-align:left;
+  line-height:0.95em;
+  padding:0.25em 0.25em 0.25em 0;
+}
+/* END radioTable widget */
+
+/* START tableRows */
+div.tableRow  { padding:5px; border:2px solid #00646e; margin:5px;  border-radius:8px!important; background-color:white; line-height:1.2em;}
+div.groupheader div.groupcontent div.tableRow div.question-wrapper {
+  border-left:0!important;
+  border-right:0!important;
+  padding-top:0;
+  padding-bottom:0;
+}
+
+div.tableRow textarea { border:0; resize:none; }
+
+div.tableRowsContent div.tableRow div.buttonRow button {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; 
+    min-width: 1em;
+    width: 2em;
+    height: 2em;
+    vertical-align: top;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 1em;
+    float:right;
+    margin-left:1em;
+    position:relative;
+    z-index:100;
+}
+
+div.tableRowsContent div.tableRow div.buttonRow button.delete {
+    background-image: url(images/delete.png);
+    border-radius: 1em;
+    background-color: red!important;
+    border:1px solid red;
+
+}
+
+div.tableRowsContent div.tableRow div.buttonRow button.edit {
+    background-image: url(images/edit.png);
+    border-radius: 1em;
+    background-color: #478F24!important;
+    border:1px solid #478F24;
+}
+
+div.tableRowsContent div.tableRow .question-wrapper {
+  border-color: transparent!important;
+  border-width:0!important
+} /* remove separator lines */
+div.tableRowsContent div.tableRow img.radios,
+div.tableRowsContent div.tableRow span.upper_questionhelp,
+
+/* hide Radio Buttons, helptext divs and "mandatory" asterisks */
+div.tableRowsContent div.tableRow span.asterisk {display:none;}
+
+/* hide borders and change font size for input fields */
+div.tableRowsContent div.tableRow input { 
+  border:none;
+  font-size:inherit!important;
+  height:auto;
+  padding:0;
+  background-color:#f0f0f0;
+}
+
+div.tableRowsContent div.tableRow div.answer { margin:0;}
+
+/* reduce distance between entries */
+div.tableRowsContent div.tableRow span.lower_questionhelp {
+  margin:0;
+  padding:0;
+}
+
+/* add a light separator line */
+div.tableRowsContent div.tableRow div.question-value {
+  margin-bottom:3px!important;
+  border-bottom:1px solid rgba(192, 192, 192, 0.5)
+}
+
+/* reduce image height */
+div.tableRowsContent div.tableRow img.fotoImg { max-height:5em; }
+
+div.tableRowsContent div.tableRow { 
+  min-height:2em;
+}
+div.tableRowsContent div.tableRow div.question-value > div {
+  display:inline-block;
+}
+div.tableRowsContent div.tableRow div.question-value > div.rowtitle {
+  margin-right:0.5em;
+}
+
+/* END tableRows */
+
+/* limit width of input elements */
+.answer input, .answer button, .answer select, .answer textarea {
+  box-sizing:border-box;
+  max-width:100%;
+  text-overflow:ellipsis;
+}
+
+div:not([constrainttype="gps"]) > div > p > input[type="text"] { 
+  width:100%;
+}
+
+/* currency fields */
+div.answer span.flex {
+  display: inline-flex;
+  position: relative;
+  top: 3px;
+}
+div.answer span.flex input {
+  max-width: 300px;
+  flex: 1 1 300px;
+}
+
+div.answer input.text.currency {
+  padding: 0;
+  border: 1px solid #ccc;
+  border-left: 0;
+  width: 100%;
+}
+
+div.answer span.currency {
+  padding: 0 10px 0 20px;
+  border: 1px solid #ccc;
+  border-right: 0;
+  line-height: 1.5;
+  background: white;
+}
+
+div.answer span.flex.invalid input.text.currency, div.answer span.flex.invalid span.currency {
+  background: #ffcccc;
+}
+/* END currency fields */
+
+/* rotate for icon rotation */
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+#imageView img {
+  -webkit-box-shadow: 20px 20px 100px 10px black; /* WebKit */
+  -moz-box-shadow: 20px 20px 100px 10px black; /* Firefox */
+  box-shadow: 20px 20px 100px 10px black; /* Standard */
+  background-color: white;
+  z-index: 10000;
+  background: lightgray; /* for transparent images */
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; 
+}
+
+div#dlg_ok .flex-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+@media (orientation: landscape) {
+  div#dlg_ok img {
+    width: auto;
+    height:  100%;
+  }
+}
+
+@media (orientation: portrait) {
+  div#dlg_ok img {
+    width: 100%;
+    height:  auto;
+  }
+}
+
+/* more entries for multiple Select */
+
+span.upper_questionhelp.moreEntries::before {
+  content: attr(data-before);;
+  box-sizing:border-box;
+  width:36px;
+  height:36px;
+  border:1px solid gray;
+  background-color:rgba(242, 207, 102, 1);
+  font-size:1.6em;
+  line-height:36px;
+  text-align:center;
+  border-radius:50%;
+  float:right;
+  position:relative;
+  right:4px;
+  top:-30px;
+  z-index:100001;
+}
+
+span.upper_questionhelp.moreEntries img.questionhelp {
+  position:relative;
+  right:-36px;
+}

@@ -1,0 +1,1638 @@
+<?xml version="1.0"?><!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+  <file original="admin_de.xml" source-language="en-US" datatype="plaintext">
+    <header/>
+    <body>
+      <trans-unit id="add_permission_column">
+        <source>Add permission column</source>
+      <target xml:lang="de">Berechtigungs-Spalte hinzufügen</target></trans-unit>
+      <trans-unit id="adminright_add_button">
+        <source>Add Admin right</source>
+      <target xml:lang="de">Admin-Recht hinzufügen</target></trans-unit>
+      <trans-unit id="bd_recomputeScore">
+        <source>Recompute score</source>
+      <target xml:lang="de">Score neu berechnen</target></trans-unit>
+      <trans-unit id="compare_button">
+        <source>Start compare Mode</source>
+      <target xml:lang="de">Starte Vergleichs-Modus</target></trans-unit>
+      <trans-unit id="datarow_jump_to_parentbook">
+        <source>Go to parent book</source>
+      <target xml:lang="de">Gehe zu Parent-Buch</target></trans-unit>
+      <trans-unit id="external_create_button">
+        <source>Add external table</source>
+      <target xml:lang="de">Füge externe Tabelle hinzu</target></trans-unit>
+      <trans-unit id="external_update_button">
+        <source>Update external table</source>
+      <target xml:lang="de">Aktualisiere externe Tabelle</target></trans-unit>
+      <trans-unit id="mn_bookdata_button">
+        <source>Manage bookdata</source>
+      <target xml:lang="de">Buch-Daten verwalten</target></trans-unit>
+      <trans-unit id="nav_brand">
+        <source>Admin Dashboard</source>
+      <target xml:lang="de">Admin Schaltzentrale</target></trans-unit>
+      <trans-unit id="no">
+        <source>NO</source>
+      <target xml:lang="de">NEIN</target></trans-unit>
+      <trans-unit id="option_NEWROW">
+        <source>On a new row</source>
+      <target xml:lang="de">Auf neuer Zeile</target></trans-unit>
+      <trans-unit id="option_all">
+        <source>Create BI data for all BODY pages</source>
+      <target xml:lang="de">Erstelle BI-Daten für alle BODY-pages</target></trans-unit>
+      <trans-unit id="option_alllast">
+        <source>Create BI data for the last BODY page and for all BODY pages for historical analysis</source>
+      <target xml:lang="de">Erstelle BI-Daten für die letzte BODY-page und alle BODY pages für historische Analyse</target></trans-unit>
+      <trans-unit id="option_avg">
+        <source>Build average for this attribute</source><target xml:lang="de">Erstelle Durchschnitt für dieses Attribut</target></trans-unit>
+      <trans-unit id="option_body">
+        <source>Body</source>
+      <target xml:lang="de">Body</target></trans-unit>
+      <trans-unit id="option_createonly">
+        <source>Create Only</source>
+      <target xml:lang="de">Nur erstellen</target></trans-unit>
+      <trans-unit id="option_critical">
+        <source>Critical</source>
+      <target xml:lang="de">Entscheidend</target></trans-unit>
+      <trans-unit id="option_date">
+        <source>Date</source>
+        <target>Datum</target>
+      </trans-unit>
+      <trans-unit id="option_dateTime">
+        <source>DateTime</source>
+      <target xml:lang="de"/></trans-unit>
+      <trans-unit id="option_dimension">
+        <source>Attribute is a dimension</source><target xml:lang="de">Attribut ist eine Dimension</target></trans-unit>
+      <trans-unit id="option_cp_lookup">
+        <source>Cross-Project Lookup</source><target xml:lang="de">Projekt-übergreifender Lookup</target></trans-unit>
+      <trans-unit id="option_external">
+        <source>External</source><target xml:lang="de">Extern</target></trans-unit>
+      <trans-unit id="option_file">
+        <source>Attachment (File)</source>
+        <target>Anhang (Datei)</target>
+      </trans-unit>
+      <trans-unit id="option_foto">
+        <source>Photo</source><target xml:lang="de">Foto</target></trans-unit>
+        <target>Foto (optional WxH als Parameter)</target>
+      <trans-unit id="option_gps">
+        <source>GPS</source></trans-unit>
+      <trans-unit id="option_groupend">
+        <source>Group End Marker</source><target xml:lang="de"/></trans-unit>
+      <trans-unit id="option_groupheader">
+        <source>Group Header</source></trans-unit>
+      <trans-unit id="option_header">
+        <source>Header</source>
+        <target>HEADER</target>
+      </trans-unit>
+      <trans-unit id="option_hidden">
+        <source>Hidden</source><target xml:lang="de">Versteckt</target></trans-unit>
+      <trans-unit id="option_hiddentimestamp">
+        <source>Hidden timestamp</source><target xml:lang="de">Versteckter Zeitstempel</target></trans-unit>
+      <trans-unit id="option_important">
+        <source>Important</source><target xml:lang="de">Wichtig</target></trans-unit>
+      <trans-unit id="option_info">
+        <source>Info</source><target xml:lang="de">Info</target></trans-unit>
+      <trans-unit id="option_infotext">
+        <source>Infotext</source><target xml:lang="de">Infotext</target></trans-unit>
+      <trans-unit id="option_last">
+        <source>Create BI data for only the last BODY page</source><target xml:lang="de">Erstelle BI-Daten nur für die letzte BODY page</target></trans-unit>
+      <trans-unit id="option_lookup">
+        <source>Lookup</source>
+        <target>LOOKUP</target>
+      </trans-unit>
+      <trans-unit id="option_mandatory">
+        <source>Mandatory</source><target xml:lang="de">Pflichtfeld</target></trans-unit>
+      <trans-unit id="option_mandatory_modifiablehdrcol">
+        <source>Mandatory, modifiable header column</source><target xml:lang="de">Pflichtfeld, veränderbare Header spalte</target></trans-unit>
+      <trans-unit id="option_max">
+        <source>Take maximum for this attribute</source><target xml:lang="de">Maximum für dieses Attribut</target></trans-unit>
+      <trans-unit id="option_min">
+        <source>Take minimum for this attribute</source><target xml:lang="de">Minimum für dieses Attribut</target></trans-unit>
+      <trans-unit id="option_modifiablehdrcol">
+        <source>Modifiable header column</source><target xml:lang="de">Veränderbare Header-Spalte</target></trans-unit>
+      <trans-unit id="option_multifromarg">
+        <source>Multiple values from ConstraintParameter</source>
+        <target>Mehrzeiliger Wert von Bedingungs-Parameter (getrennt durch Komma)</target>
+      </trans-unit>
+      <trans-unit id="option_multifromtable">
+        <source>Multiple values from table</source>
+        <target>Mehrzeiliger Wert von Tabelle</target>
+      </trans-unit>
+      <trans-unit id="option_multiline">
+        <source>Multi-Line Editor</source>
+        <target>Mehrzeiliger Editor</target>
+      </trans-unit>
+      <trans-unit id="option_no">
+        <source>NO</source>
+        <target>NEIN</target>
+      </trans-unit>
+      <trans-unit id="option_none"><source>Do not include this attribute in BI</source><target xml:lang="de">Keine BI-Daten erstellen</target></trans-unit>
+      <trans-unit id="option_num">
+        <source>Numerical</source>
+        <target>Numerisch (minimum,maximum,decimals)</target>
+      </trans-unit>
+      <trans-unit id="option_pull">
+        <source>PULL</source><target xml:lang="de"/></trans-unit>
+      <trans-unit id="option_push">
+        <source>PUSH</source></trans-unit>
+      <trans-unit id="option_qrcode">
+        <source>QR code</source></trans-unit>
+      <trans-unit id="option_quiz">
+        <source>Quiz</source></trans-unit>
+      <trans-unit id="option_readonly">
+        <source>Read Only</source><target xml:lang="de">Nur lesbar</target></trans-unit>
+      <trans-unit id="option_regexp">
+        <source>Regular Expression</source>
+        <target>Regulärer Ausdruck</target>
+      </trans-unit>
+      <trans-unit id="option_samerow">
+        <source>On the same row</source><target xml:lang="de">Auf gleicher Zeile</target></trans-unit>
+      <trans-unit id="option_signature">
+        <source>Signature</source><target xml:lang="de">Unterschrift</target></trans-unit>
+      <trans-unit id="option_simple">
+        <source>Simple</source><target xml:lang="de">Einfach</target></trans-unit>
+      <trans-unit id="option_singlefromarg">
+        <source>Single value from ConstraintParameter</source>
+        <target>Einzeliger Wert von Bedingungs-Parameter (getrennt durch Komma)</target>
+      </trans-unit>
+      <trans-unit id="option_singlefromtable">
+        <source>Single value from table</source>
+        <target>Einzeliger Wert von Tabelle</target>
+      </trans-unit>
+      <trans-unit id="option_sum">
+        <source>Build sum for this attribute</source><target xml:lang="de">Summe erstellen für dieses Attribut</target></trans-unit>
+      <trans-unit id="option_tableCopy">
+        <source>Table Copy</source><target xml:lang="de"/></trans-unit>
+      <trans-unit id="option_tableRows">
+        <source>Table Rows</source><target xml:lang="de">Tabellen-Zeilen</target></trans-unit>
+      <trans-unit id="option_text">
+        <source>Short-Text (one line)</source>
+        <target>Kurzer Text (einzeilig)</target>
+      </trans-unit>
+      <trans-unit id="option_visible">
+        <source>Visible</source><target xml:lang="de">Sichtbar</target></trans-unit>
+      <trans-unit id="option_yes">
+        <source>YES</source>
+        <target>JA</target>
+      </trans-unit>
+      <trans-unit id="pd_create_button">
+        <source>Add page</source>
+        <target>Seiten-Definition erstellen</target>
+      </trans-unit>
+      <trans-unit id="pd_move2book"><source>Move to book</source><target xml:lang="de">Zu Buch verschieben</target></trans-unit>
+      <trans-unit id="pd_update_button">
+        <source>Update page</source>
+        <target>Seiten-Definition aktualisieren</target>
+      </trans-unit>
+      <trans-unit id="pdattr_advanced"><source>Advanced</source><target xml:lang="de">Erweitert</target></trans-unit>
+      <trans-unit id="pdattr_create_button">
+         <source>Add attribute</source>
+         <target>Attribut hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="pdattr_rename_button"><source>Rename column name</source><target xml:lang="de">Spaltenname umbenennen</target></trans-unit>
+      <trans-unit id="pdattr_renumber"><source>Renumber</source><target xml:lang="de">Neu numerieren</target></trans-unit>
+      <trans-unit id="pdattr_update_button"><source>Update attribute</source><target xml:lang="de">Attribute aktualisieren</target></trans-unit>
+      <trans-unit id="pdattrs_from_page_create_button"><source>Add attributes from page</source><target xml:lang="de">Füge Attribute zur Seite hinzu</target></trans-unit>
+      <trans-unit id="pfile_upload_button"><source>Upload file to project</source><target xml:lang="de">Datei zum Projekt hinzufügen</target></trans-unit>
+      <trans-unit id="project_advanced">
+          <source>Advanced</source>
+          <target>Erweitert</target>
+      </trans-unit>
+      <trans-unit id="project_check_button">
+         <source>Check project</source>
+         <target>Prüfe Projekt</target>
+       </trans-unit>
+        <trans-unit id="project_create_button">
+           <source>Create project</source>
+           <target>Erstelle Projekt</target>
+        </trans-unit>
+        <trans-unit id="project_download_button"><source>Download project</source><target xml:lang="de">Projekt herunterladen</target></trans-unit>
+        <trans-unit id="project_import_button"><source>Import project</source><target xml:lang="de">Projekt importieren</target></trans-unit>
+        <trans-unit id="project_project_button"><source>Update project</source><target xml:lang="de">Projekt aktualisieren</target></trans-unit>
+        <trans-unit id="project_upload_pfile_button"><source>Upload file to project</source><target xml:lang="de">Datei zum Projekt hinzufügen</target></trans-unit>
+        <trans-unit id="project_xliff_button"><source>Generate translation</source><target xml:lang="de">Übersetzung generieren</target></trans-unit>
+        <trans-unit id="report_csvexport_button"><source>Download report table</source><target xml:lang="de">Report-Tabelle herunterladen</target></trans-unit>
+        <trans-unit id="report_hide_empty"><source><span class="showhide">Hide</span> empty rows/columns</source><target xml:lang="de">Leere Zeilen/Spalten ausblenden</target></trans-unit>
+        <trans-unit id="report_svgexport_button"><source>Download charts as svg</source><target xml:lang="de">Diagramme als svg herunterladen</target></trans-unit>
+        <trans-unit id="resetlimit"><source>Show all rows (slow)</source><target xml:lang="de">Alle Zeilen anzeigen (langsam)</target></trans-unit>
+        <trans-unit id="role_create_button"><source>Create role</source><target xml:lang="de">Rolle erstellen</target></trans-unit>
+        <trans-unit id="role_update_button"><source>Update role</source><target xml:lang="de">Rolle aktualisieren</target></trans-unit>
+        <trans-unit id="th_address">
+            <source>Address</source>
+           <target>Adresse</target>
+        </trans-unit>
+        <trans-unit id="th_adminrights"><source>Right</source><target xml:lang="de">Recht</target></trans-unit>
+        <trans-unit id="th_alwaysLogin"><source>Login always required</source><target xml:lang="de">Anmeldung immer erforderlich</target></trans-unit>
+        <trans-unit id="th_ampasswd"><source>Advanced menu password</source><target xml:lang="de">Erweiteres Menü Passwort</target></trans-unit>
+        <trans-unit id="th_attributelist">
+           <source>Attribute List</source>
+           <target>Attribut-Liste</target>
+        </trans-unit>
+        <trans-unit id="th_autocreate"><source>Autocreated</source><target xml:lang="de"/></trans-unit>
+        <trans-unit id="th_bookfilter"><source>Book Filter</source><target xml:lang="de">Buch-Filter</target></trans-unit>
+        <trans-unit id="th_userlist"><source>User List</source><target xml:lang="de">Benutzer-Liste</target></trans-unit>
+        <trans-unit id="th_biparams"><source>Business Intelligence (BI)</source><target xml:lang="de"/></trans-unit>
+        <trans-unit id="th_bookdefrights"><source>Book Filter / Regexp</source><target xml:lang="de"/></trans-unit>
+        <trans-unit id="th_bookid">
+            <source>Book Definition Id</source>
+           <target>Buch-Id</target>
+        </trans-unit>
+        <trans-unit id="th_booklist">
+            <source>Book List</source>
+           <target>Buch-Liste</target>
+        </trans-unit>
+        <trans-unit id="th_booktitle">
+            <source>Book Title</source>
+           <target>Buch-Name</target>
+        </trans-unit>
+        <trans-unit id="th_bshowif"><source>Show If</source><target xml:lang="de">Zeige, wenn Bedingung zutrifft</target></trans-unit>
+        <trans-unit id="th_changeNameTo"><source>Change Project Name To</source><target xml:lang="de">Ändere Projekt-Namen nach</target></trans-unit>
+        <trans-unit id="th_checkOnly"><source>Check only, do not change anything</source><target xml:lang="de">Nur prüfen</target></trans-unit>
+        <trans-unit id="th_clear"><source>Clear</source>
+           <target>Leeren</target>
+        </trans-unit>
+        <trans-unit id="th_columnmaxlength">
+           <source>Column Max Length</source>
+           <target>Spalten-Maximal-Länge</target>
+        </trans-unit>
+        <trans-unit id="th_columnname">
+        <source>Column Name</source>
+           <target>Spalten-Name</target>
+        </trans-unit>
+        <trans-unit id="th_columnorder">
+           <source>Column Order</source>
+           <target>Spalten-Reihenfolge</target>
+        </trans-unit>
+        <trans-unit id="th_columns"><source>Columns</source><target xml:lang="de">Spalten</target></trans-unit>
+        <trans-unit id="th_condLabel"><source>Source</source><target xml:lang="de">Quelle</target></trans-unit>
+        <trans-unit id="th_condValue"><source>Value</source><target xml:lang="de">Wert</target></trans-unit>
+        <trans-unit id="th_constraintparam">
+           <source>Constraint Param</source>
+           <target>Bedingungs-Parameter</target>
+        </trans-unit>
+        <trans-unit id="th_constrainttype">
+           <source>Constraint Type</source>
+           <target>Bedingungs-Typ</target>
+        </trans-unit>
+        <trans-unit id="th_corrective"><source>Corrective Action</source><target xml:lang="de">Korrektive Aktion</target></trans-unit>
+        <trans-unit id="th_csvimport">
+          <source>Table Csv file (mandatory)</source>
+          <target>Tabellen CSV Datei (erforderlich)</target>
+        <target xml:lang="de"/></trans-unit>
+        <trans-unit id="th_data"><source>Data</source><target xml:lang="de">Daten</target></trans-unit>
+        <trans-unit id="th_datadump">
+           <source>Data Csv file (optional)</source>
+           <target>Daten CSV Datei (optional)</target>
+        </trans-unit>
+        <trans-unit id="th_defaultlang"><source>Default Language</source><target xml:lang="de">Standard-Sprache</target></trans-unit>
+        <trans-unit id="th_defaultvalue">
+           <source>Default Value</source>
+           <target>Standard-Wert</target>
+        </trans-unit>
+        <trans-unit id="th_delete">
+          <source>Delete</source>
+          <target>Löschen</target>
+        </trans-unit>
+        <trans-unit id="th_remove">
+          <source>Remove</source>
+          <target>Entfernen</target>
+        </trans-unit>
+        <trans-unit id="th_destination"><source>Destination</source><target xml:lang="de">Ziel</target></trans-unit>
+        <trans-unit id="th_direction"><source>Direction</source><target xml:lang="de">Richtung</target></trans-unit>
+        <trans-unit id="th_directory"><source>Project Name</source><target xml:lang="de">Projekt-Name</target></trans-unit>
+        <trans-unit id="th_displayname"><source>Display Name</source>
+           <target>Anzeige-Name</target>
+        </trans-unit>
+        <trans-unit id="th_dst_table"><source>Destination Table</source><target xml:lang="de">Ziel-Tabelle</target></trans-unit>
+        <trans-unit id="th_edit">
+           <source>Edit</source>
+           <target>Bearbeiten</target>
+        </trans-unit>
+        <trans-unit id="th_email">
+           <source>Email address</source>
+           <target>Email Adresse</target>
+        </trans-unit>
+        <trans-unit id="th_extension"><source>File Extension</source><target xml:lang="de">Datei-Erweiterung</target></trans-unit>
+        <trans-unit id="th_externalid"><source>External Id</source><target xml:lang="de">Externe ID</target></trans-unit>
+        <trans-unit id="th_externallist"><source>External Tables</source><target xml:lang="de">Externe Tabellen</target></trans-unit>
+        <trans-unit id="th_filename"><source>File Name</source><target xml:lang="de">Datei-Name</target></trans-unit>
+        <trans-unit id="th_filesize"><source>File Size</source><target xml:lang="de">Date-Grösse</target></trans-unit>
+        <trans-unit id="th_fileslist"><source>Files List</source><target xml:lang="de">Datei-Liste</target></trans-unit>
+        <trans-unit id="th_filter"><source>Filter</source><target xml:lang="de">Filter</target></trans-unit>
+        <trans-unit id="th_gluewithnext"><source>Glue with next</source><target xml:lang="de">Verbinde mit nächstem Element</target></trans-unit>
+        <trans-unit id="th_helptext">
+           <source>Help Text</source>
+           <target>Hilfetext</target>
+        </trans-unit>
+        <trans-unit id="th_hidden"><source>Hidden</source><target xml:lang="de">Versteckt</target></trans-unit>
+        <trans-unit id="th_i18n"><source>Translation needed</source><target xml:lang="de">Übersetzung erforderlich</target></trans-unit>
+        <trans-unit id="th_importOverwrite">
+           <source>Overwrite by Import</source>
+           <target>Überschreiben beim Import</target>
+        </trans-unit>
+        <trans-unit id="th_import_bd">
+           <source>Kipus file (mandatory)</source>
+           <target>Buch-Definition Import</target>
+        </trans-unit>
+        <trans-unit id="th_import_project"><source>Project zip file (mandatory)</source><target xml:lang="de">Projekt Zip Datei (erforderlich)</target></trans-unit>
+        <trans-unit id="th_include_userdata"><source>Include user-data</source><target xml:lang="de">Benutzer-Daten mit erfassen</target></trans-unit>
+        <trans-unit id="th_inputtype"><source>Input Type</source><target xml:lang="de">Eingabe-Typ</target></trans-unit>
+        <trans-unit id="th_isdefault"><source>Default</source><target xml:lang="de">Standard</target></trans-unit>
+        <trans-unit id="th_offline_active"><source>Offline Active</source><target xml:lang="de">Offline Aktiv</target></trans-unit>
+        <trans-unit id="th_isoffline"><source>Offline</source><target xml:lang="de"/></trans-unit>
+        <trans-unit id="th_javascriptonchange"><source>Javascript on change</source></trans-unit>
+        <trans-unit id="th_javascriptonsave"><source>Javascript on save</source></trans-unit>
+        <trans-unit id="th_lastsync"><source>Last sync</source>
+           <target>Letzter Sync</target>
+        </trans-unit>
+        <trans-unit id="th_login"><source>Login</source>
+           <target>Anmeldung</target>
+        </trans-unit>
+        <trans-unit id="th_longhelp"><source>Long help (HTML)</source><target xml:lang="de">Hilfetext (HTML)</target></trans-unit>
+        <trans-unit id="th_longtitle"><source>Long Title</source><target xml:lang="de">Lange Titel</target></trans-unit>
+        <trans-unit id="th_lvlabel"><source>Last</source><target xml:lang="de">Zuletzt</target></trans-unit>
+        <trans-unit id="th_modified">
+           <source>Date modified</source>
+           <target>Änderungsdatum</target>
+        </trans-unit>
+        <trans-unit id="th_modified_by">
+           <source>Modified by</source>
+           <target>Geändert von</target>
+        </trans-unit>
+        <trans-unit id="th_book_name"><source>Book Name</source><target xml:lang="de">Buch-Name</target></trans-unit>
+        <trans-unit id="th_name"><source>Name</source><target xml:lang="de">Name</target></trans-unit>
+        <trans-unit id="th_order">
+           <source>Order</source>
+           <target>Reihenfolge</target>
+        </trans-unit>
+        <trans-unit id="th_overwriteLocal"><source>Overwrite data even if marked as "Overwrite by Import: NO"</source><target xml:lang="de">Überschreibe Daten (auch wenn Überschreibe bei Import auf NEIN steht)</target></trans-unit>
+        <trans-unit id="th_pageid">
+           <source>Page Definition Id</source>
+           <target>Seiten-Id</target>
+        </trans-unit>
+        <trans-unit id="th_pagelist">
+           <source>Page List</source>
+           <target>Seiten-Liste</target>
+        </trans-unit>
+        <trans-unit id="th_pagetype">
+           <source>Page Type</source>
+           <target>Seiten-Typ</target>
+        </trans-unit>
+        <trans-unit id="th_parentbookid"><source>Parent Book</source><target xml:lang="de">Parent-Buch</target></trans-unit>
+        <trans-unit id="th_lang">
+           <source>Language</source>
+           <target>Sprache</target>
+        </trans-unit>
+        <trans-unit id="th_passwd"><source>Password</source>
+           <target>Passwort</target>
+        </trans-unit>
+        <trans-unit id="th_passwd2"><source>Password Confirm</source>
+           <target>Passwort bestätigen</target>
+        </trans-unit>
+        <trans-unit id="th_permcol"><source>Column</source><target xml:lang="de">Spalte</target></trans-unit>
+        <trans-unit id="th_permcollist"><source>Permission Columns</source><target xml:lang="de">Berechtigungs-Spalten</target></trans-unit>
+        <trans-unit id="th_permission"><source>Permission</source><target xml:lang="de">Berechtigung</target></trans-unit>
+        <trans-unit id="th_placeholder"><source>Placeholder</source><target xml:lang="de">Platzhalter</target></trans-unit>
+        <trans-unit id="th_project_prefix"> 
+           <source>Project Prefix</source>
+           <target>Projekt Präfix</target>
+        </trans-unit>
+        <trans-unit id="th_prefix">
+           <source>Prefix</source>
+           <target>Präfix</target>
+        </trans-unit>
+        <trans-unit id="th_prightdef"><source>Permissions</source><target xml:lang="de">Berechtigungen</target></trans-unit>
+        <trans-unit id="th_project">
+           <source>Project</source>
+           <target>Projekt</target>
+        </trans-unit>
+        <trans-unit id="th_projectbook">
+           <source>Project Book</source>
+           <target>Projekt Buch</target>
+        </trans-unit>
+        <trans-unit id="th_projectid"><source>Project Id</source><target xml:lang="de">Projekt ID</target></trans-unit>
+        <trans-unit id="th_role"><source>Role</source><target xml:lang="de">Rolle</target></trans-unit>
+        <trans-unit id="th_sel_project"><source>Select Project</source><target xml:lang="de">Projekt auswählen</target></trans-unit>
+        <trans-unit id="th_conditions"><source>Conditions</source><target xml:lang="de">Bedingungen</target></trans-unit>
+        <trans-unit id="th_permissions"><source>Permissions</source><target xml:lang="de">Berechtigungen</target></trans-unit>
+        <trans-unit id="th_projectlist"><source>Project List</source><target xml:lang="de">Projekt-Liste</target></trans-unit>
+        <trans-unit id="th_projectname"><source>Project Name</source><target xml:lang="de">Projekt-Name</target></trans-unit>
+        <trans-unit id="th_replace_userdata"><source>Import body/header content, replace with existing</source><target xml:lang="de">Importiere BODY/HEADER Inhalt und ersetze mit existierendem</target></trans-unit>
+        <trans-unit id="th_right"><source>Right</source><target xml:lang="de">Recht</target></trans-unit>
+        <trans-unit id="th_rights">
+           <source>Rights</source>
+           <target>Rechte</target>
+        </trans-unit>
+        <trans-unit id="th_roleid"><source>Role Id</source><target xml:lang="de">Rollen ID</target></trans-unit>
+        <trans-unit id="th_rolename"><source>Name</source><target xml:lang="de">Name</target></trans-unit>
+        <trans-unit id="th_roleparam"><source>Parameter</source><target xml:lang="de">Parameter</target></trans-unit>
+        <trans-unit id="th_roletitle"><source>Title</source><target xml:lang="de">Titel</target></trans-unit>
+        <trans-unit id="th_rows"><source>Data Records approximation</source>
+          <target>Anzahl Zeilen (geschätzt)</target>
+        </trans-unit>
+        <trans-unit id="th_scoretype"><source>Score type</source><target xml:lang="de">Score Typ</target></trans-unit>
+        <trans-unit id="th_search">
+          <source>Search</source>
+          <target>Suchen</target>
+        </trans-unit>
+        <trans-unit id="th_shorttitle"><source>Short Title</source><target xml:lang="de">Kurzer Titel</target></trans-unit>
+        <trans-unit id="th_showif"><source>Show if</source><target xml:lang="de">Zeige nur, wenn Bedingung erfüllt</target></trans-unit>
+        <trans-unit id="th_sortby"><source>Sort by</source><target xml:lang="de">Sortiere nach</target></trans-unit>
+        <trans-unit id="th_sourcelang">
+          <source>Source Language</source>
+        <target xml:lang="de">Quelle-Sprache</target></trans-unit>
+        <trans-unit id="th_src_table"><source>Source Table</source><target xml:lang="de">Quell-Tabelle</target></trans-unit>
+        <trans-unit id="th_status"><source>Status</source><target xml:lang="de">Status</target></trans-unit>
+        <trans-unit id="th_subpageparam"><source>Sub-Page Param</source>
+           <target>Unter-Seiten-Parameter</target>
+        </trans-unit>
+        <trans-unit id="th_suffix">
+          <source>Suffix/Unit</source>
+        <target xml:lang="de"/></trans-unit>
+        <trans-unit id="th_tablename_displayname">
+           <source>Table/Display Name</source>
+        <target xml:lang="de">Tabelle/Anzeige-Name</target></trans-unit>
+        <trans-unit id="th_tablename">
+           <source>Table Name</source>
+           <target>Tabellen-Name</target>
+        </trans-unit>
+        <trans-unit id="th_title">
+           <source>Title</source>
+           <target>Titel</target>
+        </trans-unit>
+        <trans-unit id="th_type">
+           <source>Type</source>
+           <target>Typ</target>
+        </trans-unit>
+        <trans-unit id="th_show">
+           <source>Show</source>
+           <target>Zeige</target>
+        </trans-unit>
+        <trans-unit id="th_hide">
+           <source>Hide</source>
+           <target>Ausblenden</target>
+        </trans-unit>
+        <trans-unit id="th_uniquecols"><source>Unique columns</source><target xml:lang="de">Eindeutige Spalten</target></trans-unit>
+        <trans-unit id="th_upload_fpile"><source>Project file upload</source><target xml:lang="de">Projekt Datei Upload</target></trans-unit>
+        <trans-unit id="th_username"><source>User Name</source><target xml:lang="de">Benutzer-Name</target></trans-unit>
+        <trans-unit id="th_view">
+           <source>View</source>
+           <target>Betrachten</target>
+        </trans-unit>
+        <trans-unit id="toggledatatable">
+           <source>Show/Hide Table</source>
+           <target>Tabelle anzeigen/ausblenden</target>
+        </trans-unit>
+        <trans-unit id="uproject_add_permission"><source>Add permission</source><target xml:lang="de">Berechtigung hinzufügen</target></trans-unit>
+        <trans-unit id="uproject_add_project"><source>Add project</source><target xml:lang="de">Projekt hinzufügen</target></trans-unit>
+        <trans-unit id="uproject_add_existing_project"><source>Add existing project</source><target xml:lang="de">Existierendes Projekt hinzufügen</target></trans-unit>
+        <trans-unit id="uright_add_condition"><source>Add condition</source><target xml:lang="de">Bedingung hinzufügen</target></trans-unit>
+        <trans-unit id="uright_add"><source>Set permission</source><target xml:lang="de">Berechtigung hinzufügen</target></trans-unit>
+        <trans-unit id="user_create_button">
+           <source>Create user</source>
+           <target>Benutzer erstellen</target>
+        </trans-unit> 
+        <trans-unit id="user_update_button">
+        <source>Update user</source>
+           <target>Benutzer aktualisieren</target>
+        </trans-unit>
+        <trans-unit id="settings_update_button">
+           <source>Update settings</source>
+           <target>Einstellungen aktualisieren</target>
+        </trans-unit>
+        <trans-unit id="settings_not_found">
+           <source>User settings not found in database</source>
+           <target>Benutzer-Einstellungen konnten nicht zu dem Benutzer gefunden werden in der Datenbank</target>
+        </trans-unit>
+        <trans-unit id="yes"><source>YES</source><target xml:lang="de">JA</target></trans-unit>
+        <trans-unit id="noscript">
+          <source>javascript is deactivated, this site can't run properly! Please activate javascript to run this site!</source>
+          <target>Javascript ist deaktiviert, diese Seite kann nicht ordnungsgemäß ausgeführt werden. Bitte aktivieren Sie Javascript!</target>
+        </trans-unit>
+        <trans-unit id="login_txt">
+           <source>Login</source>
+           <target>Anmeldung</target>
+        </trans-unit>
+        <trans-unit id="login_button">
+           <source>Sign in</source>
+           <target>Anmelden</target>
+        </trans-unit> 
+        <trans-unit id="login0">
+           <source>Login</source>
+           <target>Benutzerkennung</target>
+        </trans-unit>
+        <trans-unit id="password0">
+           <source>Password</source>
+           <target>Passwort</target>
+        </trans-unit>
+        <trans-unit id="remember">
+           <source>Remember me</source>
+           <target>Angemeldet bleiben</target>
+        </trans-unit>
+        <trans-unit id="login_success0">
+           <source>Successfully logged in.</source>
+           <target>Erfolgreich angemeldet.</target>
+        </trans-unit>
+        <trans-unit id="nav_data">
+           <source>Data Maintenance</source>
+           <target>Daten-Pflege</target>
+        </trans-unit> 
+        <trans-unit id="nav_user">
+           <source>User Administration</source>
+           <target>Benutzer Administration</target>
+        </trans-unit> 
+        <trans-unit id="nav_project">
+           <source>Projects</source>
+           <target>Projekte</target>
+        </trans-unit> 
+        <trans-unit id="nav_role">
+           <source>Role Administration</source>
+           <target>Rollen</target>
+        </trans-unit> 
+        <trans-unit id="nav_logout">
+           <source>Logout</source>
+           <target>Abmelden</target>
+        </trans-unit> 
+        <trans-unit id="nav_geodata">
+           <source>Geo Data</source>
+           <target>Geo Daten</target>
+        </trans-unit> 
+        <trans-unit id="nav_reports">
+           <source>Reports</source>
+           <target>Berichte</target>
+        </trans-unit> 
+        <trans-unit id="nav_logs">
+           <source>Log Files</source>
+           <target>Log-Dateien</target>
+        </trans-unit> 
+        <trans-unit id="nav_settings">
+           <source>Settings</source>
+           <target>Einstellungen</target>
+        </trans-unit> 
+        <trans-unit id="cancel_button">
+           <source>Back</source>
+           <target>Zurück</target>
+        </trans-unit> 
+        <trans-unit id="bd_update_button">
+           <source>Update book</source>
+           <target>Buch-Definition aktualisieren</target>
+        </trans-unit> 
+        <trans-unit id="bd_create_button">
+           <source>Add book</source>
+           <target>Buch-Definition erstellen</target>
+        </trans-unit> 
+        <trans-unit id="bd_import_button">
+           <source>Import book</source>
+           <target>Buch-Definition importieren</target>
+        </trans-unit> 
+        <trans-unit id="bd_download_button">
+           <source>Import book</source>
+           <target>Buch-Definition herunterladen</target>
+        </trans-unit> 
+        <trans-unit id="pd_import_button">
+           <target>Seiten-Definition importieren</target>
+        </trans-unit> 
+        <trans-unit id="pd_download_button">
+           <target>Seiten-Definition herunterladen</target>
+        </trans-unit> 
+        <trans-unit id="bd_xliff_button">
+           <target>Übersetzung herunterladen</target>
+        </trans-unit> 
+        <trans-unit id="bdpage_add_button">
+           <target>Vorhandene Seite hinzufügen</target>
+        </trans-unit> 
+        <trans-unit id="data_import_button">
+           <target>Tabellendaten importieren</target>
+        </trans-unit> 
+        <trans-unit id="data_addrow_button">
+           <source>Add row</source>
+           <target>Zeile hinzufügen</target>
+        </trans-unit> 
+        <trans-unit id="data_download_button">
+           <target>Tabellendaten herunterladen</target>
+        </trans-unit> 
+        <trans-unit id="data_csvexport_button">
+           <source>Download table data</source>
+           <target>Tabellendaten exportieren (CSV)</target>
+        </trans-unit> 
+        <trans-unit id="data_csvimport_button">
+           <source>Import table data</source>
+           <target>Tabellendaten importieren (CSV)</target>
+        </trans-unit> 
+        <trans-unit id="datarow_add_button">
+           <source>Add row</source>
+           <target>Zeile hinzufügen</target>
+        </trans-unit> 
+        <trans-unit id="datarow_update_button">
+           <source>Update row</source>
+           <target>Zeile aktualisieren</target>
+        </trans-unit> 
+        <trans-unit id="th_synctype">
+           <target>Sync-Typ</target>
+        </trans-unit> 
+        <trans-unit id="th_selectpage">
+           <target>Seite auswählen</target>
+        </trans-unit> 
+        <trans-unit id="th_showinsummary">
+           <target>In Übersicht anzeigen</target>
+        </trans-unit> 
+        <trans-unit id="th_mandatory">
+           <source>Mandatory</source>
+           <target>Pflichtfeld</target>
+        </trans-unit> 
+        <trans-unit id="th_javascript">
+           <target>Javascript</target>
+        </trans-unit> 
+        <trans-unit id="th_pagebreak">
+           <target>Seitenumbruch</target>
+        </trans-unit> 
+        <trans-unit id="option_subpage">
+           <target>SUBPAGE</target>
+        </trans-unit> 
+        <trans-unit id="option_downloadonly">
+           <target>Nur Download</target>
+        </trans-unit> 
+        <trans-unit id="option_uploadonly">
+           <target>Nur Upload</target>
+        </trans-unit> 
+        <trans-unit id="option_uploadanddownload">
+           <target>Upload und Download</target>
+        </trans-unit> 
+        <trans-unit id="th_reportdesc">
+           <target>Beschreibung</target>
+        </trans-unit> 
+
+        <trans-unit id="th_tablename0">
+           <source>Table Name</source>
+        <target xml:lang="de">Tabellen-Name</target></trans-unit>
+        <trans-unit id="dlg0">
+           <source>OK</source>
+        <target xml:lang="de">OK</target></trans-unit>
+        <trans-unit id="dlg1">
+           <source>Cancel</source>
+           <target>Abbrechen</target>
+        </trans-unit>
+        <trans-unit id="dlg2">
+           <source>Yes</source>
+           <target>Ja</target>
+        </trans-unit>
+        <trans-unit id="dlg3">
+           <source>No</source>
+           <target>Nein</target>
+        </trans-unit>
+        <trans-unit id="dlg4">
+          <source>Save</source>
+          <target>Speichern</target>
+        </trans-unit>
+        <trans-unit id="dlg5">
+          <source>Add</source>
+          <target>Hinzufügen</target>
+        </trans-unit>
+        <trans-unit id="dlg6">
+          <source>Move</source>
+          <target>Verschieben</target>
+        </trans-unit>
+        <trans-unit id="dlg7">
+          <source>Create</source>
+          <target>Erstellen</target>
+        </trans-unit>
+        <trans-unit id="dlg8">
+          <source>Rename</source>
+          <target>Umbenennen</target>
+        </trans-unit>
+        <trans-unit id="dlg9">
+          <source>Search</source>
+          <target>Suchen</target>
+        </trans-unit>
+        <trans-unit id="logintitle0">
+          <source>KIPUS Admin Login</source>
+        <target xml:lang="de"/></trans-unit>
+        <trans-unit id="title0">
+          <source>KIPUS Admin Dashboard</source>
+        </trans-unit>
+        <trans-unit id="remember0">
+          <source>Remember me</source>
+        <target xml:lang="de">Passwort speichern</target></trans-unit>
+        <trans-unit id="invalid_login0">
+          <source>Invalid login, please use a login with valid credentials.</source>
+           <target>Ungültige Anmeldung, bitte versuchen Sie es mit einer gültiger Benutzerkennung/Password.</target>
+        </trans-unit>
+        <trans-unit id="invalid_login1">
+          <source>Invalid login, user has no admin rights.</source>
+        <target xml:lang="de">Ungültige Anmeldung, Benutzer hat nicht die erfolderlichen Rechte.</target></trans-unit>
+        <trans-unit id="invalid_login2">
+          <source>Invalid login, user has no report viewing rights.</source>
+        <target xml:lang="de">Ungültiger Login, Benutzer hat keiner Report-Rechte.</target></trans-unit>
+      
+      
+        <trans-unit id="bc_error0">
+          <source>Error on backendCall: </source>
+        <target xml:lang="de">Fehler im backendCall:</target></trans-unit>
+        <trans-unit id="role_delete0">
+          <source>Do you really want to delete this role?</source>
+        <target xml:lang="de">Wollen Sie die Rolle wirklich löschen?</target></trans-unit>
+        <trans-unit id="role_delete1">
+          <source>Role successfully deleted.</source>
+        <target xml:lang="de">Rolle erfolgreich gelöscht.</target></trans-unit>
+        <trans-unit id="role_delete2">
+          <source>Do you really want to delete this role? Warning: role is used by user(s) {1}.</source>
+        <target xml:lang="de">Wollen Sie die Rolle wirklich löschen? Achtung: Rolle wird benutzt von Benutzer(n) {1}.</target></trans-unit>
+        <trans-unit id="role_delete3">
+          <source>Do you really want to delete this user from role?</source>
+        <target xml:lang="de">Wollen Sie wirklich diesen Benutzer aus der Rolle entfernen?</target></trans-unit>
+      
+      
+        <trans-unit id="role_create0">
+          <source>Name, Title and Project are mandatory fields.</source>
+        <target xml:lang="de">Name, Titel und Projekt sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="role_create1">
+          <source>Role successfully created.</source>
+        <target xml:lang="de">Rolle erfolgreich erstellt.</target></trans-unit>
+      
+      
+        <trans-unit id="role_update0">
+          <source>Role successfully updated.</source>
+        <target xml:lang="de">Rolle erfolgreich aktualisiert.</target></trans-unit>
+      
+      
+        <trans-unit id="user_delete0">
+          <source>Do you really want to delete the user {1}?</source>
+        <target xml:lang="de">Wollen Sie den Benutzer {1} wirklich löschen?</target></trans-unit>
+        <trans-unit id="user_delete1">
+          <source>User successfully deleted.</source>
+        <target xml:lang="de">Benutzer erfolgreich gelöscht.</target></trans-unit>
+      
+      
+        <trans-unit id="new_user0">
+          <source>New User</source>
+        <target xml:lang="de">Neuer Benutzer</target></trans-unit>
+      
+      
+        <trans-unit id="data_clear0">
+          <source>Do you really want to clear this table (delete all content of this table)?</source>
+        <target xml:lang="de">Wollen sie diese Tabelle wirklich leeren (gesamter Inhalt wird gelöscht)?</target></trans-unit>
+        <trans-unit id="data_clear1">
+          <source>Table successfully cleared.</source>
+        <target xml:lang="de">Tabelle erfolgreich geleert.</target></trans-unit>
+      
+      
+        <trans-unit id="datarow_delete0">
+          <source>Do you really want to delete this row?</source>
+        <target xml:lang="de">Wollen Sie diese Zeile wirklich löschen?</target></trans-unit>
+        <trans-unit id="datarow_delete1">
+          <source>Row successfully deleted.</source>
+        <target xml:lang="de">Zeile erfolgreich gelöscht.</target></trans-unit>
+      
+      
+        <trans-unit id="data_download0">
+          <source>Table Name is a mandatory field.</source>
+        <target xml:lang="de">Tabellen-Name ist ein Pflichtfeld.</target></trans-unit>
+        <trans-unit id="data_download1">
+          <source>Table Data successfully downloaded.</source>
+        <target xml:lang="de">Tabellen-Daten erfolgreich heruntergeladen.</target></trans-unit>
+      
+      
+        <trans-unit id="data_csvexport0">
+          <source>Table Name is a mandatory field.</source>
+        <target xml:lang="de">Tabellen-Name ist ein Pflichtfeld.</target></trans-unit>
+        <trans-unit id="data_csvexport1">
+          <source>Table Data successfully downloaded as CSV.</source>
+        <target xml:lang="de">Tabellen-Daten erfolgreich als CSV-Datei heruntergeladen.</target></trans-unit>
+      
+      
+        <trans-unit id="data_csvimport0">
+          <source>Please choose a CSV file to import.</source>
+        <target xml:lang="de">Bitte wählen Sie eine CSV-Datei für den Import.</target></trans-unit>
+        <trans-unit id="data_csvimport1">
+          <source>Data successfully imported from CSV.</source>
+        <target xml:lang="de">Daten erfolgreich aus CSV-Datei importiert.</target></trans-unit>
+        <trans-unit id="data_csvimport2">
+          <source>Data could not be imported, unable to read CSV file.</source>
+        <target xml:lang="de">Daten konnten nicht importiert werden, die CSV-Datei kann nicht gelesen werden.</target></trans-unit>
+        <trans-unit id="data_csvimport3">
+          <source>Table Name is a mandatory field.</source>
+        <target xml:lang="de">Tabellen-Name ist ein Pflichtfeld.</target></trans-unit>
+        <trans-unit id="data_csvimport4">
+          <source>Invalid format, first column line is missing in CSV.</source>
+        <target xml:lang="de">Ungültiges Format, die erste Zeile mit der Spaltenbeschreibung fehlt offensichtlich.</target></trans-unit>
+        <trans-unit id="data_csvimport5">
+          <source>Data could not be imported, no data found in CSV.</source>
+        <target xml:lang="de">Daten konnten nicht importiert werden, keine Daten in der CSV-Datei gefunden.</target></trans-unit>
+        <trans-unit id="data_csvimport6">
+          <source>Data could not be imported, columns do not match column header in line </source>
+        <target xml:lang="de">Daten konnten nicht importiert werden, die Spaltenanzahl und die Spaltenbeschreibung in der ersten Zeile stimmen nicht miteinander überein.</target></trans-unit>
+        <trans-unit id="data_csvimport7">
+          <source>Table Csv File has wrong extension (needs to be *.csv)</source>
+        <target xml:lang="de">CSV-Datei hat falsche Datei-Endung (*.csv wird benötigt).</target></trans-unit>
+        <trans-unit id="data_csvimport8">
+          <source>Data Csv File has wrong extension (needs to be *.datadump.csv)</source>
+        <target xml:lang="de">Daten-CSV-Datei hat falsche Datei-Endung (*.datadump.csv wird benötigt).</target></trans-unit>
+      
+      
+        <trans-unit id="user_create0">
+          <source>Login, Display Name and Password are mandatory fields.</source>
+        <target xml:lang="de">Login, Anzeige-Name und Passwort sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="user_create1">
+          <source>Password and confirmation does not match.</source>
+        <target xml:lang="de">Passwort und Passwort-Bestätigung stimmen nicht überein.</target></trans-unit>
+        <trans-unit id="user_create2">
+          <source>User successfully created.</source>
+        <target xml:lang="de">Benutzer erfolgreich erstellt.</target></trans-unit>
+      
+      
+        <trans-unit id="user_update0">
+          <source>User successfully updated.</source>
+        <target xml:lang="de">Benutzer erfolgreich aktualisiert.</target></trans-unit>
+        <trans-unit id="user_update1">
+          <source>Password and confirmation does not match.</source>
+        <target xml:lang="de">Passwort und Passwort-Bestätigung stimmen nicht überein.</target></trans-unit>
+      
+      
+        <trans-unit id="project_create0">
+          <source>Name is mandatory field.</source>
+        <target xml:lang="de">Name ist Pflichtfeld.</target></trans-unit>
+        <trans-unit id="project_create1">
+          <source>Project successfully created.</source>
+        <target xml:lang="de">Projekt erfolgreich erstellt.</target></trans-unit>
+        <trans-unit id="project_create2">
+                    <source>Prefix is mandatory field, 5 characters maximum.</source>
+        <target xml:lang="de">Präfix ist Pflichtfeld, 5 Zeichen maximum.</target></trans-unit>
+      
+      
+        <trans-unit id="project_download0">
+          <source>Project Id is mandatory field.</source>
+        <target xml:lang="de">Projekt ID ist Pflichtfeld.</target></trans-unit>
+        <trans-unit id="project_download1">
+          <source>Project successfully downloaded.</source>
+        <target xml:lang="de">Projekt erfolgreich heruntergeladen.</target></trans-unit>
+      
+      
+        <trans-unit id="project_import0">
+          <source>Please choose a project file (.zip) to import.</source>
+        <target xml:lang="de">Bitte wähle eine Projekt-Datei (*.zip) für den Import aus.</target></trans-unit>
+        <trans-unit id="project_import1">
+          <source>Project successfully imported.</source>
+        <target xml:lang="de">Projekt erfolgreich importiert.</target></trans-unit>
+        <trans-unit id="project_import2">
+          <source>Project could not be imported, unable to read file.</source>
+        <target xml:lang="de">Projekt konnte nicht importiert werden, nicht imstande, die Datei zu lesen.</target></trans-unit>
+      
+      
+        <trans-unit id="project_update0">
+          <source>Project Id and Name are mandatory fields.</source>
+        <target xml:lang="de">Projekt ID und Name sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="project_update1">
+          <source>Project successfully updated.</source>
+        <target xml:lang="de">Projekt erfolgreich aktualisiert.</target></trans-unit>
+      
+      
+        <trans-unit id="project_delete0">
+          <source>Do you really want to delete this project and all it's books and files?</source>
+        <target xml:lang="de">Wollen Sie wirklicht das Projekt und alle seine Daten löschen?</target></trans-unit>
+        <trans-unit id="project_delete1">
+          <source>Project successfully deleted.</source>
+        <target xml:lang="de">Projekt erfolgreich gelöscht.</target></trans-unit>
+      
+      
+        <trans-unit id="pfile_delete0">
+          <source>Do you really want to delete this file?</source>
+        <target xml:lang="de">Wollen Sie wirklich diese Datei löschen?</target></trans-unit>
+        <trans-unit id="pfile_delete1">
+          <source>File successfully deleted.</source>
+        <target xml:lang="de">Datei erfolgreich gelöscht.</target></trans-unit>
+      
+      
+        <trans-unit id="upload_pfile0">
+          <source>Please choose a file to upload.</source>
+        <target xml:lang="de">Bitte wählen Sie ein Datei zum Upload aus.</target></trans-unit>
+        <trans-unit id="upload_pfile1">
+          <source>File successfully uploaded to project.</source>
+        <target xml:lang="de">Datei erfolgreich zum Projekt hinzufügt.</target></trans-unit>
+        <trans-unit id="upload_pfile2">
+          <source>File could not be uploaded, unable to read file.</source>
+        <target xml:lang="de">Datei konnte nicht zum Projekt hinzugefügt werden, nicht imstande, die Datei zu lesen.</target></trans-unit>
+        <trans-unit id="upload_pfile3">
+          <source>Max Filesize exceeded (maxsize={1} bytes).</source>
+        <target xml:lang="de">Maximale Dateigrösse erreicht (Maximale Dateigrösse={1} bytes).</target></trans-unit>
+      
+      
+        <trans-unit id="datarow_filter0">
+          <source>Search in the database table {1}</source>
+          <target>Suche in der Datenbank Tabelle {1}</target>
+        </trans-unit>
+        <trans-unit id="datarow_filter1">
+          <source>Fulltext search</source>
+          <target>Volltext Suche</target>
+        </trans-unit>
+        <trans-unit id="datarow_filter2">
+          <source>Search with WHERE clause (SQL)</source>
+          <target>Suche mit WHERE Klausel (SQL)</target>
+        </trans-unit>
+        <trans-unit id="datarow_filter3">
+          <source>Either full text search or SQL query has to be set for search.</source>
+        <target xml:lang="de">Entweder Volltext-Suche oder SQL-Query müssen für eine Suche gesetzt sein.</target></trans-unit>
+        <trans-unit id="datarow_filter4">
+          <source>{1} column details</source>
+          <target>{1} Spaltendetails</target>
+        </trans-unit>
+        <trans-unit id="datarow_filter5">
+          <source>Column search</source>
+          <target>Spaltensuche</target>
+        </trans-unit>
+      
+      
+        <trans-unit id="datarow_update0">
+          <source>Data row successfully updated.</source>
+        <target xml:lang="de">Datenzeile erfolgreich aktualisiert.</target></trans-unit>
+        <trans-unit id="datarow_update1">
+          <source>Table Name and Id is mandatory.</source>
+        <target xml:lang="de">Tabellen-Name und ID sind Pflichtfelder.</target></trans-unit>
+      
+      
+        <trans-unit id="datarow_create0">
+          <source>Table Name is a mandatory field.</source>
+        <target xml:lang="de">Tabellen-Name ist ein Pflichtfeld.</target></trans-unit>
+        <trans-unit id="datarow_create1">
+          <source>Data row successfully created.</source>
+        <target xml:lang="de">Daten-Zeile erfolgreich erstellt.</target></trans-unit>
+      
+      
+        <trans-unit id="data_import0">
+          <source>Please choose a Data file to import.</source>
+        <target xml:lang="de">Bitte wähle eine Datei für den Import aus.</target></trans-unit>
+        <trans-unit id="data_import1">
+          <source>Data successfully imported.</source>
+        <target xml:lang="de">Daten erfolgreich importiert.</target></trans-unit>
+        <trans-unit id="data_import2">
+          <source>Data could not be imported, unable to read file.</source>
+        <target xml:lang="de">Daten konnten nicht importiert werden, nich imstande, die Datei zu lesen.</target></trans-unit>
+        <trans-unit id="data_import3">
+          <source>Data could not be imported, invalid format.</source>
+        <target xml:lang="de">Daten konnten nicht importiert werden, ungültiges Format.</target></trans-unit>
+      
+      
+        <trans-unit id="new_page0">
+          <source>New Page Definition</source>
+        <target xml:lang="de">Neue Seiten-Definition</target></trans-unit>
+      
+      
+        <trans-unit id="pd_create0">
+          <source>Table Name and Display Name are mandatory fields.</source>
+        <target xml:lang="de">Tabellen-Name und Anzeige-Name sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="pd_create1">
+          <source>Page definition successfully created.</source>
+        <target xml:lang="de">Seite erfolgreich erstellt.</target></trans-unit>
+        <trans-unit id="pd_create2">
+          <source>Table already exists.</source>
+        <target xml:lang="de">Tabelle exisitert bereits.</target></trans-unit>
+        <trans-unit id="pd_create3">
+          <source>If page type is 'Quiz', table name has to start with 'QUIZ_'.</source>
+        <target xml:lang="de">Wenn die Seite vom Typ 'Quiz' ist, muss der Tabellen-Name mit QUIZ_ beginnen.</target></trans-unit>
+      
+      
+        <trans-unit id="pd_delete0">
+          <source>Do you really want to delete this page definition and all its attributes?</source>
+        <target xml:lang="de">Wollen Sie wirklich diese Seiten-Definition und alle ihre Attribute löschen?</target></trans-unit>
+        <trans-unit id="pd_delete1">
+          <source>Page definition successfully deleted.</source>
+        <target xml:lang="de">Seiten-Definition erfolgreich gelöscht.</target></trans-unit>
+      
+      
+        <trans-unit id="pd_update0">
+          <source>Page definition successfully updated.</source>
+        <target xml:lang="de">Seiten-Definition erfolgreich aktualisiert.</target></trans-unit>
+        <trans-unit id="pd_update1">
+          <source>Table Name and Display Name are mandatory fields.</source>
+        <target xml:lang="de">Tabellen-Name und Anzeigename sind Pflichtfelder.</target></trans-unit>
+      
+      
+        <trans-unit id="pdattr_create0">
+          <source>Column Name, Display Name and Column Order are mandatory fields.</source>
+        <target xml:lang="de">Spalten-Name, Anzeige-Name und Spalten-Reihenfolge sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="pdattr_create1">
+          <source>Page attribute successfully created.</source>
+        <target xml:lang="de">Seiten-Attribut erfolgreich erstellt.</target></trans-unit>
+        <trans-unit id="pdattr_create2">
+          <source>Source page and prefix are mandatory fields.</source>
+        <target xml:lang="de">Quell-Seite und Präfix sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="pdattr_create3">
+          <source>Source page not found.</source>
+        <target xml:lang="de">Quell-Seite nicht gefunden.</target></trans-unit>
+      
+      
+        <trans-unit id="pdattr_delete0">
+          <source>Do you really want to delete this attribute in all referenced tables?</source>
+        <target xml:lang="de">Wollen Sie wirklich dieses Attribut in allen referenzierten Tabellen löschen?</target></trans-unit>
+        <trans-unit id="pdattr_delete1">
+          <source>Page attribute successfully deleted.</source>
+        <target xml:lang="de">Seiten-Attribut erfolgreich gelöscht.</target></trans-unit>
+      
+      
+        <trans-unit id="pdattr_update0">
+          <source>Page attribute successfully updated.</source>
+        <target xml:lang="de">Seiten-Attribut erfolgreich aktualisiert.</target></trans-unit>
+        <trans-unit id="pdattr_update1">
+          <source>Column Name, Display Name and Column Order are mandatory fields.</source>
+        <target xml:lang="de">Spalten-Name, Anzeige-Name und Spalten-Reihenfolge sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="pdattr_update2">
+          <source>Cannot change constrainttype, as it would change DB column type.</source>
+        <target xml:lang="de">Kann den Constraint-Typ nicht mehr nachträglich ändern.</target></trans-unit>
+      
+      
+        <trans-unit id="pdattr_rename0">
+          <source>Page attribute successfully renamed.</source>
+        <target xml:lang="de">Seiten-Attribut erfolgreich umbenannt.</target></trans-unit>
+        <trans-unit id="pdattr_rename1">
+          <source>Column Name may not be empty.</source>
+        <target xml:lang="de">Spalten-Name darf nicht leer sein.</target></trans-unit>
+        <trans-unit id="pdattr_rename2">
+          <source>Column Name is already used in this project (not renamed).</source>
+        <target xml:lang="de">Spalten-Name wird bereits in diesem Projekt benutzt (keine Umbenennung durchgeführt).</target></trans-unit>
+        <trans-unit id="pdattr_rename3">
+          <source>Column Name and new Column Name are identical (not renamed).</source>
+        <target xml:lang="de">Spalten-Name und neuer Spalten-Name sind identisch (keine Umbennenung durchgeführt).</target></trans-unit>
+        <trans-unit id="pdattr_rename4">
+          <source>Warning: this attribute may already be referenced in reports or client logic.<br/></source>
+        <target xml:lang="de">Achtung: dieses Attribut ist möglicherweise bereits in den Reporten oder in der Client-Logik referenziert.</target></trans-unit>
+           Do you really want to rename this attribute? This will be reported!
+      
+      
+        <trans-unit id="bd_create0">
+          <source>Name is a mandatory field.</source>
+        <target xml:lang="de">Name ist Pflichtfeld.</target></trans-unit>
+        <trans-unit id="bd_create1">
+          <source>Book definition successfully created.</source>
+        <target xml:lang="de">Buch-Definition erfolgreich erstellt.</target></trans-unit>
+      
+      
+        <trans-unit id="external_create0">
+          <source>All fields except of Filter are mandatory fields.</source>
+        <target xml:lang="de">Alle Felder ausser Filter sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="external_create1">
+          <source>External table successfully added.</source>
+        <target xml:lang="de">Externe Tabelle erfolgreich erstellt.</target></trans-unit>
+      
+      
+        <trans-unit id="external_update0">
+          <source>External update successful.</source>
+        <target xml:lang="de">Externe Tabelle erfolgreich aktualisiert.</target></trans-unit>
+      
+      
+        <trans-unit id="external_delete0">
+          <source>Do you really want to delete the external table?</source>
+        <target xml:lang="de">Wollen Sie wirklich die externe Tabelle löschen?</target></trans-unit>
+        <trans-unit id="external_delete1">
+          <source>External successfully deleted.</source>
+        <target xml:lang="de">Externe Tabelle erfolgreich gelöscht.</target></trans-unit>
+      
+      
+        <trans-unit id="bd_download0">
+          <source>Book definition Id is a mandatory field.</source>
+        <target xml:lang="de">Buch Definition ID ist Pflichtfeld.</target></trans-unit>
+        <trans-unit id="bd_download1">
+          <source>Book definition successfully downloaded.</source>
+        <target xml:lang="de">Buch definition erfolgreich heruntergeladen.</target></trans-unit>
+      
+      
+        <trans-unit id="bd_import0">
+          <source>Please choose a book definition file to import.</source>
+        <target xml:lang="de">Bitte wählen Sie eine Datei für den Import.</target></trans-unit>
+        <trans-unit id="bd_import1">
+          <source>Book definition successfully imported.</source>
+        <target xml:lang="de"/></trans-unit>
+        <trans-unit id="bd_import2">
+          <source>Book definition could not be imported, unable to read file.</source>
+        </trans-unit>
+        <trans-unit id="bd_import3">
+          <source>Book definition could not be imported, invalid format.</source>
+        </trans-unit>
+      
+      
+        <trans-unit id="pd_import0">
+          <source>Please choose a page definition file to import.</source>
+        </trans-unit>
+        <trans-unit id="pd_import1">
+          <source>Page definition successfully imported.</source>
+        </trans-unit>
+        <trans-unit id="pd_import2">
+          <source>Page definition could not be imported, unable to read file.</source>
+        </trans-unit>
+        <trans-unit id="pd_import3">
+          <source>Page definition could not be imported, invalid format.</source>
+        </trans-unit>
+      
+      
+        <trans-unit id="pd_download0">
+          <source>Page definition Id is a mandatory field.</source>
+        <target xml:lang="de"/></trans-unit>
+        <trans-unit id="pd_download1">
+          <source>Page definition successfully downloaded.</source>
+        </trans-unit>
+      
+      
+        <trans-unit id="bd_delete0">
+          <source>Do you really want to delete this book definition?</source>
+        <target xml:lang="de">Wollen Sie wirklich diese Buch-Definition löschen?</target></trans-unit>
+        <trans-unit id="bd_delete1">
+          <source>Book definition successfully deleted.</source>
+        <target xml:lang="de">Buch-Definition erfolgreich gelöscht.</target></trans-unit>
+      
+      
+        <trans-unit id="bd_update0">
+          <source>Book definition successfully updated.</source>
+        <target xml:lang="de">Buch-Definition erfolgreich aktualisiert.</target></trans-unit>
+        <trans-unit id="bd_update1">
+          <source>Name is a mandatory field.</source>
+        <target xml:lang="de">Name ist Pflichtfeld.</target></trans-unit>
+      
+      
+        <trans-unit id="bdpage_add0">
+          <source>Book Id and Page Id are mandatory fields.</source>
+        <target xml:lang="de">Buch-ID und Seiten-ID sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="bdpage_add1">
+          <source>Bookpage successfully added.</source>
+        <target xml:lang="de">Buch-Seite erfolgreich hinzugefügt.</target></trans-unit>
+      
+      
+        <trans-unit id="bdpage_delete0">
+          <source>Do you really want to remove this page from the book?</source>
+        <target xml:lang="de">Wollen Sie diese Seite wirklich aus dem Buch entfernen?</target></trans-unit>
+        <trans-unit id="bdpage_delete1">
+          <source>Page successfully removed from book.</source>
+        <target xml:lang="de">Seite erfolgreich aus dem Buch entfernt.</target></trans-unit>
+        <trans-unit id="bdpage_delete2">
+          <source>Book Id and Page Id are mandatory fields.</source>
+        <target xml:lang="de">Buch Id und Seiten Id sind Pflichtfelder.</target></trans-unit>
+      
+      
+        <trans-unit id="xliffgen0">
+          <source>Project Id is a mandatory field.</source>
+        <target xml:lang="de">Projekt ID ist Pflichtfeld.</target></trans-unit>
+        <trans-unit id="xliffgen1">
+          <source>Xliff successfully generated.</source>
+        <target xml:lang="de">Übersetzung erfolgreich generiert.</target></trans-unit>
+      
+      
+        <trans-unit id="pbook_add0">
+          <source>Project Id and Book Id are mandatory fields.</source>
+        <target xml:lang="de">Projekt Id und Buch Id sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="pbook_add1">
+          <source>Book successfully added to project.</source>
+        <target xml:lang="de">Buch erfolgreich zum Projekt hinzugefügt.</target></trans-unit>
+      
+      
+        <trans-unit id="pbook_delete0">
+          <source>Do you really want to delete this book?</source>
+        <target xml:lang="de">Wollen Sie diese Buch wirklich löschen?</target></trans-unit>
+        <trans-unit id="pbook_delete1">
+          <source>Book successfully deleted.</source>
+        <target xml:lang="de">Buch erfolgreich gelöscht.</target></trans-unit>
+      
+      
+        <trans-unit id="uproject_add0">
+          <source>Login and Project Id are mandatory fields.</source>
+        <target xml:lang="de">Anmeldung und Projekt-ID sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="uproject_add1">
+          <source>Project successfully added to user.</source>
+        <target xml:lang="de">Projekt erfolgreich zum Benutzer hinzugefügt</target></trans-unit>
+      
+      
+        <trans-unit id="uproject_delete0">
+          <source>Do you really want to remove this project from the user?</source>
+        <target xml:lang="de">Wollen Sie dieses Projekt wirklich dem User entziehen?</target></trans-unit>
+        <trans-unit id="uproject_delete1">
+          <source>Project successfully removed from user.</source>
+        <target xml:lang="de">Projekt erfolgreich entzogen.</target></trans-unit>
+      
+      
+        <trans-unit id="bookdata_delete0">
+          <source>Do you really want to delete this record including all bookdata?</source>
+        <target xml:lang="de">Wollen Sie wirklich diese Datensätze inklusiv aller Buchdaten löschen?</target></trans-unit>
+        <trans-unit id="bookdata_delete1">
+          <source>Commit changes?</source>
+        <target xml:lang="de">Änderungen bestätigen?</target></trans-unit>
+        <trans-unit id="bookdata_delete2">
+          <source>Save changes in {1} data set?</source>
+        <target xml:lang="de">Änderung in {1} Datensatz speichern?</target></trans-unit>
+        <trans-unit id="bookdata_delete3">
+          <source>Do you really want to delete this data set and assign all bookdata to the data set on the {1} <i style="color: #fbe074;" class="glyph glyphicon glyphicon-arrow-{1}"/> side?</source>
+        <target xml:lang="de">Wollen Sie wirklich diesen Datensatz löschen und alle Buchdaten dem Datensatz auf der {1} Seite übertragen?</target></trans-unit>
+        <trans-unit id="image_upload0">
+          <source>Choose Image File to upload</source>
+        <target xml:lang="de">Wähle Bild-Datei für den Upload.</target></trans-unit>
+        <trans-unit id="image_upload1">
+          <source>Upload Image</source>
+        <target xml:lang="de">Upload Bild</target></trans-unit>
+        <trans-unit id="image_upload2">
+          <source>Table Name and Image Name are mandatory field.</source>
+        <target xml:lang="de">Tabellen-Name und Bild-Name sind Pflichtfelder.</target></trans-unit>
+        <trans-unit id="image_upload3">
+          <source>Image could not be uploaded, unable to read image file.</source>
+        <target xml:lang="de">Bild Datei konnte nicht hochgeladen werden, nicht imstande, die Datei zu lesen.</target></trans-unit>
+        <trans-unit id="image_upload4">
+          <source>Image successfully uploaded.</source>
+        <target xml:lang="de">Bild-Datei erfolgreich hochgeladen.</target></trans-unit>
+        <trans-unit id="regexp0">
+          <source>Wrong format, please correct above errors first!</source>
+        <target xml:lang="de">Ungültiges Format, bitte korrigieren Sie die obigen Fehler zurerst!</target></trans-unit>
+        <trans-unit id="tooltip0">
+          <source>Only characters A-Z, 0-9 and _ are allowed plus may not start with 0-9!</source>
+        <target xml:lang="de">Nur Zeichen A-Z, 0-9 und _ sind erlaubt, und ein Beginn mit 0-9 ist ebenfalls nicht erlaubt.</target></trans-unit>
+        <trans-unit id="tooltip1">
+          <source>Values may be approximations. Admin Dashboard uses a quick method to get the row count, and this method only returns an approximate count in the case of InnoDB tables.</source>
+        <target xml:lang="de">Werte sind Schätzungen. Es wird eine schnelle Methode benutzt, um die Zeilenanzahl in der Datenbank zu ermitteln, diese Methode benutzt Näherungswerte (im Fall von InnoDB Tabellen).</target></trans-unit>
+        <trans-unit id="tooltip2">
+          <source>Called if the content of the field changes.</source>
+        <target xml:lang="de">Aufgerufen, wenn sich der Inhalt des Felder ändert.</target></trans-unit>
+        <trans-unit id="tooltip3">
+          <source>Called if save is called, returns false if the check failed.</source>
+        <target xml:lang="de">Wird aufgerufen, wenn Speichern aufgerufen wird. Gibt false zurück, wenn der Check fehlschlägt.</target></trans-unit>
+        <trans-unit id="tooltip4">
+          <source><b>Syntax:</b> <i>FilterEntry</i>[:<i>FilterColumn</i>]=<i>Regexp</i><br/><br/><i>FilterEntry</i> is the name of a field on this page or on the header page.<br/>
+             This value must match the <i>Regexp</i>.<br/>
+        <br/>  If <i>FilterColumn</i> is specified, the
+             <i>FilterEntry</i> must be of type "Single Value from table", and <i>FilterColumn</i>
+             must be a valid column in this table.<br/>The Value of this column is taken
+             for comparison with the <i>Regexp</i>.
+          </source>
+        <target xml:lang="de"/></trans-unit>
+        <trans-unit id="tooltip5">
+          <source>Draw one border around this and the next field.</source>
+        <target xml:lang="de">Zeichne einen Rahmen um dieses und das nächste Feld.</target></trans-unit>
+        <trans-unit id="tooltip6">
+          <source><b>Syntax:</b> <i>TableName</i> [<i>ColumnName</i>=<i>FilterEntry</i>[:<i>FilterColumn</i>]]<br/><br/>
+             Display the DISPLAYNAME column values from <i>TableName</i>.<br/>
+            <br/>
+             If <i>ColumnName=</i> is specified, then filter the lines.<br/>
+             <i>ColumnName</i> must be a column in <i>TableName</i>.<br/>
+             <br/>
+             If <i>FilterEntry</i> is enclosed in "" then only lines with this literal value
+             are shown, else another value on this page or the header page is searched
+             with the name of <i>FilterEntry</i>.<br/>
+             <br/>
+             If <i>FilterColumn</i> is specified, the <i>FilterEntry</i> must be of type "Single Value
+             from table", and <i>FilterColumn</i> must be a valid column in this table.
+          </source>
+        </trans-unit>
+        <trans-unit id="tooltip7">
+          <source>"a,b c,d", where a,b,c,d is a columnName followed by an optional "=RegExp", and interpreted as a AND b OR c AND d ...</source>
+        </trans-unit>
+        <trans-unit id="tooltip8">
+          <source>All of the conditions must be true at the same
+                  time for the same book header page
+          </source>
+        <target xml:lang="de">Alle Bedingungen müssen zur selben Zeit zutreffen für den gleichen Buch-Header.</target></trans-unit>
+        <trans-unit id="tooltip9">
+          <source>The header page should contain only one attribute,
+                  which is a link to the parent header
+          </source>
+        <target xml:lang="de">Die Header-Seite darf nur ein Attribut enthalten, was zum Parent-Header verlinkt.</target></trans-unit>
+        <trans-unit id="tooltip10">
+          <source>Comma separated list of Column Names, with
+                  optional =DESTINATION COLUMNNAME after each Column Name
+        </source>
+        <target xml:lang="de"></target></trans-unit>
+        <trans-unit id="tooltip11">
+          <source>If last is chosen, use to the value of the last historic entry with the same name.</source>
+        </trans-unit>
+        <trans-unit id="tooltip12">
+          <source>Permission is a combination of a role and zero or or more conditions. You have to first add a project to project list
+                  before adding a permission.
+          </source>
+        </trans-unit>
+        <trans-unit id="tooltip13">
+          <source>"All Projects" and the right UserFronted exclude each other.</source>
+        </trans-unit>
+        <trans-unit id="tooltip14">
+          <source>Only characters A-Z, 0-9 and _ are allowed plus may not start with 0-9! (5 characters allowed maximum)</source>
+        </trans-unit>
+        <trans-unit id="tooltip15">
+          <source>source:TABLE (type BODY)<br/>
+          target:TABLE (BODY, hidden by subpageparam)<br/>
+          display:comma separated list of source columns to show in 
+          the table<br/>
+          prefix:each target column is prefixed by this<br/>
+          filter:comma separated col=val for source<br/>
+        </source>
+        </trans-unit>
+        <trans-unit id="tooltip16">
+          <source>
+          {TABLENAME:id} is replaced by DISPLAYNAME
+          (LU_DEFAULTS@kipus_tst)<br/>
+          {last} take the last filled value<br/>
+          {code} will be executed<br/>
+          <br/>
+        </source>
+        </trans-unit>
+        <trans-unit id="tooltip17">
+          <source>
+          target:TABLE (BODY, hidden by subpageparam)<br/>
+          prefix:each target column is prefixed by this<br/>
+          noDelete:if set to true, hide the delete button<br/>
+          expandColumn:generate all entries for a given column<br/>
+          maxNo:maximum Number of entries<br/>
+          </source>
+        </trans-unit>
+          
+        <trans-unit id="tooltip18">
+          <source>
+          &lt;width&gt; x &lt;heigth&gt; (resize to maximum width or heigth)<br/>
+          Optional: capture:both, capture:user, capture:environment (force using a camera on mobile)
+          </source>
+        </trans-unit>
+          
+        <trans-unit id="tooltip19">
+          <source>
+          Possible options:<br/>
+          ADDRESS:colname<br/>
+          COMPUTED:colname<br/>
+          ELEVATION:colname<br/>
+          AREA:colname<br/>
+          SHAPE:colname<br/>
+          TIMESTAMP:colname<br/>
+          AUTOFILL:1<br/>
+        </source>
+        </trans-unit>
+        <trans-unit id="leave0">
+          <source>Please confirm you want to leave this page.</source>
+        <target xml:lang="de">Wollen Sie die Seite wirklich verlassen?</target></trans-unit>
+        <trans-unit id="filter0">
+          <source>filter</source>
+        <target xml:lang="de">Filter</target></trans-unit>
+        <trans-unit id="filter1">
+          <source>clear filter</source>
+          <target>Fillter entfernen</target>
+        </trans-unit>
+        <trans-unit id="filter2">
+          <source>Filter text (space-separated), press return or filter button to filter</source>
+          <target>Text filtern (Leerzeichen getrennt), bestätige mit Eingabetaste oder klicke filter-Knopf</target>
+        </trans-unit>
+        <trans-unit id="filter3">
+          <source>filtered by </source>
+          <target>gefiltert nach </target>
+        </trans-unit>
+        <trans-unit id="filter4">
+          <source>Hide filter</source>
+          <target>Filter ausblenden</target>
+        </trans-unit>
+        <trans-unit id="filter5">
+          <source>Show filter</source>
+          <target>Filter anzeigen</target>
+        </trans-unit>
+        <trans-unit id="mandatory0">
+          <source>Mandatory field</source>
+        <target xml:lang="de">Pflichtfeld</target></trans-unit>
+        <trans-unit id="constraintparam0">
+          <source>max-width x max-height (optional)</source>
+        <target xml:lang="de"></target></trans-unit>
+        <trans-unit id="constraintparam1">
+          <source>comma separated values</source>
+        <target xml:lang="de">Komma-separierte Werte</target></trans-unit>
+        <trans-unit id="constraintparam2">
+          <source>tableName [ColumnName=FilterEntry[:FilterColumn]]</source>
+        <target xml:lang="de"></target></trans-unit>
+        <trans-unit id="constraintparam3">
+          <source>executed for non-empty fields.</source>
+        </trans-unit>
+        <trans-unit id="constraintparam4">
+          <source>minimum,maximum[,decimals]</source>
+        <target xml:lang="de"></target></trans-unit>
+        <trans-unit id="constraintparam5">
+          <source>cols x rows (optional)</source>
+        <target xml:lang="de"></target></trans-unit>
+        <trans-unit id="constraintparam6">
+          <source>was gps, unused now, see tooltip19</source>
+        <target xml:lang="de"></target></trans-unit>
+        <trans-unit id="constraintparam7">
+          <source>imageTableName:id</source>
+        </trans-unit>
+        <trans-unit id="constraintparam8">
+          <source>maxSizeInBytes .xls .docx .pdf AllowDownload (optional)</source>
+        </trans-unit>
+        <trans-unit id="constraintparam9">
+          <source>source target prefix display filter</source>
+        </trans-unit>
+        <trans-unit id="constraintparam10">
+          <source>target:TABLENAME prefix:COLPREFIX</source>
+        <target xml:lang="de"></target></trans-unit>
+      
+      
+        <trans-unit id="selectionrequired">
+          <source>Please select at least one</source>
+        <target xml:lang="de">Bitte mindestens ein Element auswählen</target></trans-unit>
+      
+      
+        <trans-unit id="All">
+          <source>All</source>
+        </trans-unit>
+      
+        <trans-unit id="Jan">
+          <source>Jan</source>
+        </trans-unit>
+        <trans-unit id="Feb">
+          <source>Feb</source>
+        </trans-unit>
+        <trans-unit id="Mar">
+          <source>Mar</source>
+        </trans-unit>
+        <trans-unit id="Apr">
+          <source>Apr</source>
+        </trans-unit>
+        <trans-unit id="May">
+          <source>May</source>
+        </trans-unit>
+        <trans-unit id="Jun">
+          <source>Jun</source>
+        </trans-unit>
+        <trans-unit id="Jul">
+          <source>Jul</source>
+        </trans-unit>
+        <trans-unit id="Aug">
+          <source>Aug</source>
+        </trans-unit>
+        <trans-unit id="Sep">
+          <source>Sep</source>
+        </trans-unit>
+        <trans-unit id="Oct">
+          <source>Oct</source>
+        </trans-unit>
+        <trans-unit id="Nov">
+          <source>Nov</source>
+        </trans-unit>
+        <trans-unit id="Dec">
+          <source>Dec</source>
+        </trans-unit>
+      
+        <trans-unit id="Q1">
+          <source>Q1</source>
+        </trans-unit>
+        <trans-unit id="Q2">
+          <source>Q2</source>
+        </trans-unit>
+        <trans-unit id="Q3">
+          <source>Q3</source>
+        </trans-unit>
+        <trans-unit id="Q4">
+          <source>Q4</source>
+        </trans-unit>
+      
+      
+        <trans-unit id="name">
+          <source>Name</source>
+        <target xml:lang="de">Name</target></trans-unit>
+        <trans-unit id="description">
+          <source>Description</source>
+        <target xml:lang="de">Beschreibung</target></trans-unit>
+        <trans-unit id="number">
+          <source>Nr</source>
+        <target xml:lang="de">Nr</target></trans-unit>
+        <trans-unit id="Year">
+          <source>Year</source>
+        <target xml:lang="de">Jahr</target></trans-unit>
+        <trans-unit id="Quarter">
+          <source>Quarter</source>
+        <target xml:lang="de">Quartal</target></trans-unit>
+        <trans-unit id="Month">
+          <source>Month</source>
+        <target xml:lang="de">Monat</target></trans-unit>
+        <trans-unit id="YearFrom">
+          <source>Year from</source>
+        <target xml:lang="de">Jahr von</target></trans-unit>
+        <trans-unit id="QuarterFrom">
+          <source>Quarter from</source>
+        <target xml:lang="de">Quartal von</target></trans-unit>
+        <trans-unit id="MonthFrom">
+          <source>Month from</source>
+        <target xml:lang="de">Monat von</target></trans-unit>
+        <trans-unit id="YearTo">
+          <source>Year to</source>
+        <target xml:lang="de">Jahr bis</target></trans-unit>
+        <trans-unit id="QuarterTo">
+          <source>Quarter to</source>
+        <target xml:lang="de">Quartal bis</target></trans-unit>
+        <trans-unit id="MonthTo">
+          <source>Month to</source>
+        <target xml:lang="de">Monat bis</target></trans-unit>
+        <trans-unit id="region">
+          <source>Region</source>
+        <target xml:lang="de">Region</target></trans-unit>
+        <trans-unit id="organisation">
+          <source>Organisation</source>
+        <target xml:lang="de">Organisation</target></trans-unit>
+        <trans-unit id="farm">
+          <source>Farm</source>
+        <target xml:lang="de">Farm</target></trans-unit>
+        <trans-unit id="field">
+          <source>Field</source>
+        <target xml:lang="de">Feld</target></trans-unit>
+        <trans-unit id="crop">
+          <source>Crop</source>
+        <target xml:lang="de">Feldfrucht</target></trans-unit>
+        <trans-unit id="cropVariety">
+          <source>Crop variety</source>
+        <target xml:lang="de">Art der Frucht</target></trans-unit>
+        <trans-unit id="ViewAs">
+          <source>View as</source>
+        <target xml:lang="de">Anzeigen als</target></trans-unit>
+        <trans-unit id="Table">
+          <source>Table</source>
+        <target xml:lang="de">Tabelle</target></trans-unit>
+        <trans-unit id="BarChart">
+          <source>Bar chart</source>
+        <target xml:lang="de">Spalten-Diagramm</target></trans-unit>
+        <trans-unit id="LineChart">
+          <source>Line chart</source>
+        <target xml:lang="de">Linien-Diagramm</target></trans-unit>
+        <trans-unit id="PieChart">
+          <source>Pie chart</source>
+        <target xml:lang="de">Torten-Diagramm</target></trans-unit>
+        <trans-unit id="TimeseriesChart">
+          <source>Time series chart</source>
+        <target xml:lang="de">Zeit-Diagramm</target></trans-unit>
+        <trans-unit id="StackedBarChart">
+          <source>Stacked Bar chart</source>
+        <target xml:lang="de">Gestapeltes Spalten-Diagramm</target></trans-unit>
+        <trans-unit id="AggregatedBy">
+          <source>Aggregated by</source>
+        <target xml:lang="de">Aggregiert anhand</target></trans-unit>
+        <trans-unit id="CountryCrop">
+          <source>Country and Crop</source>
+        <target xml:lang="de">Land und Feldfrucht</target></trans-unit>
+        <trans-unit id="RegionCrop">
+          <source>Region and Crop</source>
+        <target xml:lang="de">Region und Feldfrucht</target></trans-unit>
+        <trans-unit id="OrganisationCrop">
+          <source>Organisation and Crop</source>
+        <target xml:lang="de">Organisation und Feldfrucht</target></trans-unit>
+        <trans-unit id="FarmCrop">
+          <source>Farm and Crop</source>
+        <target xml:lang="de">Farm und Feldfrucht</target></trans-unit>
+        <trans-unit id="RegionAssessmentLevel">
+          <source>Region and Assessment Level</source>
+        <target xml:lang="de">Region und Stufe</target></trans-unit>
+        <trans-unit id="CountryFertilizer">
+          <source>Country and Fertilizer</source>
+        <target xml:lang="de">Land und Dünger</target></trans-unit>
+        <trans-unit id="RegionFertilizer">
+          <source>Region and Fertilizer</source>
+        <target xml:lang="de">Region und Dünger</target></trans-unit>
+        <trans-unit id="OrganisationFertilizer">
+          <source>Organisation and Fertilizer</source>
+        <target xml:lang="de">Organisation und Dünger</target></trans-unit>
+        <trans-unit id="FarmFertilizer">
+          <source>Farm and Fertilizer</source>
+        <target xml:lang="de">Farm und Dünger</target></trans-unit>
+        <trans-unit id="FieldFertilizer">
+          <source>Field and Fertilizer</source>
+        <target xml:lang="de">Feld und Dünger</target></trans-unit>
+        <trans-unit id="CropFertilizer">
+          <source>Crop and Fertilizer</source>
+        <target xml:lang="de">Feldfrucht und Dünger</target></trans-unit>
+        <trans-unit id="CountryPesticide">
+          <source>Country and Plant Protection</source>
+        <target xml:lang="de">Land und Pflanzenschutzmittel</target></trans-unit>
+        <trans-unit id="RegionPesticide">
+          <source>Region and Plant Protection</source>
+        <target xml:lang="de">Region und Pflanzenschutzmittel</target></trans-unit>
+        <trans-unit id="OrganisationPesticide">
+          <source>Organisation and Plant Protection</source>
+        <target xml:lang="de">Organisation und Pflanzenschutzmittel</target></trans-unit>
+        <trans-unit id="FarmPesticide">
+          <source>Farm and Plant Protection</source>
+        <target xml:lang="de">Farm und Pflanzenschutzmittel</target></trans-unit>
+        <trans-unit id="FieldPesticide">
+          <source>Field and Plant Protection</source>
+        <target xml:lang="de">Feld und Pflanzenschutzmittel</target></trans-unit>
+        <trans-unit id="CropPesticide">
+          <source>Crop and Plant Protection</source>
+        <target xml:lang="de">Feldfrucht und Pflanzenschutzmittel</target></trans-unit>
+        <trans-unit id="th_orgs">
+          <source>Farm Organization</source>
+          <target xml:lang="de">Farm Organisation</target>
+        </trans-unit>
+        <trans-unit id="org_clear_filter_button">
+          <source>Clear Filter</source>
+          <target xml:lang="de">Filter löschen</target>
+        </trans-unit>
+        <trans-unit id="org_filter_button">
+          <source>Filter Organization</source>
+          <target xml:lang="de">Filter Organisation</target>
+        </trans-unit>
+        <trans-unit id="th_reportnumber">
+          <source>Nr</source>
+          <target xml:lang="de">Nr</target>
+        </trans-unit>
+        <trans-unit id="th_reportname">
+          <source>Name</source>
+          <target xml:lang="de">Name</target>
+        </trans-unit>
+        <trans-unit id="th_reportdesc">
+          <source>Description</source>
+          <target xml:lang="de">Beschreibung</target>
+        </trans-unit>
+        <trans-unit id="th_reportmodified">
+          <source>Modified</source>
+          <target xml:lang="de">Geändert</target>
+        </trans-unit>
+
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,42 @@
+HOW TO: add an additional module to the admin frontend (admin.html), e.g. to
+implement a workflow.
+
+- modify config.js:
+  - in the module.exports.htmlReplace add an entry for /admin.html, and insert
+    the new .js file (e.g. adminMods/XXX/myWorkflow.js)
+  - if special backend support is needed, add the backend modules to the list
+    in module.exports.backendModules (e.g. XXX/myBackendMod.js)
+  - restart the backend
+
+- Create the myWorkflow.js file in html/adminMods/XXX (replace XXX with your
+  project name).
+  The file contains to HTML-snippets:
+  - one which is inserted in the sidebar (aka menu), which is visible all the
+    time.
+  - the next one is a skeleton shown, when the above sidebar menu entry is
+    called. This one is filled with logic when it is shown.
+  - the admin frontend  uses the Twitter Bootstrap libraries, which enable a
+    responsive design. It communicates with the backend in order to read and
+    write data in the project database tables, with encapsulated or direct SQL
+    commands. The following is an extract, the full list and parameters are in
+    backend/modules/tableOps.js
+    - tableSelect: get columns from a table
+    - tableInsert: insert a line into a table
+    - tableUpdate: update a line in the table
+    - tableDelete: delete a line in the table
+    - tableCmd:    direct SQL command
+    - tableBatch:  contains one or more of the above, and executes them in a
+      transaction.
+
+- for special backend support create the file html/projects/XXX/myBackendMod.js
+  (replace XXX with your project)
+  - implement the new function
+  - make it globally visible by adding an entry in module.exports.cmd
+  - the function will be called with the node.js standard connect parameters
+    req, res next, where req contains the request (including the body of the
+    request), the res, which is responsible for sending the result, and the
+    next function, which is called if this function cannot fulfill the request
+    Normally the function should send a JSON string via res.end, either
+    containing the data, or an error entry containing the error.
+  - on the other side (in the myWorkflow.js) this function is called via
+    backendCall("myBackendFunction", { <parameters> }, resultFunction);

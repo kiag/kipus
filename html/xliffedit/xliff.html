@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Translation and Glossary Editor</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=8" />
+
+  <link rel='stylesheet' type='text/css' href='css/jquery-ui-1.10.2.custom.min.css'/>
+  <link rel='stylesheet' type='text/css' href='css/xliff.css'/>
+
+  <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+  <script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+  <script type="text/javascript" src="js/jquery.textarea-expander.js"></script>
+  <script type="text/javascript" src="js/jquery.csv-0.71.min.js"></script>
+  <script type='text/javascript' src='js/xliff.js'></script>
+  <script type='text/javascript' src='js/xliffLib.js'></script>
+</head>
+
+<body>
+
+<div id="outer-wrapper">
+  <div class="title">
+      <span trid="hdrtab_lsovv" class="red"><img src="css/images/kipus_logo.png"> Translation file custom_en.xml</span>
+       - 
+      <span id="title" class="italic"></span>
+      <span id="closeHelp">
+        Press the Close button below if you are finished to allow other people to change this file
+      </span>
+      <span id="buttons"></span>
+  </div>
+
+
+  <div id="content">
+
+    <div id="mo_lsovv" class="omm_div mo_lsovv">
+      <div id="xliffovv_scrollarea">
+        <div id="hidecol"><input checked type="checkbox"></input><span>Show ID</span></div>
+        <div id="status"></div>
+        <div id="xliffovv_div">
+          <table id="xliffovv_tbl" summary="Translation elements with source and target languages">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead><tr>
+              <th trid="tr_id" class="xliffid"><div>ID</div></th>
+              <th trid="tr_source" class="xliffsource"><div>Source</div></th>
+              <th trid="tr_target" class="xlifftarget"><div>Target</div></th>
+              <th></th>
+            </tr></thead>
+            <tbody><!----></tbody>
+          </table>
+        </div>
+      </div>
+      <div id="footer" style="display:none;">
+        <span id="mo_footertxt1"></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="dialog" style="display:none;">
+</div>
+
+<div id="tooltip" style="display:none;">
+</div>
+
+<div id="dlg_errorMessage" style="display:none;">
+</div>
+
+<div id="translations" style="display:none;">
+  <div id="footerText">
+    <div trid="mo_footertxt0">Translation Editor</div>
+  </div>
+  <div id="dlg">
+    <div trid="dlg0">OK</div>
+    <div trid="dlg1">Cancel</div>
+    <div trid="dlg2">Yes</div>
+    <div trid="dlg3">No</div>
+    <div trid="dlg4">Save</div>
+    <div trid="dlg5">Close</div>
+  </div>
+  <div id="close">
+    <div trid="close0">Do you really want to close? Unsaved changes will be lost!</div>
+  </div>
+  <div id="system">
+    <div trid="system0">Bad redirect: Contact system andministrator
+                        to finish installation.</div>
+  </div>
+  <div id="xtitle">
+    <div trid="xtitle0">all your changes will be directly going live on save</div>
+  </div>
+  <div id="xstatus">
+    <div trid="xstatus0">View Mode: show all translations</div>
+    <div trid="xstatus1">To change translation, click inside target field and start editing, click Save when you are done.</div>
+    <div trid="xstatus2">Glossary Mode: select text in translation to add glossary or remove by click on</div>
+    <div trid="xstatus3">View Mode: show only changed translations in version</div>
+    <div trid="xstatus4">View Mode: show only untranslated elements (no target-text)</div>
+  </div>
+  
+  <div id="xpref">
+    <div trid="xpref0">Translation and Glossary Editor Preferences</div>
+    <div trid="xpref1">Language</div>
+  </div>
+  <div id="gloss">
+    <div trid="gloss0">Add Glossary Entry</div>
+    <div trid="gloss1">Filter</div>
+  </div>
+</div>
+
+
+  <div id="snackbar">Network not available</div>
+</body>
+</html>

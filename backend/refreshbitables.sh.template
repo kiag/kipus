@@ -1,0 +1,40 @@
+#!/bin/sh
+
+NH=../node
+export NODE_PATH=$NH/node_modules
+
+PROJECT=DEF
+PROJECT_DB=kipus
+
+SQLUSER=$PROJECT_DB
+SQLPASS=5424_$PROJECT_DB
+SQLHOST=localhost
+SQLDB=$PROJECT_DB
+
+LOGFILE=refreshbitables_$PROJECT.log
+
+trap "exit" SIGINT
+
+LOGFILE=`pwd`/$LOGFILE
+
+echo "`date`: refreshbitables.sh: Started" | tee -a $LOGFILE
+echo "    DB Host:  $SQLHOST"
+echo "    Database: $SQLDB"
+echo "    Logfile:  $LOGFILE"
+
+echo "`date`: Executing refreshlookuphierarchypath.js ..." | tee -a $LOGFILE
+$NH/bin/node helper/refreshlookuphierarchypath.js | tee -a $LOGFILE
+
+echo "`date`: Executing rootbook.js ..." | tee -a $LOGFILE
+$NH/bin/node helper/rootbook.js | tee -a $LOGFILE
+
+echo "`date`: Executing createuserbookids.js ..." | tee -a $LOGFILE
+$NH/bin/node helper/createuserbookids.js | tee -a $LOGFILE
+
+#echo "`date`: Executing bi/$PROJECT_fact_tables.sql ..." | tee -a $LOGFILE
+#mysql -h $SQLHOST -u$SQLUSER -p${SQLPASS} -D$SQLDB < ../bi/$PROJECT_fact_tables.sql 2>&1 | tee -a $LOGFILE
+
+#echo "`date`: Executing install/insert_reports_$PROJECT.sql ..." | tee -a $LOGFILE
+#mysql -h $SQLHOST -u$SQLUSER -p${SQLPASS} -D$SQLDB < ../install/insert_reports_$PROJECT.sql 2>&1 | tee -a $LOGFILE
+
+echo "`date`: refreshbitables.sh: Completed" | tee -a $LOGFILE

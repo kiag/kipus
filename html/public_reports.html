@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Copyright 2013-1019 KI-AG  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>KIPUS Admin Login</title>
+    <link rel='stylesheet' type='text/css' href='css/jquery-ui-1.10.2.custom.min.css'/>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'/>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap-select.min.css'/>
+    <link rel='stylesheet' type='text/css' href='css/admin.css'/>
+    <link rel='stylesheet' type='text/css' href='css/adminReports.css'/>
+    <link rel="stylesheet" type="text/css" href="css/c3.min.css">
+    <script type="text/javascript" src="js/signature_pad-1.4.0/signature_pad.min.js"></script>
+    <script type='text/javascript' src='js/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script type='text/javascript' src='js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='js/bootstrap-select.min.js'></script>
+    <script type='text/javascript' src='js/kipusAdminLib.js'></script>
+    <script type='text/javascript' src='js/c3.min.js'></script>
+    <script type='text/javascript' src='js/d3.v3.min.js'></script>
+    <script type='text/javascript' src='js/admin.js'></script>
+    <script type='text/javascript' src='js/adminReports.js'></script>
+    <script type='text/javascript'>
+      $(document).ready(function() { 
+        bcUser = 'public_reports';
+        bcPasswd = 'Public_Reports';
+        bcRights = '';
+        do_select_reports();
+      });
+    </script>
+    <!-- PROJECT_JS -->
+  </head>
+  <body>
+    <div id="dashboard">
+      <div id="wrapper" style="padding-left:0">
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+          <div class="content content-reports">
+                    <div class="headtitle"></div>
+                    <div id="reportparams" style="display:none">
+                      <div id="time-selector-period"></div>
+                      <div id="time-selector-range"></div>
+                      <div id="view-selector"></div>
+                      <div id="chart-aggregation-selector" style="display:none"></div>
+                      <div id="country-selector" class="filter-sel"></div>
+                      <div id="region-selector" class="filter-sel"></div>
+                      <div id="organisation-selector" class="filter-sel"></div>
+                      <div id="farm-selector" class="filter-sel"></div>
+                      <div id="field-selector" class="filter-sel"></div>
+                      <div id="crop-selector" class="filter-sel"></div>
+                      <div id="crop-variety-selector" class="filter-sel"></div>
+                      <div id="market-selector" class="filter-sel"></div>
+                      <div id="product-selector" class="filter-sel"></div>
+                      <div id="target_group-selector" class="filter-sel"></div>
+                      <div id="educational_level-selector" class="filter-sel"></div>
+                      <div id="gender-selector" class="filter-sel"></div>
+                      <div id="trade_area-selector" class="filter-sel"></div>
+                      <div id="columns_distinct-selector" style="display:none"></div>
+                    </div>
+                    <table id="reportprojects" class="table table-striped table-bordered">
+                      <thead>
+                        <tr>
+                           <th trid="th_view">View</th>
+                           <th trid="th_name"><span style='padding-right:5px'>Name</span>
+                             <i class='btn-link glyphicon glyphicon-sort-by-attributes' onclick='sort_tablerows(this)'></i>
+                           </th>
+                           <th trid="th_title"><span style='padding-right:5px'>Title</span>
+                             <i class='btn-link glyphicon glyphicon-sort-by-attributes' onclick='sort_tablerows(this)'></i>
+                           </th>
+                           <th trid="th_title"><span style='padding-right:5px'>Modified</span>
+                             <i class='btn-link glyphicon glyphicon-sort-by-attributes' onclick='sort_tablerows(this)'></i>
+                           </th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                    <table id="reportstable" class="table table-striped table-bordered paginated" style="display:none">
+                      <thead></thead>
+                      <tbody></tbody>
+                    </table>
+                    <table id="reportheader" class="table table-striped table-bordered paginated" style="display:none">
+                      <thead>
+                        <tr></tr>
+                      </thead>
+                      <tbody>
+                         <tr></tr>
+                      </tbody>
+                    </table>
+
+
+                    <div id="chart-bar-line" class="chart"></div>
+                    <div id="chart-pie" class="chart"></div>
+                    <table id="reportbody" class="table table-striped table-bordered paginated" style="display:none">
+                      <thead>
+                        <tr></tr>
+                      </thead>
+                      <tbody></tbody>
+                      <tfoot>
+                        <tr></tr>
+                      </tfoot>
+                    </table>
+                    <div class="btn-toolbar" style="display:none">
+                      <button trid="report_csvexport_button" id="btn-report-csvexport" class="btn btn-default" style="display:none">Download report table</button>
+                      <button trid="report_svgexport_button" id="btn-report-svgexport" class="btn btn-default" style="display:none">Download charts as svg</button>
+                      <button trid="report_hide_emty" id="btn-report-hide-empty" class="btn btn-default" style="display:none"><span class="showhide">Hide</span> empty rows/columns</button>
+                      <button trid="cancel_button" id="btn-cancelreports" class="btn cancel" onclick="toggle_rproject_back()" style="display:none">Back</button>
+                    </div>
+                  </div>
+            
+            <div class="footer navbar-fixed-bottom"></div>
+            <div id="dialog" style="display:none;"></div>
+            <div id="imageView" style="display:none;">
+                <img>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="signature" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div id="signature-pad" class="modal-content m-signature-pad">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body m-signature-pad--body">
+                    <canvas></canvas>
+                  </div>
+                  <div class="modal-footer m-signature-pad--footer">
+                    <div class="description">Sign above</div>
+                    <button class="button clear" data-action="clear">Clear</button>
+                    <button class="button save" data-action="save" data-dismiss="modal">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="translations" style="display:none;">
+              <div id="th_tablename">
+                <div trid="th_tablename0">Table Name</div>
+              </div>
+              <div id="dlg">
+                <div trid="dlg0">OK</div>
+                <div trid="dlg1">Cancel</div>
+                <div trid="dlg2">Yes</div>
+                <div trid="dlg3">No</div>
+                <div trid="dlg4">Save</div>
+                <div trid="dlg5">Add</div>
+                <div trid="dlg6">Move</div>
+                <div trid="dlg7">Create</div>
+                <div trid="dlg8">Rename</div>
+              </div>
+              <div id="logintitle">
+                <div trid="logintitle0">KIPUS Admin Login</div>
+              </div>
+              <div id="title">
+                <div trid="title0">KIPUS Admin Dashboard</div>
+              </div>
+              <div id="login">
+                <div trid="login0">Login</div>
+              </div>
+              <div id="password">
+                <div trid="password0">Password</div>
+              </div>
+              <div id="remember">
+                <div trid="remember0">Remember me</div>
+              </div>
+              <div id="invalid_login">
+                <div trid="invalid_login0">Invalid login, please use a login with valid credentials.</div>
+                <div trid="invalid_login1">Invalid login, user has no admin rights.</div>
+                <div trid="invalid_login1">Invalid login, user has no report viewing rights.</div>
+              </div>
+              <div id="bc_error">
+                <div trid="bc_error0">Error on backendCall: </div>
+              </div>
+              <div id="login_success">
+                <div trid="login_success0">Successfully logged in.</div>
+              </div>
+              <div id="role_delete">
+                <div trid="role_delete0">Do you really want to delete this role?</div>
+                <div trid="role_delete1">Role successfully deleted.</div>
+                <div trid="role_delete2">Do you really want to delete this role? Warning: role is used by user(s) {1}.</div>
+                <div trid="role_delete3">Do you really want to delete this user from role?</div>
+              </div>
+              <div id="role_create">
+                <div trid="role_create0">Name, Title and Project are mandatory fields.</div>
+                <div trid="role_create1">Role successfully created.</div>
+              </div>
+              <div id="role_update">
+                <div trid="role_update0">Role successfully updated.</div>
+              </div>
+              <div id="user_delete">
+                <div trid="user_delete0">Do you really want to delete the user {1}?</div>
+                <div trid="user_delete1">User successfully deleted.</div>
+              </div>
+              <div id="new_user">
+                <div trid="new_user0">New User</div>
+              </div>
+              <div id="data_clear">
+                <div trid="data_clear0">Do you really want to clear this table (delete all content of this table)?</div>
+                <div trid="data_clear1">Table successfully cleared.</div>
+              </div>
+              <div id="datarow_delete">
+                <div trid="datarow_delete0">Do you really want to delete this row?</div>
+                <div trid="datarow_delete1">Row successfully deleted.</div>
+              </div>
+              <div id="data_download">
+                <div trid="data_download0">Table Name is a mandatory field.</div>
+                <div trid="data_download1">Table Data successfully downloaded.</div>
+              </div>
+              <div id="data_csvexport">
+                <div trid="data_csvexport0">Table Name is a mandatory field.</div>
+                <div trid="data_csvexport1">Table Data successfully downloaded as CSV.</div>
+              </div>
+              <div id="data_csvimport">
+                <div trid="data_csvimport0">Please choose a CSV file to import.</div>
+                <div trid="data_csvimport1">Data successfully imported from CSV.</div>
+                <div trid="data_csvimport2">Data could not be imported, unable to read CSV file.</div>
+                <div trid="data_csvimport3">Table Name is a mandatory field.</div>
+                <div trid="data_csvimport4">Invalid format, first column line is missing in CSV.</div>
+                <div trid="data_csvimport5">Data could not be imported, no data found in CSV.</div>
+                <div trid="data_csvimport6">Data could not be imported, columns do not match column header in line </div>
+                <div trid="data_csvimport7">Table Csv File has wrong extension (needs to be *.csv)</div>
+                <div trid="data_csvimport8">Data Csv File has wrong extension (needs to be *.datadump.csv)</div>
+              </div>
+              <div id="user_create">
+                <div trid="user_create0">Login, Display Name and Password are mandatory fields.</div>
+                <div trid="user_create1">Password and confirmation does not match.</div>
+                <div trid="user_create2">User successfully created.</div>
+              </div>
+              <div id="user_update">
+                <div trid="user_update0">User successfully updated.</div>
+                <div trid="user_update1">Password and confirmation does not match.</div>
+              </div>
+              <div id="project_create">
+                <div trid="project_create0">Name is mandatory field.</div>
+                <div trid="project_create1">Project successfully created.</div>
+                <div trid="project_create2">Prefix is mandatory field, 5 characters maximum.</div>
+              </div>
+              <div id="project_download">
+                <div trid="project_download0">Project Id is mandatory field.</div>
+                <div trid="project_download1">Project successfully downloaded.</div>
+              </div>
+              <div id="project_import">
+                <div trid="project_import0">Please choose a project file (.zip) to import.</div>
+                <div trid="project_import1">Project successfully imported.</div>
+                <div trid="project_import2">Project could not be imported, unable to read file.</div>
+              </div>
+              <div id="project_update">
+                <div trid="project_update0">Project Id and Name are mandatory fields.</div>
+                <div trid="project_update1">Project successfully updated.</div>
+              </div>
+              <div id="project_delete">
+                <div trid="project_delete0">Do you really want to delete this project and all it's books and files?</div>
+                <div trid="project_delete1">Project successfully deleted.</div>
+              </div>
+              <div id="pfile_delete">
+                <div trid="pfile_delete0">Do you really want to delete this file?</div>
+                <div trid="pfile_delete1">File successfully deleted.</div>
+              </div>
+              <div id="upload_pfile">
+                <div trid="upload_pfile0">Please choose a file to upload.</div>
+                <div trid="upload_pfile1">File successfully uploaded to project.</div>
+                <div trid="upload_pfile2">File could not be uploaded, unable to read file.</div>
+                <div trid="upload_pfile3">Max Filesize exceeded (maxsize={1} bytes).</div>
+              </div>
+              <div id="datarow_update">
+                <div trid="datarow_update0">Data row successfully updated.</div>
+                <div trid="datarow_update1">Table Name and Id is mandatory.</div>
+              </div>
+              <div id="datarow_create">
+                <div trid="datarow_create0">Table Name is a mandatory field.</div>
+                <div trid="datarow_create1">Data row successfully created.</div>
+              </div>
+              <div id="data_import">
+                <div trid="data_import0">Please choose a Data file to import.</div>
+                <div trid="data_import1">Data successfully imported.</div>
+                <div trid="data_import2">Data could not be imported, unable to read file.</div>
+                <div trid="data_import3">Data could not be imported, invalid format.</div>
+              </div>
+              <div id="new_page">
+                <div trid="new_page0">New Page Definition</div>
+              </div>
+              <div id="pd_create">
+                <div trid="pd_create0">Table Name and Display Name are mandatory fields.</div>
+                <div trid="pd_create1">Page definition successfully created.</div>
+                <div trid="pd_create2">Table already exists.</div>
+                <div trid="pd_create3">If page type is 'Quiz', table name has to start with 'QUIZ_'.</div>
+              </div>
+              <div id="pd_delete">
+                <div trid="pd_delete0">Do you really want to delete this page definition and all its attributes?</div>
+                <div trid="pd_delete1">Page definition successfully deleted.</div>
+              </div>
+              <div id="pd_update">
+                <div trid="pd_update0">Page definition successfully updated.</div>
+                <div trid="pd_update1">Table Name and Display Name are mandatory fields.</div>
+              </div>
+              <div id="pdattr_create">
+                <div trid="pdattr_create0">Column Name, Display Name and Column Order are mandatory fields.</div>
+                <div trid="pdattr_create1">Page attribute successfully created.</div>
+                <div trid="pdattr_create2">Source page and prefix are mandatory fields.</div>
+                <div trid="pdattr_create3">Source page not found.</div>
+              </div>
+              <div id="pdattr_delete">
+                <div trid="pdattr_delete0">Do you really want to delete this attribute in all referenced tables?</div>
+                <div trid="pdattr_delete1">Page attribute successfully deleted.</div>
+              </div>
+              <div id="pdattr_update">
+                <div trid="pdattr_update0">Page attribute successfully updated.</div>
+                <div trid="pdattr_update1">Column Name, Display Name and Column Order are mandatory fields.</div>
+                <div trid="pdattr_update2">Cannot change constrainttype, as it would change DB column type.</div>
+              </div>
+              <div id="pdattr_rename">
+                <div trid="pdattr_rename0">Page attribute successfully renamed.</div>
+                <div trid="pdattr_rename1">Column Name may not be empty.</div>
+                <div trid="pdattr_rename2">Column Name is already used in this project (not renamed).</div>
+                <div trid="pdattr_rename3">Column Name and new Column Name are identical (not renamed).</div>
+                <div trid="pdattr_rename4">Warning: this attribute may already be referenced in reports or client logic.<br>
+                   Do you really want to rename this attribute? This will be reported!</div>
+              </div>
+              <div id="bd_create">
+                <div trid="bd_create0">Name is a mandatory field.</div>
+                <div trid="bd_create1">Book definition successfully created.</div>
+              </div>
+              <div id="external_create">
+                <div trid="external_create0">All fields except of Filter are mandatory fields.</div>
+                <div trid="external_create1">External table successfully added.</div>
+              </div>
+              <div id="external_update">
+                <div trid="external_update0">External update successful.</div>
+              </div>
+              <div id="external_delete">
+                <div trid="external_delete0">Do you really want to delete the external table?</div>
+                <div trid="external_delete1">External successfully deleted.</div>
+              </div>
+              <div id="bd_download">
+                <div trid="bd_download0">Book definition Id is a mandatory field.</div>
+                <div trid="bd_download1">Book definition successfully downloaded.</div>
+              </div>
+              <div id="bd_import">
+                <div trid="bd_import0">Please choose a book definition file to import.</div>
+                <div trid="bd_import1">Book definition successfully imported.</div>
+                <div trid="bd_import2">Book definition could not be imported, unable to read file.</div>
+                <div trid="bd_import3">Book definition could not be imported, invalid format.</div>
+              </div>
+              <div id="pd_import">
+                <div trid="pd_import0">Please choose a page definition file to import.</div>
+                <div trid="pd_import1">Page definition successfully imported.</div>
+                <div trid="pd_import2">Page definition could not be imported, unable to read file.</div>
+                <div trid="pd_import3">Page definition could not be imported, invalid format.</div>
+              </div>
+              <div id="pd_download">
+                <div trid="pd_download0">Page definition Id is a mandatory field.</div>
+                <div trid="pd_download1">Page definition successfully downloaded.</div>
+              </div>
+              <div id="bd_delete">
+                <div trid="bd_delete0">Do you really want to delete this book definition?</div>
+                <div trid="bd_delete1">Book definition successfully deleted.</div>
+              </div>
+              <div id="bd_update">
+                <div trid="bd_update0">Book definition successfully updated.</div>
+                <div trid="bd_update1">Name is a mandatory field.</div>
+              </div>
+              <div id="bdpage_add">
+                <div trid="bdpage_add0">Book Id and Page Id are mandatory fields.</div>
+                <div trid="bdpage_add1">Bookpage successfully added.</div>
+              </div>
+              <div id="bdpage_delete">
+                <div trid="bdpage_delete0">Do you really want to remove this page from the book?</div>
+                <div trid="bdpage_delete1">Page successfully removed from book.</div>
+                <div trid="bdpage_delete2">Book Id and Page Id are mandatory fields.</div>
+              </div>
+              <div id="xliffgen">
+                <div trid="xliffgen0">Project Id is a mandatory field.</div>
+                <div trid="xliffgen1">Xliff successfully generated.</div>
+              </div>
+              <div id="pbook_add">
+                <div trid="pbook_add0">Project Id and Book Id are mandatory fields.</div>
+                <div trid="pbook_add1">Book successfully added to project.</div>
+              </div>
+              <div id="pbook_delete">
+                <div trid="pbook_delete0">Do you really want to delete this book?</div>
+                <div trid="pbook_delete1">Book successfully deleted.</div>
+              </div>
+              <div id="uproject_add">
+                <div trid="uproject_add0">Login and Project Id are mandatory fields.</div>
+                <div trid="uproject_add1">Project successfully added to user.</div>
+              </div>
+              <div id="uproject_delete">
+                <div trid="uproject_delete0">Do you really want to remove this project from the user?</div>
+                <div trid="uproject_delete1">Project successfully removed from user.</div>
+              </div>
+              <div id="image_upload">
+                <div trid="image_upload0">Choose Image File to upload</div>
+                <div trid="image_upload1">Upload Image</div>
+                <div trid="image_upload2">Table Name and Image Name are mandatory field.</div>
+                <div trid="image_upload3">Image could not be uploaded, unable to read image file.</div>
+                <div trid="image_upload4">Image successfully uploaded.</div>
+              </div>
+              <div id="regexp">
+                <div trid="regexp0">Wrong format, please correct above errors first!</div>
+              </div>
+              <div id="tooltip">
+                <div trid="tooltip0">Only characters A-Z, 0-9 and _ are allowed plus may not start with 0-9!</div>
+                <div trid="tooltip1">Values may be approximations. Admin Dashboard uses a quick method to get the row count, and this method only returns an approximate count in the case of InnoDB tables.</div>
+                <div trid="tooltip2">Called if the content of the field changes.</div>
+                <div trid="tooltip3">Called if save is called, returns false if the check failed.</div>
+                <div trid="tooltip4"><b>Syntax:</b> <i>FilterEntry</i>[:<i>FilterColumn</i>]=<i>Regexp</i><br><br><i>FilterEntry</i> is the name of a field on this page or on the header page.<br>
+             This value must match the <i>Regexp</i>.<br><br>  If <i>FilterColumn</i> is specified, the
+             <i>FilterEntry</i> must be of type "Single Value from table", and <i>FilterColumn</i>
+             must be a valid column in this table.<br>The Value of this column is taken
+             for comparison with the <i>Regexp</i>.</div>
+                <div trid="tooltip5">Draw one border around this and the next field.</div>
+                <div trid="tooltip6"><b>Syntax:</b> <i>TableName</i> [<i>ColumnName</i>=<i>FilterEntry</i>[:<i>FilterColumn</i>]]<br><br>
+                                     Display the DISPLAYNAME column values from <i>TableName</i>.<br><br>
+                                     If <i>ColumnName=</i> is specified, then filter the lines.<br>
+                                     <i>ColumnName</i> must be a column in <i>TableName</i>.<br><br>
+                                     If <i>FilterEntry</i> is enclosed in "" then only lines with this literal value
+                                     are shown, else another value on this page or the header page is searched
+                                     with the name of <i>FilterEntry</i>.<br><br>
+                                     If <i>FilterColumn</i> is specified, the <i>FilterEntry</i> must be of type "Single Value
+                                     from table", and <i>FilterColumn</i> must be a valid column in this table.</div>
+                <div trid="tooltip7">"a,b c,d", where a,b,c,d is a columnName followed by an optional "=RegExp", and interpreted as a AND b OR c AND d ...</div>
+                <div trid="tooltip8">All of the conditions must be true at the same
+                                     time for the same book header page</div>
+                <div trid="tooltip9">The header page should contain only one attribute,
+                                     which is a link to the parent header</div>
+                <div trid="tooltip10">Comma separated list of Column Names, with
+                                     optional =DESTINATION COLUMNNAME after each Column Name</div>
+                <div trid="tooltip11">If last is chosen, use to the value of the last historic entry with the same name.</div>
+                <div trid="tooltip12">Permission is a combination of a role and zero or or more conditions. You have to first add a project to project list
+                                      before adding a permission.</div>
+                <div trid="tooltip13">"All Projects" and the right UserFronted exclude each other.</div>
+                <div trid="tooltip14">Only characters A-Z, 0-9 and _ are allowed plus may not start with 0-9! (5 characters allowed maximum)</div>
+                <div trid="tooltip15">source:TABLE (type BODY)<br>
+                  target:TABLE (BODY, hidden by subpageparam)<br>
+                  display:comma separated list of source columns to show in 
+                  the table<br>
+                  prefix:each target column is prefixed by this<br>
+                  filter:comma separated col=val for source<br>
+                  </div>
+                <div trid="tooltip16">If the value is of the form
+                  {TABLENAME:ID}, then the default value will be taken from the
+                  column DISPLAYNAME of the Lookup Table TABLENAME, which is
+                  Overwrite by Import=NO (think of default currency after
+                  import)
+                  <br></div>
+                <div trid="tooltip17">
+                  target:TABLE (BODY, hidden by subpageparam)<br>
+                  prefix:each target column is prefixed by this<br>
+                  noDelete:if set to true, hide the delete button<br>
+                  expandColumn:generate all entries for a given column<br>
+                  maxNo:maximum Number of entries<br>
+                  </div>
+              </div>
+              <div id="leave">
+                <div trid="leave0">Please confirm you want to leave this page.</div>
+              </div>
+              <div id="filter">
+                <div trid="filter0">filter</div>
+                <div trid="filter1">clear filter</div>
+                <div trid="filter2">Filter text (space-separated), press return or filter button to filter</div>
+                <div trid="filter3">filtered by </div>
+                <div trid="filter4">Hide filter</div>
+                <div trid="filter5">Show filter</div>
+              </div>
+              <div id="mandatory">
+                <div trid="mandatory0">Mandatory field</div>
+              </div>
+              <div id="constraintparam">
+                <div trid="constraintparam0">max-width x max-height (optional)</div>
+                <div trid="constraintparam1">comma separated values</div>
+                <div trid="constraintparam2">tableName [ColumnName=FilterEntry[:FilterColumn]]</div>
+                <div trid="constraintparam3">executed for non-empty fields.</div>
+                <div trid="constraintparam4">minimum,maximum[,decimals]</div>
+                <div trid="constraintparam5">cols x rows (optional)</div>
+                <div trid="constraintparam6">ADDRESS:colname COMPUTED:colname ELEVATION:colname AREA:colname SHAPE:colname AUTOFILL:1</div>
+                <div trid="constraintparam7">imageTableName:id</div>
+                <div trid="constraintparam8">maxSizeInBytes .xls .docx .pdf AllowDownload (optional)</div>
+                <div trid="constraintparam9">source target prefix display filter</div>
+                <div trid="constraintparam10">target:TABLENAME prefix:COLPREFIX</div>
+              </div>
+              <div id="selection">
+                <div trid="selectionrequired">Please select at least one</div>
+              </div>
+              <div id="all">
+                <div trid="All">All</div>
+              </div>
+              <div id="month_list">
+                <div trid="All">All</div>
+                <div trid="Jan">Jan</div>
+                <div trid="Feb">Feb</div>
+                <div trid="Mar">Mar</div>
+                <div trid="Apr">Apr</div>
+                <div trid="May">May</div>
+                <div trid="Jun">Jun</div>
+                <div trid="Jul">Jul</div>
+                <div trid="Aug">Aug</div>
+                <div trid="Sep">Sep</div>
+                <div trid="Oct">Oct</div>
+                <div trid="Nov">Nov</div>
+                <div trid="Dec">Dec</div>
+              </div>
+              <div id="quarter_list">
+                <div trid="All">All</div>
+                <div trid="Q1">Q1</div>
+                <div trid="Q2">Q2</div>
+                <div trid="Q3">Q3</div>
+                <div trid="Q4">Q4</div>
+              </div>
+              <div id="reportstable_header">
+                <div trid="name">Name</div>
+                <div trid="description">Description</div>
+                <div trid="number">Nr</div>
+              </div>
+              <div id="hierarchy_time">
+                <div trid="Year">Year</div>
+                <div trid="Quarter">Quarter</div>
+                <div trid="Month">Month</div>
+                <div trid="YearFrom">Year from</div>
+                <div trid="QuarterFrom">Quarter from</div>
+                <div trid="MonthFrom">Month from</div>
+                <div trid="YearTo">Year to</div>
+                <div trid="QuarterTo">Quarter to</div>
+                <div trid="MonthTo">Month to</div>
+              </div>
+              <div id="hierarchy_1">
+                <div trid="region">Region</div>
+                <div trid="organisation">Organisation</div>
+                <div trid="farm">Farm</div>
+                <div trid="field">Field</div>
+                <div trid="crop">Crop</div>
+                <div trid="cropVariety">Crop variety</div>
+              </div>
+              <div id="chart_type">
+                <div trid="ViewAs">View as</div>
+                <div trid="Table">Table</div>
+                <div trid="BarChart">Bar chart</div>
+                <div trid="LineChart">Line chart</div>
+                <div trid="PieChart">Pie chart</div>
+                <div trid="TimeseriesChart">Time series chart</div>
+                <div trid="StackedBarChart">Stacked Bar chart</div>
+              </div>
+              <div id="chart_aggregated_by">
+                <div trid="AggregatedBy">Aggregated by</div>
+                <div trid="CountryCrop">Country and Crop</div>
+                <div trid="RegionCrop">Region and Crop</div>
+                <div trid="OrganisationCrop">Organisation and Crop</div>
+                <div trid="FarmCrop">Farm and Crop</div>
+                <div trid="RegionAssessmentLevel">Region and Assessment Level</div>
+              </div>
+              <div id="chart_fertilizer_aggregated_by">
+                <div trid="AggregatedBy">Aggregated by</div>
+                <div trid="CountryFertilizer">Country and Fertilizer</div>
+                <div trid="RegionFertilizer">Region and Fertilizer</div>
+                <div trid="OrganisationFertilizer">Organisation and Fertilizer</div>
+                <div trid="FarmFertilizer">Farm and Fertilizer</div>
+                <div trid="FieldFertilizer">Field and Fertilizer</div>
+                <div trid="CropFertilizer">Crop and Fertilizer</div>
+              </div>
+              <div id="chart_pesticide_aggregated_by">
+                <div trid="AggregatedBy">Aggregated by</div>
+                <div trid="CountryPesticide">Country and Plant Protection</div>
+                <div trid="RegionPesticide">Region and Plant Protection</div>
+                <div trid="OrganisationPesticide">Organisation and Plant Protection</div>
+                <div trid="FarmPesticide">Farm and Plant Protection</div>
+                <div trid="FieldPesticide">Field and Plant Protection</div>
+                <div trid="CropPesticide">Crop and Plant Protection</div>
+              </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

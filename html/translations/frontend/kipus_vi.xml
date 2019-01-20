@@ -1,0 +1,181 @@
+<?xml version="1.0"?><!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd"><xliff version="1.0">
+<file original="kipus-en.xml" source-language="en-US" datatype="plaintext">
+<header/>
+<body>
+
+<trans-unit id="add"><source>Add entry</source><target xml:lang="vi">Thêm đăng mục</target></trans-unit>
+<trans-unit id="admin"><source>Admin</source><target xml:lang="vi">Quản trị</target></trans-unit>
+<trans-unit id="admin_advanced"><source>Advanced options</source><target xml:lang="vi">Các chức năng nâng cao</target></trans-unit>
+<trans-unit id="admin_autocreate"><source>Create Books with autocreate flag</source><target xml:lang="vi">Tạo sổ ghi chép tự động</target></trans-unit>
+<trans-unit id="admin_sync"><source>Synchronize with the server</source><target xml:lang="vi">Đồng bộ với máy chủ</target></trans-unit>
+<trans-unit id="admin_syncBookDef"><source>Download book definitions and helper-tables</source><target xml:lang="vi">Tải về các định nghĩa tập dữ liệu và bảng trợ giúp</target></trans-unit>
+<trans-unit id="alreadyExists"><source>Entry already exists</source><target xml:lang="vi">Đăng mục đã tồn tại</target></trans-unit>
+<trans-unit id="appInstalled"><source>This page was successfully installed as an application.&lt;br&gt;
+Please close this browser page and continue to use the app on the home screen.</source></trans-unit>
+<trans-unit id="back"><source>Back</source><target xml:lang="vi">Trở lại</target></trans-unit>
+<trans-unit id="book"><source>Book</source><target xml:lang="vi">Tập dữ liệu</target></trans-unit>
+<trans-unit id="bookDefFailed"><source>Data partially downloaded</source><target xml:lang="vi">Dữ liệu được tải xuống một phần</target></trans-unit>
+<trans-unit id="bookDefResult"><source>Got {1} books, {2} pages, {3} attributes</source><target xml:lang="vi">Có {1} các tập dữ liệu, {2} các trang, {3} các thuộc tính</target></trans-unit>
+<trans-unit id="bookHeader"><source>Book header</source><target xml:lang="vi">Tiêu đề tập dữ liệu</target></trans-unit>
+<trans-unit id="caErr1"><source>Action Text Missing</source><target xml:lang="vi">Thiếu Văn bản Hành động</target></trans-unit>
+<trans-unit id="caShowClosed"><source>(closed entries)</source><target xml:lang="vi">(các đăng mục kín)</target></trans-unit>
+<trans-unit id="caShowOpen"><source>(open entries)</source><target xml:lang="vi">(các đăng mục mở)</target></trans-unit>
+<trans-unit id="cancel"><source>Cancel</source><target xml:lang="vi">Hủy</target></trans-unit>
+<trans-unit id="changeuser"><source>Change User</source><target xml:lang="vi">Thay đổi người sử dụng</target></trans-unit>
+<trans-unit id="checkDateStartEnd"><source>End date is before start date</source><target xml:lang="vi">Ngày kết thúc trước ngày bắt đầu</target></trans-unit>
+<trans-unit id="checkLength"><source>{1} is too long</source><target xml:lang="vi">{1}  quá dài</target></trans-unit>
+<trans-unit id="checkMandatory"><source>{1} is mandatory</source><target xml:lang="vi">{1} là bắt buộc</target></trans-unit>
+<trans-unit id="checkNumBoundery"><source>Boundery ({2}) exceeded for {1}</source><target xml:lang="vi">Ranh giới ({2}) vượt quá đối với {1}</target></trans-unit>
+<trans-unit id="checkRegexp"><source>{1} check failed</source><target xml:lang="vi">{1} kiểm tra không thành công</target></trans-unit>
+<trans-unit id="clear"><source>Clear</source><target xml:lang="vi">Xóa</target></trans-unit>
+<trans-unit id="computedAreaToSmall"><source>The computed area is &lt; 1 ㎡, the distance between shape points is too small.&lt;br&gt;Shape was removed.</source></trans-unit>
+<trans-unit id="connecting"><source>Connecting to kipus server...</source><target xml:lang="vi">Kết nối đến máy chủ kipus...</target></trans-unit>
+<trans-unit id="correctiveAction"><source>Corrective action</source><target xml:lang="vi">Hành động khắc phục</target></trans-unit>
+<trans-unit id="create"><source>Create</source><target xml:lang="vi">Tạo lập</target></trans-unit>
+<trans-unit id="createNotAllowed"><source>Permission denied</source><target xml:lang="vi">Không được phép</target></trans-unit>
+<trans-unit id="debugInfo"><source>Check debug messages</source><target xml:lang="vi">Kiểm trá các thông điệp sửa lỗi</target></trans-unit>
+<trans-unit id="delAll"><source>All data on this client will be deleted, unsynchronized data gets lost!</source><target xml:lang="vi">Tất cả các dữ liệu trên máy khách này sẽ bị xóa. Dữ liệu không được đồng bộ hóa sẽ mất đi!</target></trans-unit>
+<trans-unit id="deleteRow"><source>Delete entry</source><target xml:lang="vi">Xóa đăng mục</target></trans-unit>
+<trans-unit id="deleteRowReally"><source>The current entry will be deleted!</source><target xml:lang="vi">Toàn bộ dữ liệu của mục này sẽ xóa vĩnh viễn. Bạn có chắc chắn muốn xóa không?&lt;br&gt;Để hoàn tác các thay vừa thực, sử dụng nút mũi tên quay lại ở góc trên bên trái màn hình.</target></trans-unit>
+<trans-unit id="deleteRowReallyCancel"><source>NO, keep this entry</source><target xml:lang="vi">Hủy</target></trans-unit>
+<trans-unit id="deleteRowReallyOK"><source>YES, delete this entry</source><target xml:lang="vi">Đồng ý, xóa thông tin này</target></trans-unit>
+<trans-unit id="download"><source>Load</source><target xml:lang="vi">Tải</target></trans-unit>
+<trans-unit id="downloadMD_picture"><source>Download pictures too</source><target xml:lang="vi">Tải xuống cả hình ảnh</target></trans-unit>
+<trans-unit id="downloadMD_time"><source>Time period</source><target xml:lang="vi">Khoảng thời gian</target></trans-unit>
+<trans-unit id="downloadMD_time1m"><source>last Month</source><target xml:lang="vi">Tháng trước</target></trans-unit>
+<trans-unit id="downloadMD_time1y"><source>last Year</source><target xml:lang="vi">Năm trước</target></trans-unit>
+<trans-unit id="downloadMD_timeAll"><source>Everything</source><target xml:lang="vi">Tất cả</target></trans-unit>
+<trans-unit id="downloadMyData"><source>Download my data from the server</source><target xml:lang="vi">Tải xuống các dữ liệu của tôi từ máy chủ</target></trans-unit>
+<trans-unit id="downloadProgram"><source>Loading program files:&lt;br&gt;{1} of {2}</source><target xml:lang="vi">Tải các tệp chương trình: :&lt;br&gt;{1} của {2}</target></trans-unit>
+<trans-unit id="downloadProgramError"><source>Loading program failed:&lt;br&gt;{1}&lt;br&gt;Try to reload.</source><target xml:lang="vi">Tải chương trình không thành công: &lt;br&gt;{1}&lt;br&gt; Thử tải lại.</target></trans-unit>
+<trans-unit id="downloadSaving"><source>Saving table {1}</source><target xml:lang="vi">Bảng lưu {1}</target></trans-unit>
+<trans-unit id="downloadServer"><source>Getting data from server</source><target xml:lang="vi">Lấy dữ liệu từ máy chủ</target></trans-unit>
+<trans-unit id="enoperm"><source>Permission denied</source><target xml:lang="vi">Không được phép</target></trans-unit>
+<trans-unit id="filesizeExceeded"><source>Max Filesize exceeded (maxsize={1} bytes).</source><target xml:lang="vi">Vượt quá dung lượng tệp tối đa (kích thước tối đa={1} bytes).</target></trans-unit>
+<trans-unit id="gpsAccuracy"><source>Accuracy</source></trans-unit>
+<trans-unit id="gpsArea"><source>Calculated area: {1} ha</source></trans-unit>
+<trans-unit id="gpsAverage"><source>average of {1} points</source></trans-unit>
+<trans-unit id="gpsDeleteShape"><source>Delete drawn shape</source></trans-unit>
+<trans-unit id="gpsGetLoc"><source>Get current location from GPS</source><target xml:lang="vi">Xác định vị trí hiện tại từ Hệ thống Định vị Toàn cầu GPS</target></trans-unit>
+<trans-unit id="gpsInit"><source>GPS initializing - this may take a few, in rare cases up to 10, minutes, please be patient. Avoid standing under trees and rainy weather to get quick initialization.
+</source></trans-unit>
+<trans-unit id="gpsIgnComp"><source>Ignore computed value</source><target xml:lang="vi">Bỏ qua giá trị tính toán</target></trans-unit>
+<trans-unit id="gpsReceiving"><source>Receiving GPS Data</source><target xml:lang="vi">Nhận dữ liệu GPS</target></trans-unit>
+<trans-unit id="gpsTrackButton"><source>Track field point from GPS</source><target xml:lang="vi">Theo dõi khu vực từ GPS</target></trans-unit>
+<trans-unit id="gpsUseGM"><source>Use Google-Maps</source><target xml:lang="vi">Sử dụng bản đồ Google-Maps</target></trans-unit>
+<trans-unit id="gpsUseGMHelp1"><source>Note: Google-Maps needs internet connection</source><target xml:lang="vi">Lưu ý: Google-Maps cần kết nối mạng internet</target></trans-unit>
+<trans-unit id="gpsUseGMHelp2"><source>Drag the pin and drop it to the desired location</source><target xml:lang="vi">Kéo mũi ghim rồi thả xuống vị trí mong muốn</target></trans-unit>
+<trans-unit id="helpTextLoginName"><source>Enter your login name here</source><target xml:lang="vi">Nhập tên truy cập của bạn tại đây</target></trans-unit>
+<trans-unit id="helpTextPassword"><source>Enter your password here</source><target xml:lang="vi">Nhập mật khẩu của bạn tại đây</target></trans-unit>
+<trans-unit id="home"><source>Home</source><target xml:lang="vi">Trang chủ</target></trans-unit>
+<trans-unit id="importClientDBReady"><source>Client database import finished</source><target xml:lang="vi">Kết thúc nhập cơ sở dữ liệu khách hàng</target></trans-unit>
+<trans-unit id="inputFile"><source>Select File</source><target xml:lang="vi">Chọn tập tin</target></trans-unit>
+<trans-unit id="inputPhoto"><source>Select Photo</source><target xml:lang="vi">Chọn hình ảnh</target></trans-unit>
+<trans-unit id="langButton"><source>Set language</source><target xml:lang="vi">Cài đặt ngôn ngữ</target></trans-unit>
+<trans-unit id="langLabel"><source>Language</source><target xml:lang="vi">Ngôn ngữ</target></trans-unit>
+<trans-unit id="langTitle"><source>Select laguage</source><target xml:lang="vi">Chọn ngôn ngữ</target></trans-unit>
+<trans-unit id="leaveApp"><source>Leaving the app (KIPUS)</source><target xml:lang="vi">Thoát khỏi ứng dụng (KIPUS)</target></trans-unit>
+<trans-unit id="loadImg"><source>Downloading image {1}</source><target xml:lang="vi">Tải hình ảnh {1}</target></trans-unit>
+<trans-unit id="login"><source>Login</source><target xml:lang="vi">Đăng nhập</target></trans-unit>
+<trans-unit id="loginName"><source>Login Name</source><target xml:lang="vi">Tên Đăng nhập</target></trans-unit>
+<trans-unit id="loginOffline"><source>ready to operate offline</source><target xml:lang="vi">sẵn sàng vận hành không trực tuyến</target></trans-unit>
+<trans-unit id="loginOnline"><source>online operation only</source><target xml:lang="vi">chỉ vận hành trực tuyến</target></trans-unit>
+<trans-unit id="multiPicDone"><source>Done</source><target xml:lang="vi">Hoàn tất</target></trans-unit>
+<trans-unit id="networkErr"><source>Network Error, please check the Internet Connection.</source><target xml:lang="vi">Lỗi Mạng, hãy kiểm tra kết nối với internet.</target></trans-unit>
+<trans-unit id="networkNeeded"><source>needs internet connection</source><target xml:lang="vi">cần kết nối internet</target></trans-unit>
+<trans-unit id="newBook"><source>New book</source><target xml:lang="vi">Tập thông tin mới</target></trans-unit>
+<trans-unit id="no"><source>No</source></trans-unit>
+<trans-unit id="noBodyPage"><source>No page definition available</source><target xml:lang="vi">Không có trang này</target></trans-unit>
+<trans-unit id="noBookDef"><source>No book definition available</source><target xml:lang="vi">Không có tập thông tin này</target></trans-unit>
+<trans-unit id="noSel"><source>Nothing selected</source><target xml:lang="vi">Không chọn gì</target></trans-unit>
+<trans-unit id="numHelp"><source>Number between {1} and {2}</source><target xml:lang="vi">Số giữa  {1} và {2}</target></trans-unit>
+<trans-unit id="numHelp2"><source>Number between {1} and {2}, with {3} decimal places</source><target xml:lang="vi">Số giữa {1} và {2}, với {3} chữ số thập phân</target></trans-unit>
+<trans-unit id="ok"><source>Ok</source><target xml:lang="vi">Chấp nhận</target></trans-unit>
+<trans-unit id="password"><source>Password</source><target xml:lang="vi">Mật khẩu</target></trans-unit>
+<trans-unit id="programUpdate"><source>Check for program update</source><target xml:lang="vi">Kiểm tra bản cập nhật chương trình</target></trans-unit>
+<trans-unit id="pushBlocked"><source>Push subscription is blocked</source><target xml:lang="vi">Đăng kí thông báo đẩy bị chặn</target></trans-unit>
+<trans-unit id="pushNotSupported"><source>Push is not supported!</source><target xml:lang="vi">Thông báo đẩy không được hỗ trợ</target></trans-unit>
+<trans-unit id="pushPrompt"><source>Do you want to receive push messages?&lt;br&gt;You can always disable or enable push messages in the menu.</source><target xml:lang="vi">Bạn có muốn nhận thông báo đẩy không?&lt;br&gt;Bạn luôn luôn có thể vô hiệu hóa hoặc kích hoạt thông báo đẩy trong phần mục lục.</target></trans-unit>
+<trans-unit id="pushSubscribe"><source>Subscribe to push messages</source><target xml:lang="vi">Đăng kí nhận thông báo đẩy</target></trans-unit>
+<trans-unit id="pushUnsubscribe"><source>Unsubscribe to push messages</source><target xml:lang="vi">Hủy đăng kí nhận thông báo đẩy</target></trans-unit>
+<trans-unit id="pwRequired"><source>Password protected</source><target xml:lang="vi">Bảo mật mật khẩu</target></trans-unit>
+<trans-unit id="pw_change"><source>Change Password</source><target xml:lang="vi">Đổi mật khẩu</target></trans-unit>
+<trans-unit id="pw_changed"><source>Password changed</source></trans-unit>
+<trans-unit id="pw_do"><source>Change</source><target xml:lang="vi">Thay đổi</target></trans-unit>
+<trans-unit id="pw_dontmatch"><source>Passwords dont match</source></trans-unit>
+<trans-unit id="pw_newpw"><source>New Password</source><target xml:lang="vi">Mật khẩu mới</target></trans-unit>
+<trans-unit id="pw_newpw2"><source>Retype Password</source><target xml:lang="vi">Gõ lại mật khẩu</target></trans-unit>
+<trans-unit id="pw_oldpw"><source>Old Password</source><target xml:lang="vi">Mật khẩu cũ</target></trans-unit>
+<trans-unit id="pw_tooshort"><source>Password too short</source></trans-unit>
+<trans-unit id="pw_wrongold"><source>Wrong old password</source></trans-unit>
+<trans-unit id="qrBadPrefix"><source>Wrong QR code detected (does not contain the expected prefix)</source><target xml:lang="vi">Phát hiện mã thấy mã QR không chính xác (không chứa tiền tố dự kiến)</target></trans-unit>
+<trans-unit id="qrBadRegexp"><source>Wrong QR code detected (configured validation failed)</source><target xml:lang="vi">Đã phát hiện thấy mã QR không chính xác (xác thực cấu hình sai)</target></trans-unit>
+<trans-unit id="qrScan"><source>Scan</source><target xml:lang="vi">Quét</target></trans-unit>
+<trans-unit id="qrScanAbort"><source>Abort scanning</source><target xml:lang="vi">Dừng Quét</target></trans-unit>
+<trans-unit id="quizBackToStart"><source>Do you want to go back to start?</source><target xml:lang="vi">Bạn có muốn quay lại từ đầu không?</target></trans-unit>
+<trans-unit id="quizCancel"><source>Do you really want to end the quiz? Progress will not be saved.</source><target xml:lang="vi">Bạn thực sự muốn dừng phần câu hỏi kiểm tra? Tiến độ trả lời câu hỏi sẽ không được lưu lại.</target></trans-unit>
+<trans-unit id="quizCheck"><source>Check answer</source><target xml:lang="vi">Kiểm tra câu trả lời</target></trans-unit>
+<trans-unit id="quizPleaseChoose"><source>Please choose an answer.</source><target xml:lang="vi">Hãy lựa chọn câu trả lời</target></trans-unit>
+<trans-unit id="quizQuestion"><source>Question {1}/{2}</source><target xml:lang="vi">Câu hỏi  {1}/{2}</target></trans-unit>
+<trans-unit id="quizResult100"><source>Perfect! You know everything about this topic. Please don't forget to share your knowledge.</source><target xml:lang="vi">Hoàn hảo! Bạn biết tất cả mọi thứ về chủ đề này. Xin đừng quên chia sẻ kiến thức của bạn nhé!</target></trans-unit>
+<trans-unit id="quizResultUpTo100"><source>Fantastic! You knew most of the answers, you have a very good knowledge of this topic.</source><target xml:lang="vi">Rất tuyệt! Bạn biết hầu hết các câu trả lời. Bạn có kiến thức tốt về chủ đề này.</target></trans-unit>
+<trans-unit id="quizResultUpTo25"><source>Don't worry, no-one is born a master. Just look at the questions again in the learning mode to improve your knowledge, and then try again!</source><target xml:lang="vi">Đừng quá lo lắng, không ai bẩm sinh đã là thiên tài. Hãy đọc lại các câu hỏi ở chế độ nghiên cứu để nâng cao kiến thức của mình, sau đó bạn hãy thử lại một lần nữa nhé!</target></trans-unit>
+<trans-unit id="quizResultUpTo50"><source>Good work! Maybe you can try the learning mode to close some gaps in your knowledge.</source><target xml:lang="vi">Khá tốt! Có lẽ bạn nên thử chế độ nghiên cứu để bồi đắp thêm cho các lỗ hổng kiến thức của mình.</target></trans-unit>
+<trans-unit id="quizResultUpTo75"><source>Very good! More than half of the correct answers. Keep learning to achieve even better results.</source><target xml:lang="vi">Rất tốt! Hơn một nửa các câu trả lời là đúng. Hãy tiếp tục nghiên cứu để thu được những kết quả tốt hơn.</target></trans-unit>
+<trans-unit id="quizResultsAnswered"><source>You have answered {1} questions out of {2} correctly.</source><target xml:lang="vi">Bạn đã trả lời đúng {1} trong {2} câu hỏi.</target></trans-unit>
+<trans-unit id="quizResultsHeader"><source>Your results</source><target xml:lang="vi">Kết quả của bạn</target></trans-unit>
+<trans-unit id="quizResultsNote"><source>Note: you have left {1} questions open.</source><target xml:lang="vi">Chú ý: bạn vẫn còn {1} câu hỏi chưa trả lời.</target></trans-unit>
+<trans-unit id="quizSave"><source>Save answer</source><target xml:lang="vi">Lưu câu trả lời</target></trans-unit>
+<trans-unit id="quizTocHeader"><source>Learn the answers</source><target xml:lang="vi">Nghiên cứu các câu trả lời</target></trans-unit>
+<trans-unit id="quizTocText"><source>To refresh your knowledge, you can read all the questions and check your answers before taking the test.</source><target xml:lang="vi">Để ôn luyện kiến thức, bạn có thể đọc lại tất cả các câu hỏi và rà soát các câu trả lời của mình trước khi làm bài kiểm tra.</target></trans-unit>
+<trans-unit id="readonly"><source>Entry is readonly</source><target xml:lang="vi">Đăng mục chỉ để đọc</target></trans-unit>
+<trans-unit id="ready"><source>Ready</source><target xml:lang="vi">Sẵn sàng</target></trans-unit>
+<trans-unit id="regionLabel"><source>Region</source></trans-unit>
+<trans-unit id="resetDatabase"><source>Clear data (unsynced data will be lost)</source><target xml:lang="vi">Cài đặt lại ứng dựng (dữ liệu không được đồng bộ hóa sẽ mất đi)</target></trans-unit>
+<trans-unit id="resetDatabaseDone"><source>App Data cleared.&lt;br&gt;
+To restart, just reload the app (swipe down) to download the app from scratch.&lt;br&gt;&lt;br&gt;
+If you do not intend to reinstall the app, we recommend you also uninstall the app by deleting the app from the home screen.</source></trans-unit>
+<trans-unit id="resetSync"><source>Reset sync status</source><target xml:lang="vi">Thiết lập lại tình trạng đồng bộ</target></trans-unit>
+<trans-unit id="resumeQuiz"><source>Resume the test</source><target xml:lang="vi">Tiếp tục bài kiểm tra</target></trans-unit>
+<trans-unit id="save"><source>Save</source><target xml:lang="vi">Lưu</target></trans-unit>
+<trans-unit id="settingsTitle"><source>User settings</source></trans-unit>
+<trans-unit id="signatureEnter"><source>Enter Signature</source><target xml:lang="vi">Nhập chữ ký</target></trans-unit>
+<trans-unit id="startQuiz"><source>Take the test</source><target xml:lang="vi">Làm bài kiểm tra</target></trans-unit>
+<trans-unit id="startQuizHeader"><source>Test your knowledge</source><target xml:lang="vi">Kiểm tra kiến thức của bạn</target></trans-unit>
+<trans-unit id="startQuizText"><source>Answer all questions to find out how good your knowledge is.</source><target xml:lang="vi">Trả lời tất cả các câu hỏi để biết kiến thức của bạn tốt đến mức nào.</target></trans-unit>
+<trans-unit id="statistics"><source>Statistics</source><target xml:lang="vi">Số liệu thống kê</target></trans-unit>
+<trans-unit id="structExec"><source>Structural change: {1}</source><target xml:lang="vi">Thay đổi cấu trúc: {1} </target></trans-unit>
+<trans-unit id="sync"><source>Sync</source><target xml:lang="vi">Đồng bộ</target></trans-unit>
+<trans-unit id="syncBookDef"><source>Download book definitions and helper-tables</source><target xml:lang="vi">Tải xuống các định nghĩa tập dữ liệu và bảng trợ giúp</target></trans-unit>
+<trans-unit id="syncBusy"><source>Another Sync operation is in progress. Please try again later.</source><target xml:lang="vi">Một vận hành đồng bộ khác đang được tiến hành. Xin vui lòng thử lại sau.</target></trans-unit>
+<trans-unit id="syncDataCollect"><source>Collect data...</source><target xml:lang="vi">Thu thập dữ liệu...</target></trans-unit>
+<trans-unit id="syncFailed"><source>Sync not possible, please make sure you have an internet connection.</source><target xml:lang="vi">Không thể tiến hành đồng bộ, hãy đảm bảo bạn đang có kết nối với mạng internet.</target></trans-unit>
+<trans-unit id="syncFinished"><source>Sync finished</source><target xml:lang="vi">Kết thúc đồng bộ</target></trans-unit>
+<trans-unit id="syncGotData"><source>Got new data</source><target xml:lang="vi">Có dữ liệu mới</target></trans-unit>
+<trans-unit id="syncImgRem"><source>To send: {1} images/documents</source><target xml:lang="vi">Gửi: {1} ảnh/tài liệu</target></trans-unit>
+<trans-unit id="syncNewProg"><source>Program will be updated.</source><target xml:lang="vi">Chương trình sẽ được cập nhật</target></trans-unit>
+<trans-unit id="syncNoData"><source>No data to send</source><target xml:lang="vi">Không có dữ liệu để gửi đi</target></trans-unit>
+<trans-unit id="syncNoDef"><source>No definition changes</source><target xml:lang="vi">Không thay đổi định nghĩa</target></trans-unit>
+<trans-unit id="syncNoProg"><source>Program is up to date</source><target xml:lang="vi">Chương trình được cập nhật</target></trans-unit>
+<trans-unit id="syncSend"><source>Sending data to server...</source><target xml:lang="vi">Gửi dữ liệu đến máy chủ...</target></trans-unit>
+<trans-unit id="syncTimeout"><source>Background sync of images timed out. No need to worry.</source><target xml:lang="vi">Hết thời gian đồng bộ nền của các hình ảnh. Không cần lo lắng.</target></trans-unit>
+<trans-unit id="swRegisterError"><source>App could not be registered as a progressive web app, fallback to traditional app mode.&lt;br&gt;
+Some functionalities like receiving push notifications or add to home screen prompt do not work in the traditional app mode.</source></trans-unit>
+<trans-unit id="tableCopy"><source>Copy</source><target xml:lang="vi">Sao chép</target></trans-unit>
+<trans-unit id="tableCopyClear"><source>Clear data</source><target xml:lang="vi">Xóa dữ liệu</target></trans-unit>
+<trans-unit id="tableCopyEmpty"><source>No data found to copy</source><target xml:lang="vi">Không tìm thấy dữ liệu để sao chép</target></trans-unit>
+<trans-unit id="timeGroupEmpty"><source>{1} is empty, please fill it first</source><target xml:lang="vi">{1} không có dữ liệu, vui lòng bổ sung dữ liệu này trước</target></trans-unit>
+<trans-unit id="unsupportedImage"><source>Only photos of type jpeg are supported</source><target xml:lang="vi">Chỉ hỗ trợ hình ảnh định dạng jpeg</target></trans-unit>
+<trans-unit id="upload"><source>Upload</source><target xml:lang="vi">Tải lên</target></trans-unit>
+<trans-unit id="uploadClientDB"><source>Upload client database (to help debugging)</source><target xml:lang="vi">Tải lên cơ sở dữ liệu khách hàng (để hỗ trợ gỡ lỗi) </target></trans-unit>
+<trans-unit id="uploadClientDBReady"><source>Client database was uploaded to {1}</source><target xml:lang="vi">Cơ sở dữ liệu khách hàng được tải lên {1}</target></trans-unit>
+<trans-unit id="uploadData"><source>Upload entered data</source><target xml:lang="vi">Tải lên dữ liệu được nhập vào</target></trans-unit>
+<trans-unit id="uploadReady"><source>Upload finished</source><target xml:lang="vi">Hoàn thành việc tải lên</target></trans-unit>
+<trans-unit id="userPreferences"><source>User preferences</source><target xml:lang="vi">Các sở thích của người sử dụng</target></trans-unit>
+<trans-unit id="videoDownload"><source>Download videos for storage on your device</source><target xml:lang="vi">Tải các video lưu trữ vào thiết bị của bạn</target></trans-unit>
+<trans-unit id="viewEntry"><source>View entries</source><target xml:lang="vi">Xem các đăng mục</target></trans-unit>
+<trans-unit id="yes"><source>Yes</source></trans-unit>
+
+</body>
+</file>
+</xliff>
